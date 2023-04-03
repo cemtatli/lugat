@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Capriola&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  font-family: "Inter", sans-serif;
+  @apply h-full w-full scroll-smooth bg-green-50 antialiased dark:bg-neutral-950 dark:text-white;
+}
+
+#root {
+  display: grid;
+  grid-template-columns: 1fr min(100%) 1fr;
+  grid-template-rows: 1fr minmax(calc(100vh - 120px), auto) 120px;
+}
+#root > * {
+  grid-column: 2;
+}
