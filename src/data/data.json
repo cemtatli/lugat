@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "category": ["JavaScript", "DENEME", "React"],
+    "category": ["JavaScript"],
     "term": "Scope",
     "desc": "JavaScript'te 'scope' kavramı, bir değişkenin hangi kod bloğunda erişilebilir olduğunu belirler. Bir kod bloğu, genellikle süslü parantezler ({}) arasında yer alan ve belirli bir işlevi yerine getiren kod grubudur.",
     "example": {
@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "category": "JavaScript",
+    "category": ["JavaScript"],
     "term": "Closure",
     "desc": "JavaScript'te 'closure' kavramı, iç içe fonksiyonlar arasındaki bağlantıyı ifade eder. Bir iç fonksiyon, dış fonksiyonun değişkenlerine erişebilir, ancak dış fonksiyon içinde tanımlanan değişkenlere dışarıdan erişilemez.",
     "example": {
@@ -19,11 +19,75 @@
   },
   {
     "id": 3,
-    "category": "JavaScript",
+    "category": ["JavaScript"],
     "term": "Asenkron Programlama",
     "desc": "JavaScript'te 'asenkron programlama' kavramı, işlem sırasının sıralı olarak ilerlemesi yerine, işlemlerin belirli bir sırayla çalıştırılmadan önce tamamlanması ilkesine dayanır. Bu sayede, programda uzun süren işlemlerin yavaşlatması engellenir ve program daha hızlı çalışır.",
     "example": {
       "codeBlock": "function asyncExample() {\n console.log('Başla');\n setTimeout(function() {\n console.log('3 saniye sonra çalıştı');\n }, 3000);\n console.log('Bitir');\n}\n\nasyncExample();\n// 'Başla', 'Bitir', '3 saniye sonra çalıştı' şeklinde yazdırılır\n"
+    }
+  },
+  {
+    "id": 4,
+    "category": ["React", "JavaScript"],
+    "term": "JSX",
+    "desc": "JSX, JavaScript ve HTML benzeri kodların bir arada kullanılmasını sağlayan bir syntax uzantısıdır. React uygulamalarında sıkça kullanılır.",
+    "example": {
+      "codeBlock": "const element = <h1>Hello, world!</h1>;\nReactDOM.render(element, document.getElementById('root'));\n"
+    }
+  },
+  {
+    "id": 5,
+    "category": ["React", "JavaScript"],
+    "term": "Component",
+    "desc": "React uygulamalarında UI’ı, birkaç parçaya bölerek, her parçayı tekrar kullanılabilir, bağımsız ve kolayca yönetilebilir hale getiren yapıdır.",
+    "example": {
+      "codeBlock": "class MyComponent extends React.Component {\n render() {\n return <h1>Hello, {this.props.name}</h1>;\n }\n}\n\nReactDOM.render(<MyComponent name='John' />, document.getElementById('root'));\n"
+    }
+  },
+  {
+    "id": 6,
+    "category": ["React", "JavaScript"],
+    "term": "Props",
+    "desc": "React bileşenleri arasında veri iletmek için kullanılır. Veriler, bileşenin çağrıldığı yerden başka bir bileşene, özellikle ebeveyn bileşenlerden alt bileşenlere iletilir.",
+    "example": {
+      "codeBlock": "function Welcome(props) {\n return <h1>Hello, {props.name}</h1>;\n}\n\nconst element = <Welcome name='John' />;\nReactDOM.render(element, document.getElementById('root'));\n"
+    }
+  },
+  {
+    "id": 7,
+    "category": ["React", "JavaScript"],
+    "term": "State",
+    "desc": "Bir bileşenin, kendi içinde sakladığı veri durumuna, yani 'state' denir. State, bileşenin davranışını, görüntüsünü ve etkileşimlerini kontrol etmeye yardımcı olur. State, bileşenler arasında paylaşılamaz, sadece bileşenin kendi içinde kullanılabilir.",
+    "example": {
+      "codeBlock": "class Counter extends React.Component {\n constructor(props) {\n super(props);\n this.state = { count: 0 };\n }\n\n handleClick() {\n this.setState({ count: this.state.count + 1 });\n }\n\n render() {\n return (\n <div>\n <p>Count: {this.state.count}</p>\n <button onClick={() => this.handleClick()}>Click me</button>\n </div>\n );\n }\n}\n\nReactDOM.render(<Counter />, document.getElementById('root'));\n"
+    }
+  },
+  {
+    "id": 8,
+    "category": ["React", "JavaScript"],
+    "term": "Props",
+    "desc": "Props, bir bileşene verilen özelliklerdir. Props, bileşenin başka bir bileşen tarafından çağrılırken aldığı parametrelerdir. Bir bileşen, props ile verilen özellikleri kullanarak, farklı şekillerde görüntülenebilir veya davranışlar sergileyebilir.",
+    "example": {
+      "codeBlock": "function Welcome(props) {\n return <h1>Hello, {props.name}!</h1>;\n}\n\nconst element = <Welcome name='John' />;\nReactDOM.render(\n element,\n document.getElementById('root')\n);"
+    }
+  },
+
+  {
+    "id": 9,
+    "category": ["React", "JavaScript"],
+    "term": "JSX",
+    "desc": "JSX, JavaScript sözdizimini genişleten bir XML benzeri sözdizimidir. React bileşenlerini tanımlamak ve bu bileşenlere özellikler ve çocuk bileşenler eklemek için kullanılır. JSX, React uygulamalarının okunaklılığını artırır ve hataları önceden tespit etmeye yardımcı olur.",
+    "example": {
+      "codeBlock": "function formatName(user) {\n return user.firstName + ' ' + user.lastName;\n}\n\nconst user = {\n firstName: 'John',\n lastName: 'Doe'\n};\n\nconst element = <h1>Hello, {formatName(user)}!</h1>;\n\nReactDOM.render(\n element,\n document.getElementById('root')\n);"
+    }
+  },
+  {
+    "id": 10,
+    "category": ["React", "JavaScript"],
+    "term": "Virtual DOM",
+    "desc": "Virtual DOM, React'ın performansını artırmak için kullandığı bir tekniktir. React, bir bileşenin durumu değiştiğinde, önce sanal bir DOM ağacı oluşturur ve gerçek DOM ile karşılaştırır. Ardından, sadece değişen kısımları günceller ve gerçek DOM ağacını yeniden oluşturmak yerine bu değişiklikleri yansıtır. Bu işlem, gerçek DOM ağacını yeniden oluşturmaktan daha hızlıdır ve React uygulamalarının performansını artırır.",
+    "example": {
+      "codeBlock": "// Normal DOM:\n\n<div id='myDiv'>\n <p>Hello, world!</p>\n</div>\n\n// Virtual DOM:\n\n{\n type: 'div',\n props: {\n id: 'myDiv',\n children: [\n {\n type: 'p',\n props: {\n children: 'Hello, world!'\n }\n }\n ]\n }\n}"
     }
   }
 ]

@@ -3,7 +3,7 @@ import Categories from "./Categories";
 
 const Sidebar = () => {
   return (
-    <aside className="sticky top-8 flex flex-col items-center">
+    <aside className="flex flex-col items-center p-5">
       <Categories />
     </aside>
   );
