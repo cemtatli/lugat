@@ -163,7 +163,7 @@
     }
   },
   {
-    "id": 17,
+    "id": 19,
     "category": ["JavaScript"],
     "term": "Call Stack",
     "desc": "Call Stack, JavaScript'in fonksiyon çağrılarını izlediği veri yapısıdır. Bir fonksiyon çağrısı yapıldığında, bu çağrı Call Stack'e eklenir ve fonksiyonun tamamlanmasıyla birlikte Call Stack'den çıkarılır.",
@@ -172,7 +172,7 @@
     }
   },
   {
-    "id": 18,
+    "id": 20,
     "category": ["JavaScript"],
     "term": "Higher-Order Function",
     "desc": "Higher-Order Function, bir fonksiyonun, diğer bir fonksiyonu parametre olarak alması veya bir fonksiyon döndürmesi durumudur. Bu özellik sayesinde, fonksiyonlar daha esnek ve yeniden kullanılabilir hale gelir.",
@@ -181,7 +181,7 @@
     }
   },
   {
-    "id": 19,
+    "id": 21,
     "category": ["JavaScript"],
     "term": "ES6",
     "desc": "ES6, ECMAScript 2015 olarak da bilinen bir JavaScript sürümüdür. Bu sürüm, birçok yeni özellik ve geliştirme içermektedir, örneğin arrow functionlar, let ve const anahtar kelimeleri, template literals, destructuring, spread ve rest operatörleri gibi.",
@@ -190,7 +190,7 @@
     }
   },
   {
-    "id": 20,
+    "id": 22,
     "category": ["JavaScript"],
     "term": "Destructuring",
     "desc": "Destructuring, JavaScript'te bir nesne veya dizi içindeki değerleri ayrıştırma işlemidir. Bu işlem, tek tek öğeleri elde etmek yerine nesne veya dizinin özelliklerine doğrudan erişmenizi sağlar.",
@@ -199,7 +199,7 @@
     }
   },
   {
-    "id": 21,
+    "id": 23,
     "category": ["JavaScript"],
     "term": "Template Literals",
     "desc": "Template Literals, ECMAScript 6 (ES6) ile birlikte gelen bir özelliktir ve string ifadelerini daha esnek hale getirir. Bu özellik, string ifadelerini tek tırnak veya çift tırnak içine almaktansa, backtick karakterleri (``) arasına almanıza izin verir ve içinde değişkenler veya ifadeler kullanmanızı sağlar.",
