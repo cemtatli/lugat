@@ -37,3 +37,6 @@ body,
 #root > * {
   grid-column: 2;
 }
+main {
+  @apply flex;
+}

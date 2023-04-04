@@ -63,15 +63,6 @@
     }
   },
   {
-    "id": 8,
-    "category": ["React", "JavaScript"],
-    "term": "Props",
-    "desc": "Props, bir bileşene verilen özelliklerdir. Props, bileşenin başka bir bileşen tarafından çağrılırken aldığı parametrelerdir. Bir bileşen, props ile verilen özellikleri kullanarak, farklı şekillerde görüntülenebilir veya davranışlar sergileyebilir.",
-    "example": {
-      "codeBlock": "function Welcome(props) {\n return <h1>Hello, {props.name}!</h1>;\n}\n\nconst element = <Welcome name='John' />;\nReactDOM.render(\n element,\n document.getElementById('root')\n);"
-    }
-  },
-  {
     "id": 9,
     "category": ["React", "JavaScript"],
     "term": "JSX",
@@ -91,7 +82,7 @@
   },
   {
     "id": 11,
-    "category": ["JavaScript"],
+    "category": ["JavaScript", "React"],
     "term": "let",
     "desc": "'let' anahtar kelimesi, JavaScript'te yeni bir değişken tanımlamak için kullanılır. 'let' kullanarak tanımlanan değişkenler, sadece tanımlandıkları blok içinde erişilebilir ve dışarıya sızamazlar. Ayrıca, 'let' ile tanımlanan değişkenlerin değerleri sonradan değiştirilebilir.",
     "example": {
@@ -109,7 +100,7 @@
   },
   {
     "id": 13,
-    "category": ["JavaScript"],
+    "category": ["JavaScript", "React"],
     "term": "Promise",
     "desc": "Promise, asenkron işlemleri kolaylaştırmak için JavaScript'te kullanılan bir nesnedir. Promise nesnesi, bir işlem tamamlandığında veya hata verdiğinde geri çağırma işlevlerini kullanarak işlemin sonucunu yönetir.",
     "example": {
@@ -190,7 +181,7 @@
   },
   {
     "id": 22,
-    "category": ["JavaScript"],
+    "category": ["JavaScript", "React"],
     "term": "Destructuring",
     "desc": "Destructuring, JavaScript'te bir nesne veya dizi içindeki değerleri ayrıştırma işlemidir. Bu işlem, tek tek öğeleri elde etmek yerine nesne veya dizinin özelliklerine doğrudan erişmenizi sağlar.",
     "example": {
@@ -483,6 +474,60 @@
     "desc": "ID (Identifier), HTML ve CSS'de bir öğenin benzersiz bir kimliğini tanımlamak için kullanılan bir özniteliktir. Bir ID, sayfadaki yalnızca bir öğeyi tanımlayabilir ve öğenin bir kimliği olduğu sürece diğer öğelerden ayırt edilir.",
     "example": {
       "codeBlock": "<div id='header'>Header</div>"
+    }
+  },
+  {
+    "id": 56,
+    "category": ["Web Development"],
+    "term": "WebSockets",
+    "desc": "WebSockets, istemci ve sunucu arasında tam çift yönlü iletişim sağlayan bir ağ protokolüdür. Bu protokol, sürekli bağlantı kurarak veri alışverişi yapmanızı sağlar ve gerçek zamanlı uygulamalar için idealdir.",
+    "example": {
+      "codeBlock": "const socket = new WebSocket('wss://ornek.com');\n\nsocket.onopen = function() {\n  console.log('Bağlantı açıldı');\n};\n\nsocket.onmessage = function(event) {\n  console.log('Alınan mesaj: ' + event.data);\n};\n\nsocket.onclose = function() {\n  console.log('Bağlantı kapandı');\n};"
+    }
+  },
+  {
+    "id": 57,
+    "category": ["Web Development"],
+    "term": "SSL",
+    "desc": "SSL (Secure Sockets Layer), veri iletişiminde güvenliği sağlamak için kullanılan bir kriptografik protokoldür. Bu protokol, veri iletişiminde şifreleme, kimlik doğrulama ve bütünlük sağlar.",
+    "example": {
+      "codeBlock": ""
+    }
+  },
+  {
+    "id": 58,
+    "category": ["Web Development"],
+    "term": "AJAX",
+    "desc": "AJAX, sayfa yeniden yüklenmeden web sayfaları aracılığıyla sunucu ile iletişim kurmayı sağlayan bir teknolojidir.",
+    "example": {
+      "codeBlock": "const xhr = new XMLHttpRequest();\nxhr.open('GET', 'https://example.com/api/data', true);\nxhr.onload = function() {\n  if (this.status === 200) {\n    const data = JSON.parse(this.responseText);\n    console.log(data);\n  }\n};\nxhr.send();"
+    }
+  },
+  {
+    "id": 59,
+    "category": ["Web Development"],
+    "term": "RESTful API",
+    "desc": "RESTful API, temel HTTP protokolünü kullanarak web servislerine erişim sağlamak için kullanılan bir arayüzdür.",
+    "example": {
+      "codeBlock": "app.get('/api/users', function(req, res) {\n  const users = [\n    { id: 1, name: 'John Doe' },\n    { id: 2, name: 'Jane Smith' }\n  ];\n  res.json(users);\n});"
+    }
+  },
+  {
+    "id": 60,
+    "category": ["Web Development", "JavaScript"],
+    "term": "Node.js",
+    "desc": "Node.js, JavaScript ile sunucu tarafı uygulama geliştirme için kullanılan bir çalıştırma ortamıdır.",
+    "example": {
+      "codeBlock": "const http = require('http');\n\nconst server = http.createServer((req, res) => {\n  res.statusCode = 200;\n  res.setHeader('Content-Type', 'text/plain');\n  res.end('Hello, World!');\n});\n\nserver.listen(3000, () => {\n  console.log('Server running at http://localhost:3000/');\n});"
+    }
+  },
+  {
+    "id": 61,
+    "category": ["Programming"],
+    "term": "JSON",
+    "desc": "JSON (JavaScript Object Notation), verileri okunaklı ve hafif bir format kullanarak depolamak, göndermek ve almak için kullanılan bir veri değişim formatıdır.",
+    "example": {
+      "codeBlock": "{\n 'name': 'John',\n 'age': 30,\n 'city': 'New York'\n}"
     }
   }
 ]

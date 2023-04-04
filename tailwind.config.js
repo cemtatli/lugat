@@ -12,6 +12,9 @@ export default {
         xs: "425px",
         xxs: "325px",
       },
+      width: {
+        50: "200px",
+      },
       colors: {
         heather: {
           50: "#FBFCFD",

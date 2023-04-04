@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "./Logo";
 
-const Header = () => {
+const Footer = () => {
   return (
     <footer className="flex h-10 items-center justify-center gap-x-1 text-xs font-medium">
       <Logo size={32} />
@@ -9,4 +9,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Footer;

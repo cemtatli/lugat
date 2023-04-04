@@ -43,6 +43,7 @@ const Search = ({ onSearch }) => {
   const handleHistoryClick = (historyItem) => {
     setSearchTerm(historyItem);
     onSearch(historyItem);
+    setIsFocused(false);
   };
 
   return (
@@ -50,12 +51,15 @@ const Search = ({ onSearch }) => {
       <input
         className="h-12 w-full border px-10 text-sm text-gray-700 outline-none"
         type="text"
-        placeholder="What are you looking for?"
+        placeholder="Ne aramıştınız?"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
         onKeyDown={handleKeyDown}
         id="search"
         onFocus={() => setIsFocused(true)}
+        onBlur={() => {
+          setIsFocused(true);
+        }}
       />
       {searchTerm.length > 0 && isFocused && (
         <button
@@ -68,7 +72,7 @@ const Search = ({ onSearch }) => {
       <div className="absolute left-0 top-0 flex h-12 w-12 items-center justify-center text-gray-500">
         <MagnifyingGlassIcon className="h-5 w-5 text-black" />
       </div>
-      {(searchHistory.length > 0 || searchTerm.length === 0) && isFocused && (
+      {searchHistory.length > 0 && isFocused && (
         <div className="absolute top-full z-10 w-full border border-gray-200 bg-white shadow-md">
           <ul className="divide-y divide-gray-200">
             {searchHistory.map((item) => (
@@ -81,14 +85,12 @@ const Search = ({ onSearch }) => {
               </li>
             ))}
           </ul>
-          {searchHistory.length > 0 && (
-            <button
-              className="block w-full bg-gray-100 py-2 text-sm font-medium text-gray-500 hover:bg-gray-200 dark:text-gray-900"
-              onClick={handleClearHistory}
-            >
-              Arama Geçmişini Temizle
-            </button>
-          )}
+          <button
+            className="block w-full bg-gray-100 py-2 text-sm font-medium text-gray-500 hover:bg-gray-200 dark:text-gray-900"
+            onClick={handleClearHistory}
+          >
+            Arama Geçmişini Temizle
+          </button>
         </div>
       )}
     </div>

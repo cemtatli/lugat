@@ -21,11 +21,11 @@ const Layout = () => {
         <Search onSearch={handleSearch} />
       </div>
       <div className="h-full w-full flex-auto overflow-auto rounded-md p-8">
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-15">
           {filteredData.map((item) => (
             <div key={item.id}>
               <h2 className="text-xl font-semibold">{item.term} nedir ?</h2>
-              <p className="mt-2 text-sm">{item.desc}</p>
+              <p className="mt-2 text-sm ">{item.desc}</p>
               <div className="mt-4 flex items-center gap-2">
                 {Array.isArray(item.category) &&
                   item.category.map((category, index) => (
@@ -34,7 +34,6 @@ const Layout = () => {
                     </Badge>
                   ))}
               </div>
-
               <CodeBlock code={item.example.codeBlock} />
             </div>
           ))}
