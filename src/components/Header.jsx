@@ -4,7 +4,7 @@ import Logo from "./Logo";
 
 const Header = () => {
   return (
-    <header className="flex h-15 items-center justify-center gap-x-2">
+    <header className="flex h-15 items-center justify-center gap-x-2 border-b dark:border-white dark:border-opacity-10">
       <Logo size={40} />
 
       <nav className="flex items-center gap-x-2 text-sm"></nav>

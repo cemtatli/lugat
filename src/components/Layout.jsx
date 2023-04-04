@@ -15,7 +15,7 @@ const Layout = () => {
     .sort((a, b) => a.term.localeCompare(b.term));
 
   return (
-    <div className="h-full w-full overflow-auto rounded-md p-8">
+    <section className="h-full w-full flex-auto overflow-auto rounded-md p-8">
       <div className="min-w-screen flex w-full ">
         <Search onSearch={handleSearch} />
       </div>
@@ -37,7 +37,7 @@ const Layout = () => {
           <CodeBlock code={item.example.codeBlock} />
         </div>
       ))}
-    </div>
+    </section>
   );
 };
 
