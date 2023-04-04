@@ -9,9 +9,9 @@ const Button = ({ children, variant = "default" }) => {
         "bg-red-300 text-red-950 transition-all duration-100 hover:bg-red-400 hover:text-white hover:shadow-md hover:shadow-red-300  dark:hover:shadow-red-950":
           variant === "danger",
         "bg-green-300 text-green-950 transition-all duration-100 hover:bg-green-400 hover:text-white hover:shadow-md hover:shadow-green-300  dark:hover:shadow-green-950":
-          variant === "success",
+          variant === "React",
         "bg-yellow-300 text-yellow-950 transition-all duration-100 hover:bg-yellow-400 hover:text-white hover:shadow-md hover:shadow-yellow-300  dark:hover:shadow-yellow-950":
-          variant === "warning",
+          variant === "JavaScript",
         "bg-blue-300 text-blue-950 transition-all duration-100 hover:bg-blue-400 hover:text-white hover:shadow-md hover:shadow-blue-300  dark:hover:shadow-blue-950":
           variant === "default",
       })}
@@ -22,3 +22,4 @@ const Button = ({ children, variant = "default" }) => {
 };
 
 export default Button;
+

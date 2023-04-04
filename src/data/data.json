@@ -28,11 +28,11 @@
   },
   {
     "id": 4,
-    "category": ["React", "JavaScript"],
-    "term": "JSX",
-    "desc": "JSX, JavaScript ve HTML benzeri kodların bir arada kullanılmasını sağlayan bir syntax uzantısıdır. React uygulamalarında sıkça kullanılır.",
+    "category": ["React"],
+    "term": "State",
+    "desc": "State, React component'lerindeki verilerin depolanması ve yönetilmesi için kullanılan bir özelliktir. State, component'in özellikleri (props) gibi dışarıdan değil, component'in içinde tanımlanır ve değiştirilebilir.",
     "example": {
-      "codeBlock": "const element = <h1>Hello, world!</h1>;\nReactDOM.render(element, document.getElementById('root'));\n"
+      "codeBlock": "import React, { useState } from 'react';\n\nfunction Counter() {\n  const [count, setCount] = useState(0);\n\n  function handleIncrement() {\n    setCount(count + 1);\n  }\n\n  return (\n    <div>\n      <p>You clicked {count} times</p>\n      <button onClick={handleIncrement}>Click me</button>\n    </div>\n  );\n}"
     }
   },
   {
@@ -55,11 +55,11 @@
   },
   {
     "id": 7,
-    "category": ["React", "JavaScript"],
-    "term": "State",
-    "desc": "Bir bileşenin, kendi içinde sakladığı veri durumuna, yani 'state' denir. State, bileşenin davranışını, görüntüsünü ve etkileşimlerini kontrol etmeye yardımcı olur. State, bileşenler arasında paylaşılamaz, sadece bileşenin kendi içinde kullanılabilir.",
+    "category": ["CSS"],
+    "term": "Box Model",
+    "desc": "Box Model, her HTML öğesi için bir kutu modeli oluşturarak öğelerin boyutlandırılmasını ve yerleştirilmesini sağlayan bir CSS özelliğidir. Kutu modeli, içerik, dolgu, sınır ve kenar boşluğu olarak dört bileşenden oluşur.",
     "example": {
-      "codeBlock": "class Counter extends React.Component {\n constructor(props) {\n super(props);\n this.state = { count: 0 };\n }\n\n handleClick() {\n this.setState({ count: this.state.count + 1 });\n }\n\n render() {\n return (\n <div>\n <p>Count: {this.state.count}</p>\n <button onClick={() => this.handleClick()}>Click me</button>\n </div>\n );\n }\n}\n\nReactDOM.render(<Counter />, document.getElementById('root'));\n"
+      "codeBlock": "/* Kutu modelindeki bileşenlerin genişlikleri ve yükseklikleri ayrı ayrı belirlenebilir. */\ndiv {\n  width: 200px;\n  height: 100px;\n  padding: 20px;\n  border: 1px solid black;\n  margin: 10px;\n}"
     }
   },
   {
@@ -205,6 +205,87 @@
     "desc": "Template Literals, ECMAScript 6 (ES6) ile birlikte gelen bir özelliktir ve string ifadelerini daha esnek hale getirir. Bu özellik, string ifadelerini tek tırnak veya çift tırnak içine almaktansa, backtick karakterleri (``) arasına almanıza izin verir ve içinde değişkenler veya ifadeler kullanmanızı sağlar.",
     "example": {
       "codeBlock": "const name = 'John';\nconst age = 30;\nconsole.log(My name is ${name} and I am ${age} years old.); // Output: My name is John and I am 30 years old."
+    }
+  },
+  {
+    "id": 24,
+    "category": ["JavaScript"],
+    "term": "Object Oriented Programming (OOP)",
+    "desc": "Object Oriented Programming (OOP), JavaScript'te bir programın nesne ve sınıflar üzerine kurulmasını sağlayan bir programlama paradigmadır. Bu paradigmada, bir program birbirleriyle etkileşim halinde olan nesnelerin kümesinden oluşur ve her nesne bir sınıfın örneğidir.",
+    "example": {
+      "codeBlock": "class Person {\n constructor(name, age) {\n this.name = name;\n this.age = age;\n }\n\n sayHello() {\n console.log(Hello, my name is ${this.name} and I am ${this.age} years old);\n }\n}\n\nconst john = new Person('John', 30);\njohn.sayHello(); // Output: Hello, my name is John and I am 30 years old"
+    }
+  },
+  {
+    "id": 25,
+    "category": ["JavaScript"],
+    "term": "Prototype",
+    "desc": "Prototype, JavaScript'teki nesne tabanlı programlama modelinde kullanılan bir özelliktir ve her nesnenin bir prototipi vardır. Bu özellik, bir nesnenin özellikleri veya metotlarına erişmek için kullanılır ve nesne tabanlı programlamada miras alma kavramını destekler.",
+    "example": {
+      "codeBlock": "function Person(name, age) {\n this.name = name;\n this.age = age;\n}\n\nPerson.prototype.sayHello = function() {\n console.log(Hello, my name is ${this.name} and I am ${this.age} years old);\n};\n\nconst john = new Person('John', 30);\njohn.sayHello(); // Output: Hello, my name is John and I am 30 years old"
+    }
+  },
+  {
+    "id": 26,
+    "category": ["JavaScript"],
+    "term": "Array Methods",
+    "desc": "Array Methods, JavaScript'teki dizilerde kullanılan özel metodlardır ve dizilerin işlenmesini kolaylaştırır. Bu metodlar arasında, eleman ekleme ve silme, sıralama, filtreleme ve dönüştürme işlemleri bulunur.",
+    "example": {
+      "codeBlock": "// Adding elements\nconst arr = [1, 2, 3];\narr.push(4);\nconsole.log(arr); // Output: [1, 2, 3, 4]\n\n// Removing elements\nconst arr = [1, 2, 3];\narr.pop();\nconsole.log(arr); // Output: [1, 2]\n\n// Sorting elements\nconst arr = [3, 1, 2];\narr.sort();\nconsole.log(arr); // Output: [1, 2, 3]\n\n// Filtering elements\nconst arr = [1, 2, 3];\nconst filteredArr = arr.filter(item => item > 1);\nconsole.log(filteredArr); // Output: [2, 3]\n\n// Transforming elements\nconst arr = [1, 2, 3];\nconst transformedArr = arr.map(item => item * 2);\nconsole.log(transformedArr); // Output: [2, 4, 6]"
+    }
+  },
+  {
+    "id": 27,
+    "category": ["CSS"],
+    "term": "Flexbox",
+    "desc": "Flexbox, esnek kutu modeli kullanarak bir HTML öğesi içindeki öğelerin yerleştirilmesini ve hizalanmasını yöneten bir CSS özelliğidir. Flexbox, öğelerin yatay veya dikey olarak hizalanmasını ve öğeler arasındaki boşluğu yönetmek için kullanılabilir.",
+    "example": {
+      "codeBlock": "/* Öğeleri yatay olarak hizalamak için flexbox özelliği kullanılabilir. */\n.container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.container > div {\n  margin: 10px;\n}"
+    }
+  },
+  {
+    "id": 28,
+    "category": ["CSS"],
+    "term": "Media Queries",
+    "desc": "Media Queries, belirli ekran boyutları veya cihaz özellikleri gibi koşullar için farklı CSS kuralları belirleyerek duyarlı web tasarımı yapmayı mümkün kılan bir CSS özelliğidir.",
+    "example": {
+      "codeBlock": "/* Ekran genişliği 600 pikselin altındaysa metin rengini değiştir. */\n@media (max-width: 600px) {\n  body {\n    color: red;\n  }\n}"
+    }
+  },
+  {
+    "id": 29,
+    "category": ["CSS"],
+    "term": "Selectors",
+    "desc": "Selectors, belirli HTML öğelerini veya özelliklerini seçerek stil uygulamak için kullanılan CSS özellikleridir. ID'ler, sınıflar, özellikler, yavrular, kardeşler ve daha birçok seçici türü vardır.",
+    "example": {
+      "codeBlock": "/* Sınıf seçicisi kullanarak belirli bir öğeye stil uygulayın. */\n.my-class {\n  font-weight: bold;\n}"
+    }
+  },
+  {
+    "id": 30,
+    "category": ["CSS"],
+    "term": "Transitions",
+    "desc": "Transitions, belirli bir öğenin belirli bir özelliğinde (genellikle renk veya boyut gibi) bir değişiklik olduğunda, değişikliğin düzenli ve yumuşak bir şekilde gerçekleşmesini sağlayan bir CSS özelliğidir.",
+    "example": {
+      "codeBlock": "/* Renk değişimini yavaşça gerçekleştirmek için transition özelliği kullanılabilir. */\nbutton {\n  background-color: red;\n  transition: background-color 0.5s ease;\n}\n\nbutton:hover {\n  background-color: blue;\n}"
+    }
+  },
+  {
+    "id": 31,
+    "category": ["CSS"],
+    "term": "Transforms",
+    "desc": "Transforms, bir HTML öğesinin boyutunu, şeklini, konumunu ve oryantasyonunu değiştirmek için kullanılan bir CSS özelliğidir. Döndürme, ölçeklendirme, eğimleme ve konumlandırma gibi birçok değişiklik yapılabilir.",
+    "example": {
+      "codeBlock": "/* Bir div öğesini döndürmek için transform özelliği kullanılabilir. */\ndiv {\n  transform: rotate(45deg);\n}"
+    }
+  },
+  {
+    "id": 32,
+    "category": ["CSS"],
+    "term": "Grid",
+    "desc": "Grid, bir HTML öğesinin içindeki öğeleri satır ve sütunlar halinde yerleştirmek ve hizalamak için kullanılan bir CSS özelliğidir. Grid, Flexbox'tan daha karmaşık yerleştirme işlemleri yapmak için kullanılabilir.",
+    "example": {
+      "codeBlock": "/* Öğeleri bir 2x2 kare oluşturacak şekilde yerleştirmek için grid özelliği kullanılabilir. */\n.container {\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  grid-template-rows: repeat(2, 1fr);\n  gap: 10px;\n}\n\n.container > div {\n  background-color: lightblue;\n}"
     }
   }
 ]

@@ -2,6 +2,7 @@ import { useState } from "react";
 import data from "@/data/data.json";
 import CodeBlock from "./CodeBlock";
 import Search from "./Search";
+import Badges from "./Badges";
 
 const Layout = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -25,14 +26,11 @@ const Layout = () => {
           <div className="mt-2 flex items-center gap-2">
             {Array.isArray(item.category) &&
               item.category.map((category, index) => (
-                <span
-                  key={index}
-                  className=" inline-block rounded-md bg-gray-100 px-3 py-1 text-xs text-gray-600 dark:bg-gray-800 dark:text-gray-200"
-                >
-                  # {category}
-                </span>
+                <Badges variant={category} key={index} className="inline-flex text-xs font-bold lowercase">
+                  #{category}
+                </Badges>
               ))}
-          </div>{" "}
+          </div>
           <p className="mt-4 text-sm text-gray-700 dark:text-yellow-200">{item.desc}</p>
           <CodeBlock code={item.example.codeBlock} />
         </div>

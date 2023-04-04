@@ -18,11 +18,11 @@ function CodeBlock({ code, language }) {
         <span className="text-xs font-medium text-gray-500 dark:text-white">Code</span>
         <CopyToClipboard text={code} onCopy={handleCopy}>
           <button className="flex items-center rounded-md bg-gray-300 px-2 py-1 text-xs font-medium transition-colors duration-200 hover:bg-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600">
-            {copied ? <span className="mr-1  dark:text-white">Kopyalandı !</span> : <span>Kopyala</span>}
+            {copied ? <span className="mr-1 dark:text-white">Kopyalandı !</span> : <span>Kopyala</span>}
           </button>
         </CopyToClipboard>
       </div>
-      <pre className="overflow-auto p-4 text-sm ">{code}</pre>
+      <pre className="overflow-auto p-4 text-sm">{code}</pre>
     </div>
   );
 }
