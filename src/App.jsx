@@ -8,7 +8,7 @@ function App() {
   return (
     <ThemeProvider>
       <Header />
-      <main className="container mx-auto flex px-5">
+      <main className="flex overflow-y-auto px-4">
         <Sidebar />
         <Layout />
       </main>

@@ -9,7 +9,7 @@ html,
 body,
 #root {
   font-family: "Inter", sans-serif;
-  @apply h-full w-full scroll-smooth bg-green-50 antialiased dark:bg-neutral-950 dark:text-white;
+  @apply h-full w-full scroll-smooth antialiased dark:bg-neutral-950 dark:text-white;
 }
 
 #root {

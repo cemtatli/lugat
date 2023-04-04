@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "category": ["JavaScript", "DENEME", "React"],
+    "term": "Scope",
+    "desc": "JavaScript'te 'scope' kavramı, bir değişkenin hangi kod bloğunda erişilebilir olduğunu belirler. Bir kod bloğu, genellikle süslü parantezler ({}) arasında yer alan ve belirli bir işlevi yerine getiren kod grubudur.",
+    "example": {
+      "codeBlock": "function scopeExample() {\n var x = 1; // x sadece bu fonksiyonun kapsamında erişilebilir\n console.log(x); // 1 yazdırılır\n}\n\nscopeExample();\nconsole.log(x); // hata verir, x is not defined\n"
+    }
+  },
+  {
+    "id": 2,
+    "category": "JavaScript",
+    "term": "Closure",
+    "desc": "JavaScript'te 'closure' kavramı, iç içe fonksiyonlar arasındaki bağlantıyı ifade eder. Bir iç fonksiyon, dış fonksiyonun değişkenlerine erişebilir, ancak dış fonksiyon içinde tanımlanan değişkenlere dışarıdan erişilemez.",
+    "example": {
+      "codeBlock": "function outer() {\n var x = 10;\n function inner() {\n console.log(x);\n }\n return inner;\n}\n\nvar closureExample = outer();\nclosureExample(); // 10 yazdırılır\n"
+    }
+  },
+  {
+    "id": 3,
+    "category": "JavaScript",
+    "term": "Asenkron Programlama",
+    "desc": "JavaScript'te 'asenkron programlama' kavramı, işlem sırasının sıralı olarak ilerlemesi yerine, işlemlerin belirli bir sırayla çalıştırılmadan önce tamamlanması ilkesine dayanır. Bu sayede, programda uzun süren işlemlerin yavaşlatması engellenir ve program daha hızlı çalışır.",
+    "example": {
+      "codeBlock": "function asyncExample() {\n console.log('Başla');\n setTimeout(function() {\n console.log('3 saniye sonra çalıştı');\n }, 3000);\n console.log('Bitir');\n}\n\nasyncExample();\n// 'Başla', 'Bitir', '3 saniye sonra çalıştı' şeklinde yazdırılır\n"
+    }
+  }
+]
