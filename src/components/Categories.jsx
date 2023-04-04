@@ -3,8 +3,8 @@ import Button from "./Button";
 
 const Categories = () => {
   return (
-    <section className="hidden h-full w-40 flex-col gap-y-5  px-5 md:flex">
-      <h3 className="text mt-5 font-bold text-black dark:text-white">Kategoriler</h3>
+    <section className="hidden h-full w-40 flex-col  gap-y-5  px-5 md:flex">
+      <h3 className="text mt-5 text-center font-bold text-black dark:text-white">Kategoriler</h3>
       <nav className="flex flex-col gap-y-4 overflow-auto">
         <Button variant="JavaScript" className="text-sm font-medium hover:text-gray-900">
           JavaScript
@@ -26,6 +26,9 @@ const Categories = () => {
         </Button>
         <Button variant="Web Development" className=" text-sm font-medium hover:text-gray-900">
           Web Development
+        </Button>
+        <Button variant="Package Managers" className=" text-sm font-medium hover:text-gray-900">
+          Package Managers
         </Button>
         <Button variant="Package Managers" className=" text-sm font-medium hover:text-gray-900">
           Package Managers

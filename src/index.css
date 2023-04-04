@@ -26,7 +26,7 @@ html,
 body,
 #root {
   font-family: "Inter", sans-serif;
-  @apply h-full w-full scroll-smooth antialiased dark:bg-gray-900 dark:text-white;
+  @apply h-full w-full scroll-smooth antialiased dark:bg-gradient-to-b  dark:from-gray-950 dark:to-gray-900 dark:text-white;
 }
 
 #root {
