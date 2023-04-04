@@ -1,43 +1,85 @@
 import { useState } from "react";
-import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
+import { MagnifyingGlassIcon, XCircleIcon } from "@heroicons/react/24/outline";
 
 const Search = ({ onSearch }) => {
   const [searchTerm, setSearchTerm] = useState("");
+  const [searchHistory, setSearchHistory] = useState([]);
+  const [isFocused, setIsFocused] = useState(false);
 
   const handleSearch = () => {
-    onSearch(searchTerm);
+    if (searchTerm.trim() !== "") {
+      onSearch(searchTerm);
+      if (!searchHistory.includes(searchTerm)) {
+        setSearchHistory((prevState) => [searchTerm, ...prevState]);
+      }
+    }
   };
 
   const handleKeyDown = (event) => {
     if (event.key === "Enter") {
+      event.preventDefault();
       handleSearch();
     }
   };
 
-  return (
-    <div className="mb-8 flex w-full">
-      <div className="relative flex h-12 w-full items-center overflow-hidden rounded-lg bg-white focus-within:shadow-lg">
-        <div className="grid h-full w-12 place-items-center text-gray-300">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-            />
-          </svg>
-        </div>
+  const handleClear = () => {
+    setSearchTerm("");
+  };
 
-        <input
-          className="peer h-full w-full pr-2 text-sm text-gray-700 outline-none"
-          type="text"
-          placeholder="Search"
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          onKeyDown={handleKeyDown}
-          id="search"
-        />
+  const handleClearHistory = () => {
+    setSearchHistory([]);
+  };
+
+  const handleHistoryClick = (historyItem) => {
+    setSearchTerm(historyItem);
+    onSearch(historyItem);
+  };
+
+  return (
+    <div className="relative flex w-full">
+      <input
+        className="h-12 w-full rounded-l-lg px-10 text-sm text-gray-700 outline-none"
+        type="text"
+        placeholder="What are you looking for?"
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+        onKeyDown={handleKeyDown}
+        id="search"
+        onFocus={() => setIsFocused(true)}
+        onBlur={() => setIsFocused(false)}
+      />
+      {searchTerm.length > 0 && isFocused && (
+        <button
+          className="absolute bottom-0 right-14 top-0 flex h-12 w-12 items-center justify-center rounded-l-none rounded-r-lg  text-gray-500 hover:text-gray-700 focus:outline-none"
+          onClick={handleClear}
+        >
+          <XCircleIcon className="h-5 w-5" />
+        </button>
+      )}
+      <div className="absolute left-0 top-0 flex h-12 w-12 items-center justify-center text-gray-500">
+        <MagnifyingGlassIcon className="h-5 w-5 text-black" />
       </div>
+      {searchHistory.length > 0 && isFocused && (
+        <div className="absolute top-full z-10 w-full rounded-b-lg border border-gray-200 bg-white shadow-md">
+          <ul className="divide-y divide-gray-200">
+            {searchHistory.map((item) => (
+              <li
+                key={item}
+                className="cursor-pointer px-4 py-3 hover:bg-gray-100"
+                onClick={() => handleHistoryClick(item)}
+              >
+                {item}
+              </li>
+            ))}
+          </ul>
+          <button
+            className="block w-full bg-gray-100 py-2 text-sm text-gray-500 hover:bg-gray-200"
+            onClick={handleClearHistory}
+          >
+            Clear history
+          </button>
+        </div>
+      )}
     </div>
   );
 };

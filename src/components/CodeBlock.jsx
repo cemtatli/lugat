@@ -29,7 +29,7 @@ function CodeBlock({ code, language }) {
 
 CodeBlock.propTypes = {
   code: PropTypes.string.isRequired,
-  language: PropTypes.string.isRequired,
+  /* language: PropTypes.string.isRequired, */
 };
 
 export default CodeBlock;

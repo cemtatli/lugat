@@ -37,7 +37,7 @@
   },
   {
     "id": 5,
-    "category": ["React", "JavaScript"],
+    "category": ["React", "JavaScript", "Vue.js"],
     "term": "Component",
     "desc": "React uygulamalarında UI’ı, birkaç parçaya bölerek, her parçayı tekrar kullanılabilir, bağımsız ve kolayca yönetilebilir hale getiren yapıdır.",
     "example": {
@@ -71,7 +71,6 @@
       "codeBlock": "function Welcome(props) {\n return <h1>Hello, {props.name}!</h1>;\n}\n\nconst element = <Welcome name='John' />;\nReactDOM.render(\n element,\n document.getElementById('root')\n);"
     }
   },
-
   {
     "id": 9,
     "category": ["React", "JavaScript"],
@@ -286,6 +285,204 @@
     "desc": "Grid, bir HTML öğesinin içindeki öğeleri satır ve sütunlar halinde yerleştirmek ve hizalamak için kullanılan bir CSS özelliğidir. Grid, Flexbox'tan daha karmaşık yerleştirme işlemleri yapmak için kullanılabilir.",
     "example": {
       "codeBlock": "/* Öğeleri bir 2x2 kare oluşturacak şekilde yerleştirmek için grid özelliği kullanılabilir. */\n.container {\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  grid-template-rows: repeat(2, 1fr);\n  gap: 10px;\n}\n\n.container > div {\n  background-color: lightblue;\n}"
+    }
+  },
+  {
+    "id": 33,
+    "category": ["Git"],
+    "term": "Merge",
+    "desc": "Git versiyon kontrol sisteminde iki veya daha fazla branch'i birleştirmek için kullanılan bir işlemdir. Bu işlem, değişikliklerin kaynak kodu deposundaki ana branch'e dahil edilmesini sağlar.",
+    "example": {
+      "codeBlock": "git merge feature-branch"
+    }
+  },
+  {
+    "id": 34,
+    "category": ["Web Development"],
+    "term": "Webpack",
+    "desc": "Webpack, bir JavaScript modül paketleme aracıdır. Bu araç, web uygulamaları için gerekli olan JavaScript, CSS ve diğer statik dosyaları paketler, birleştirir ve optimize eder.",
+    "example": {
+      "codeBlock": "const path = require('path');\nconst HtmlWebpackPlugin = require('html-webpack-plugin');\n\nmodule.exports = {\n entry: './src/index.js',\n output: {\n path: path.resolve(__dirname, 'dist'),\n filename: 'bundle.js'\n },\n plugins: [new HtmlWebpackPlugin({\n template: './src/index.html'\n })],\n module: {\n rules: [\n {\n test: /.js$/,\n exclude: /node_modules/,\n use: {\n loader: 'babel-loader'\n } }, { test: /.css$/,\n use: ['style-loader','css-loader']}]}};"
+    }
+  },
+  {
+    "id": 35,
+    "category": ["Web Development"],
+    "term": "MVC",
+    "desc": "Model-View-Controller, bir yazılım mimarisidir ve web geliştirme sürecinde kullanılır. Bu mimari, uygulamanın veri (Model), kullanıcı arayüzü (View) ve iş mantığının (Controller) birbirinden ayrılmasını sağlar.",
+    "example": {
+      "codeBlock": "public class StudentModel {\n private String name;\n private int age;\n //Getter and Setter methods\n}\n\npublic class StudentView {\n public void printStudentDetails(String name, int age) {\n System.out.println('Name: ' + name);\n System.out.println('Age: ' + age);\n }\n}\n\npublic class StudentController {\n private StudentModel model;\n private StudentView view;\n\n public StudentController(StudentModel model, StudentView view){\n this.model = model;\n this.view = view;\n }\n\n public void updateView(){\n view.printStudentDetails(model.getName(), model.getAge());\n }\n}"
+    }
+  },
+  {
+    "id": 36,
+    "category": ["Web Development"],
+    "term": "SPA",
+    "desc": "Tek sayfa uygulaması (SPA), kullanıcının web sayfasının farklı bölümlerine erişirken sayfayı yeniden yüklemeden yalnızca değişen verileri yükleyen bir web uygulamasıdır.",
+    "example": {
+      "codeBlock": "const App = () => {\n return (\n <div>\n <Header />\n <Main />\n <Footer />\n </div>\n );\n};"
+    }
+  },
+  {
+    "id": 37,
+    "category": ["Web Development", "JavaScript"],
+    "term": "Gulp",
+    "desc": "Gulp, JavaScript tabanlı bir yapım aracıdır. Bu araç, web geliştiricilerinin proje için özelleştirilmiş iş akışlarını otomatikleştirmelerine ve kolaylaştırmalarına olanak tanır.",
+    "example": {
+      "codeBlock": "const gulp = require('gulp');\nconst sass = require('gulp-sass');\n\nfunction compileSass() {\n return gulp\n .src('./src/scss/**/*.scss')\n .pipe(sass())\n .pipe(gulp.dest('./dist/css'));\n}\n\ngulp.task('sass', compileSass);\n\ngulp.task('default', gulp.series('sass'));"
+    }
+  },
+  {
+    "id": 38,
+    "category": ["Web Development", "JavaScript"],
+    "term": "ESLint",
+    "desc": "ESLint, JavaScript kodlarının stil ve hata denetimini otomatikleştiren bir araçtır. Bu araç, kodun okunabilirliğini ve bakımını kolaylaştırır ve hataları erken aşamada tespit ederek geliştirme sürecini hızlandırır.",
+    "example": {
+      "codeBlock": "module.exports = {\n env: {\n browser: true,\n es2021: true\n },\n extends: [\n 'eslint:recommended',\n 'plugin:react/recommended'\n ],\n parserOptions: {\n ecmaFeatures: {\n jsx: true\n },\n ecmaVersion: 12,\n sourceType: 'module'\n },\n plugins: ['react'],\n rules: {\n 'react/prop-types': 'off',\n 'no-unused-vars': 'warn'\n }\n};"
+    }
+  },
+  {
+    "id": 39,
+    "category": ["Web Development"],
+    "term": "HTTPS",
+    "desc": "HTTPS, İnternet üzerinden veri iletiminde güvenliği sağlamak için kullanılan bir protokoldür. Bu protokol, verilerin şifrelenmesi ve doğrulanması için SSL veya TLS gibi güvenlik protokolleri kullanır.",
+    "example": {
+      "codeBlock": "https://www.example.com"
+    }
+  },
+  {
+    "id": 40,
+    "category": ["Web Development"],
+    "term": "DNS",
+    "desc": "Alan adı sistemleri (DNS), İnternet adreslerini (IP adresleri) insanların anlayabileceği isimlere dönüştürmek için kullanılan bir sistemdir. Bu sistem, web sitelerine erişmek için kullanılan adreslerin yönetimini sağlar.",
+    "example": {
+      "codeBlock": "www.example.com"
+    }
+  },
+  {
+    "id": 42,
+    "category": ["Web Development"],
+    "term": "CDN",
+    "desc": "İçerik dağıtım ağı (CDN), statik içeriklerin dağıtımını kolaylaştırmak ve hızlandırmak için kullanılan bir ağdır. Bu ağ, sunucuların dünya genelindeki birçok konumda barındırılmasını sağlar.",
+    "example": {
+      "codeBlock": "<script src='https://cdn.example.com/jquery.min.js\"></script>"
+    }
+  },
+  {
+    "id": 43,
+    "category": ["Git"],
+    "term": "Push",
+    "desc": "Git'te, yerel değişiklikleri uzak bir deposuna göndermek için kullanılan bir komuttur. Bu işlem, yerel değişikliklerin uzak bir depoda saklanmasını, diğer kullanıcıların bu değişiklikleri görebilmesini ve işbirliği yapmalarını sağlar.",
+    "example": {
+      "codeBlock": "git push origin master"
+    }
+  },
+  {
+    "id": 44,
+    "category": ["Git"],
+    "term": "Pull",
+    "desc": "Git'te, uzak bir depodaki değişiklikleri yerel bir depoya çekmek için kullanılan bir komuttur. Bu işlem, yerel depoda bulunmayan değişikliklerin alınmasını ve birleştirilmesini sağlar.",
+    "example": {
+      "codeBlock": "git pull origin master"
+    }
+  },
+  {
+    "id": 45,
+    "category": ["Git"],
+    "term": "Branch",
+    "desc": "Git'te, bağımsız bir kod parçası oluşturmak için kullanılan bir kavramdır. Bu kavram, birden çok geliştiricinin aynı projede çalışmasını sağlar ve her geliştiricinin kendi kod parçasını ayrı bir dalda tutmasını mümkün kılar.",
+    "example": {
+      "codeBlock": "git branch feature-branch"
+    }
+  },
+  {
+    "id": 46,
+    "category": ["Git"],
+    "term": "Repository",
+    "desc": "Git'te, projenin tüm sürüm geçmişini ve dosyalarını içeren depodur. Bu depo, yerel bir bilgisayarda veya bir web sunucusunda barındırılabilir.",
+    "example": {
+      "codeBlock": "git clone https://github.com/example/repository.git"
+    }
+  },
+  {
+    "id": 47,
+    "category": ["Git"],
+    "term": "Commit",
+    "desc": "Git'te, değişiklikleri yerel bir depoya kaydetmek için kullanılan bir komuttur. Bu işlem, değişikliklerin tarihçesini ve açıklamasını tutar ve projenin belirli bir noktasına geri dönülebilmesini sağlar.",
+    "example": {
+      "codeBlock": "git commit -m 'Add new feature'"
+    }
+  },
+  {
+    "id": 48,
+    "category": ["Package Managers"],
+    "term": "npm",
+    "desc": "npm (Node Package Manager), Node.js için açık kaynaklı bir paket yöneticisidir. npm, Node.js topluluğu tarafından oluşturulmuştur ve paketlerin indirilmesi, yüklenmesi ve yönetimi için kullanılır.",
+    "example": {
+      "codeBlock": "npm install lodash"
+    }
+  },
+  {
+    "id": 49,
+    "category": ["Package Managers"],
+    "term": "yarn",
+    "desc": "yarn, Facebook tarafından oluşturulan açık kaynaklı bir paket yöneticisidir. npm'e benzer şekilde çalışır ve daha hızlı ve güvenilir paket yükleme ve yönetim özellikleri sunar.",
+    "example": {
+      "codeBlock": "yarn add lodash"
+    }
+  },
+  {
+    "id": 50,
+    "category": ["Package Managers"],
+    "term": "pnpm",
+    "desc": "pnpm, Node.js için açık kaynaklı bir paket yöneticisidir. npm ve yarn'a benzer şekilde çalışır ve özellikle disk alanı tasarrufu sağlayan bir özelliğe sahiptir. Ayrıca, birden fazla proje için paylaşılan bağımlılıkların tek bir yerde saklanmasını sağlar.",
+    "example": {
+      "codeBlock": "pnpm install lodash"
+    }
+  },
+  {
+    "id": 51,
+    "category": ["Web Development"],
+    "term": "API",
+    "desc": "API (Application Programming Interface), yazılım uygulamaları arasında veri alışverişi yapmak için kullanılan bir arayüzdür. İki farklı uygulama arasında bilgi alışverişi yapmak için standartlaştırılmış bir yol sağlar.",
+    "example": {
+      "codeBlock": "fetch('https://api.example.com/data')"
+    }
+  },
+  {
+    "id": 52,
+    "category": ["Web Development"],
+    "term": "SSL",
+    "desc": "SSL (Secure Sockets Layer), internet bağlantılarının güvenli hale getirilmesi için kullanılan bir protokoldür. SSL sertifikaları, kullanıcının güvenli bir web sitesine bağlandığını ve bilgilerinin şifrelendiğini doğrular.",
+    "example": {
+      "codeBlock": "https://www.example.com"
+    }
+  },
+  {
+    "id": 53,
+    "category": ["Web Development"],
+    "term": "Fetch",
+    "desc": "Fetch, web tarayıcıları tarafından sunulan bir JavaScript API'sidir ve HTTP isteklerinin yapılmasını sağlar. Fetch API, XMLHttpRequest API'sine alternatif olarak kullanılabilir ve modern web uygulamaları için daha iyi bir seçenek olabilir.",
+    "example": {
+      "codeBlock": "fetch('https://api.example.com/data')"
+    }
+  },
+  {
+    "id": 54,
+    "category": ["Web Development"],
+    "term": "SASS",
+    "desc": "SASS (Syntactically Awesome Style Sheets), CSS stil dosyaları oluşturmak için kullanılan bir CSS ön işlemcisi dilidir. SASS, daha kolay ve hızlı bir şekilde CSS yazmanıza olanak tanır ve CSS kodunun yeniden kullanılabilirliğini artırır.",
+    "example": {
+      "codeBlock": "$primary-color: #333;\n\nbody {\n background-color: $primary-color;\n}"
+    }
+  },
+  {
+    "id": 55,
+    "category": ["Web Development"],
+    "term": "ID",
+    "desc": "ID (Identifier), HTML ve CSS'de bir öğenin benzersiz bir kimliğini tanımlamak için kullanılan bir özniteliktir. Bir ID, sayfadaki yalnızca bir öğeyi tanımlayabilir ve öğenin bir kimliği olduğu sürece diğer öğelerden ayırt edilir.",
+    "example": {
+      "codeBlock": "<div id='header'>Header</div>"
     }
   }
 ]
