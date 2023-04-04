@@ -87,7 +87,124 @@
     "term": "Virtual DOM",
     "desc": "Virtual DOM, React'ın performansını artırmak için kullandığı bir tekniktir. React, bir bileşenin durumu değiştiğinde, önce sanal bir DOM ağacı oluşturur ve gerçek DOM ile karşılaştırır. Ardından, sadece değişen kısımları günceller ve gerçek DOM ağacını yeniden oluşturmak yerine bu değişiklikleri yansıtır. Bu işlem, gerçek DOM ağacını yeniden oluşturmaktan daha hızlıdır ve React uygulamalarının performansını artırır.",
     "example": {
-      "codeBlock": "// Normal DOM:\n\n<div id='myDiv'>\n <p>Hello, world!</p>\n</div>\n\n// Virtual DOM:\n\n{\n type: 'div',\n props: {\n id: 'myDiv',\n children: [\n {\n type: 'p',\n props: {\n children: 'Hello, world!'\n }\n }\n ]\n }\n}"
+      "codeBlock": "// Normal DOM:\n\n<div id='myDiv'>\n <p>Hello, world!</p>\n</div>\n\n// Virtual DOM:\n\n{\n type: 'div',\n props: {\n id: 'myDiv',\n children: [\n {\n type: 'p',\n props: {\n children: 'Hello, world!' }}]}}"
+    }
+  },
+  {
+    "id": 11,
+    "category": ["JavaScript"],
+    "term": "let",
+    "desc": "'let' anahtar kelimesi, JavaScript'te yeni bir değişken tanımlamak için kullanılır. 'let' kullanarak tanımlanan değişkenler, sadece tanımlandıkları blok içinde erişilebilir ve dışarıya sızamazlar. Ayrıca, 'let' ile tanımlanan değişkenlerin değerleri sonradan değiştirilebilir.",
+    "example": {
+      "codeBlock": "let x = 5;\nconsole.log(x); // 5\n\n{\n let x = 10;\n console.log(x); // 10\n}\n\nconsole.log(x); // 5"
+    }
+  },
+  {
+    "id": 12,
+    "category": ["JavaScript"],
+    "term": "Hoisting",
+    "desc": "Hoisting, JavaScript'te bir değişkenin ya da fonksiyonun tanımlanmasının, kodun çalıştırılması sırasında nereye konulduğundan bağımsız olarak, en üstteki blokta tanımlandığı varsayımıdır.",
+    "example": {
+      "codeBlock": "x = 5;\nconsole.log(x);\nvar x;"
+    }
+  },
+  {
+    "id": 13,
+    "category": ["JavaScript"],
+    "term": "Promise",
+    "desc": "Promise, asenkron işlemleri kolaylaştırmak için JavaScript'te kullanılan bir nesnedir. Promise nesnesi, bir işlem tamamlandığında veya hata verdiğinde geri çağırma işlevlerini kullanarak işlemin sonucunu yönetir.",
+    "example": {
+      "codeBlock": "const fetchData = () => {\n return new Promise((resolve, reject) => {\n setTimeout(() => {\n resolve('Data fetched!');\n }, 2000);\n });\n}\n\nfetchData().then(data => console.log(data));"
+    }
+  },
+  {
+    "id": 14,
+    "category": ["JavaScript"],
+    "term": "Event Loop",
+    "desc": "Event Loop, JavaScript'in asenkron çalışmasının temelidir. Event Loop, bir JavaScript programının çalıştığı ortamda, iş parçacıklarını yönetir ve ana iş parçacığı dışındaki işleri işlemek için bir sıra oluşturur.",
+    "example": {
+      "codeBlock": "console.log('start');\n\nsetTimeout(() => {\n console.log('setTimeout');\n}, 0);\n\nPromise.resolve().then(() => {\n console.log('Promise');\n});\n\nconsole.log('end');"
+    }
+  },
+  {
+    "id": 15,
+    "category": ["JavaScript"],
+    "term": "Spread Operator",
+    "desc": "Spread Operator, bir dizi ya da nesne içindeki elemanları tek tek ayırarak yeni bir dizi ya da nesne oluşturur. Spread Operator, kodun daha okunaklı ve kısa olmasına yardımcı olur.",
+    "example": {
+      "codeBlock": "const arr1 = [1, 2, 3];\nconst arr2 = [4, 5, 6];\nconst newArr = [...arr1, ...arr2];\nconsole.log(newArr);\n\nconst obj1 = {a: 1, b: 2};\nconst obj2 = {c: 3, d: 4};\nconst newObj = {...obj1, ...obj2};\nconsole.log(newObj);"
+    }
+  },
+  {
+    "id": 16,
+    "category": ["JavaScript"],
+    "term": "Rest Parameter",
+    "desc": "Rest Parameter, bir fonksiyona değişken sayıda argüman geçmek için kullanılır. Rest Parameter, argümanların bir dizi olarak toplanmasını sağlar.",
+    "example": {
+      "codeBlock": "function sum(...args) {\n return args.reduce((total, num) => total + num);\n}\n\nconsole.log(sum(1, 2, 3, 4));"
+    }
+  },
+  {
+    "id": 17,
+    "category": ["JavaScript"],
+    "term": "Local Storage",
+    "desc": "Local Storage, bir web sayfasında, kullanıcının tarayıcısında verileri depolamak için kullanılır. Local Storage, anahtar-değer çiftleri halinde verileri saklar ve veriler tarayıcıyı kapatsanız bile kalıcıdır.",
+    "example": {
+      "codeBlock": "localStorage.setItem('username', 'John');\nconsole.log(localStorage.getItem('username'));\nlocalStorage.removeItem('username');"
+    }
+  },
+  {
+    "id": 18,
+    "category": ["JavaScript"],
+    "term": "Session Storage",
+    "desc": "Session Storage, bir web sayfasında, kullanıcının tarayıcısında verileri depolamak için kullanılır. Session Storage, Local Storage gibi çalışır ancak tarayıcı kapatıldığında veriler otomatik olarak silinir.",
+    "example": {
+      "codeBlock": "sessionStorage.setItem('username', 'John');\nconsole.log(sessionStorage.getItem('username'));\nsessionStorage.removeItem('username');"
+    }
+  },
+  {
+    "id": 17,
+    "category": ["JavaScript"],
+    "term": "Call Stack",
+    "desc": "Call Stack, JavaScript'in fonksiyon çağrılarını izlediği veri yapısıdır. Bir fonksiyon çağrısı yapıldığında, bu çağrı Call Stack'e eklenir ve fonksiyonun tamamlanmasıyla birlikte Call Stack'den çıkarılır.",
+    "example": {
+      "codeBlock": "function first() {\n second();\n}\n\nfunction second() {\n third();\n}\n\nfunction third() {\n console.log('Hello, world!');\n}\n\nfirst();"
+    }
+  },
+  {
+    "id": 18,
+    "category": ["JavaScript"],
+    "term": "Higher-Order Function",
+    "desc": "Higher-Order Function, bir fonksiyonun, diğer bir fonksiyonu parametre olarak alması veya bir fonksiyon döndürmesi durumudur. Bu özellik sayesinde, fonksiyonlar daha esnek ve yeniden kullanılabilir hale gelir.",
+    "example": {
+      "codeBlock": "function sayHello() {\n console.log('Hello, world!');\n}\n\nfunction repeat(func, n) {\n for(let i = 0; i < n; i++) {\n func();\n }\n}\n\nrepeat(sayHello, 3);"
+    }
+  },
+  {
+    "id": 19,
+    "category": ["JavaScript"],
+    "term": "ES6",
+    "desc": "ES6, ECMAScript 2015 olarak da bilinen bir JavaScript sürümüdür. Bu sürüm, birçok yeni özellik ve geliştirme içermektedir, örneğin arrow functionlar, let ve const anahtar kelimeleri, template literals, destructuring, spread ve rest operatörleri gibi.",
+    "example": {
+      "codeBlock": "const sum = (a, b) => a + b;\nconst message = The sum of 2 and 3 is ${sum(2, 3)}.;\nlet arr = [1, 2, 3];\nlet [first, ...rest] = arr;\nconsole.log(first);\nconsole.log(rest);"
+    }
+  },
+  {
+    "id": 20,
+    "category": ["JavaScript"],
+    "term": "Destructuring",
+    "desc": "Destructuring, JavaScript'te bir nesne veya dizi içindeki değerleri ayrıştırma işlemidir. Bu işlem, tek tek öğeleri elde etmek yerine nesne veya dizinin özelliklerine doğrudan erişmenizi sağlar.",
+    "example": {
+      "codeBlock": "// Destructuring with an object:\n\nconst person = { name: 'John Doe', age: 30 };\nconst { name, age } = person;\nconsole.log(name); // Output: John Doe\nconsole.log(age); // Output: 30\n\n// Destructuring with an array:\n\nconst numbers = [1, 2, 3];\nconst [first, second, third] = numbers;\nconsole.log(first); // Output: 1\nconsole.log(second); // Output: 2\nconsole.log(third); // Output: 3"
+    }
+  },
+  {
+    "id": 21,
+    "category": ["JavaScript"],
+    "term": "Template Literals",
+    "desc": "Template Literals, ECMAScript 6 (ES6) ile birlikte gelen bir özelliktir ve string ifadelerini daha esnek hale getirir. Bu özellik, string ifadelerini tek tırnak veya çift tırnak içine almaktansa, backtick karakterleri (``) arasına almanıza izin verir ve içinde değişkenler veya ifadeler kullanmanızı sağlar.",
+    "example": {
+      "codeBlock": "const name = 'John';\nconst age = 30;\nconsole.log(My name is ${name} and I am ${age} years old.); // Output: My name is John and I am 30 years old."
     }
   }
 ]

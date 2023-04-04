@@ -7,20 +7,20 @@ const Layout = () => {
       {data.map((item) => (
         <div className="mb-8" key={item.id}>
           <h2 className="text-xl font-bold">{item.term}</h2>
-          <span className="text-sm">
+          <div className="mt-2 flex items-center gap-2">
             {Array.isArray(item.category) &&
               item.category.map((category, index) => (
                 <span
                   key={index}
-                  className="mr-1 mt-2 inline-block rounded bg-gray-100 px-3 py-1 text-xs text-gray-600 dark:bg-gray-800 dark:text-gray-400"
+                  className=" inline-block rounded-md bg-gray-100 px-3 py-1 text-xs text-gray-600 dark:bg-gray-800 dark:text-gray-200"
                 >
-                  #{category}
+                  # {category}
                 </span>
               ))}
-          </span>
+          </div>
 
           <p className="mt-4 text-sm text-gray-700 dark:text-yellow-200">{item.desc}</p>
-          <CodeBlock language="javascript" code={item.example.codeBlock} />
+          <CodeBlock code={item.example.codeBlock} />
         </div>
       ))}
     </div>

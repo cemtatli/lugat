@@ -1,10 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Capriola&display=swap");
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  scrollbar-width: thin;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 14px;
+}
 
 html,
 body,
@@ -16,7 +32,7 @@ body,
 #root {
   display: grid;
   grid-template-columns: 1fr min(100%) 1fr;
-  grid-template-rows: 1fr minmax(calc(100vh - 120px), auto) 120px;
+  grid-template-rows: 1fr minmax(calc(100vh - 100px), auto) 100px;
 }
 #root > * {
   grid-column: 2;
