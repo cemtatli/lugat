@@ -1,10 +1,9 @@
 import { ThemeProvider } from "@/context/ThemeContext";
 
-import Header from "./components/Header";
+import Header from "@/components/Header";
 import Layout from "@/components/Layout";
 import ScrollToTop from "@/components/ScrollToTop";
-import Footer from "./components/Footer";
-import Tooltip from "./components/Tooltip";
+import Tooltip from "@/components/Tooltip";
 
 function App() {
   return (
@@ -13,9 +12,8 @@ function App() {
       <main>
         <Tooltip />
         <Layout />
-        <ScrollToTop />
       </main>
-      <Footer />
+      <ScrollToTop />
     </ThemeProvider>
   );
 }
