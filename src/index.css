@@ -38,5 +38,5 @@ body,
   grid-column: 2;
 }
 main {
-  @apply flex;
+  @apply flex flex-col md:flex-row;
 }
