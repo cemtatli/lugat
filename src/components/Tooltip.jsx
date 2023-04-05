@@ -2,9 +2,10 @@ import { XMarkIcon } from "@heroicons/react/24/solid";
 
 export default function Tooltip() {
   return (
-    <div className="tooltip group relative flex w-full flex-col items-start justify-center gap-2.5 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-200 px-4 py-2.5 dark:bg-gradient-to-r dark:from-yellow-200 dark:via-yellow-300 dark:to-yellow-400 sm:items-center md:flex-row md:gap-4">
+    <div className="tooltip group relative flex w-full flex-col items-start justify-center gap-2.5 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-200 px-4 py-2.5 dark:bg-gradient-to-r dark:from-yellow-200 dark:via-yellow-300 dark:to-yellow-400 sm:items-center md:flex-row md:gap-4 xl:hidden">
       <span className="pr-5 text-xs dark:text-yellow-950 sm:text-sm md:pr-0">
-        Frontend terimlerini Türkçe anlamlarını gösteren, örneklerle açıklayan açık kaynaklı bir sözlük hizmetidir.
+        Frontend terimlerini Türkçe anlamlarını gösteren, örneklerle açıklayan açık kaynaklı bir
+        sözlük hizmetidir.
       </span>
       <a target="_blank" href="https://github.com/cemtatli/lugat">
         <span

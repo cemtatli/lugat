@@ -15,6 +15,8 @@ const Layout = () => {
     .filter((item) => item.term.toLowerCase().includes(searchTerm.toLowerCase().trim("")))
     .sort((a, b) => a.term.localeCompare(b.term));
 
+  const categories = [...new Set(filteredData.flatMap((item) => item.category))];
+
   return (
     <section className="flex h-full w-full flex-col items-center">
       <div className="flex w-full items-center justify-center px-8 py-4">

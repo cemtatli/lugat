@@ -26,7 +26,7 @@ html,
 body,
 #root {
   font-family: "Inter", sans-serif;
-  @apply scroll-smooth bg-white antialiased dark:bg-gradient-to-b dark:from-gray-950 dark:to-gray-900 dark:text-white md:h-full;
+  @apply scroll-smooth bg-white antialiased dark:bg-gradient-to-b dark:from-gray-950 dark:to-gray-900 dark:text-white xl:h-full;
 }
 
 #root {
@@ -38,5 +38,5 @@ body,
   grid-column: 2;
 }
 main {
-  @apply flex flex-col md:flex-row;
+  @apply flex flex-col xl:flex-row;
 }

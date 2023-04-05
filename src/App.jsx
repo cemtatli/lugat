@@ -1,19 +1,23 @@
 import { ThemeProvider } from "@/context/ThemeContext";
 
 import Header from "./components/Header";
-import Sidebar from "@/components/Sidebar";
 import Layout from "@/components/Layout";
 import ScrollToTop from "@/components/ScrollToTop";
+import Categories from "./components/Categories";
+import Footer from "./components/Footer";
+import Tooltip from "./components/Tooltip";
 
 function App() {
   return (
     <ThemeProvider>
       <Header />
       <main>
-        <Sidebar />
+        <Tooltip />
+        <Categories />
         <Layout />
         <ScrollToTop />
       </main>
+      <Footer />
     </ThemeProvider>
   );
 }
