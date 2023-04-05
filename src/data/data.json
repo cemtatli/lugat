@@ -37,7 +37,7 @@
   },
   {
     "id": 5,
-    "category": ["React", "JavaScript", "Vue.js"],
+    "category": ["React", "Vue.js"],
     "term": "Component",
     "desc": "React uygulamalarında UI’ı, birkaç parçaya bölerek, her parçayı tekrar kullanılabilir, bağımsız ve kolayca yönetilebilir hale getiren yapıdır.",
     "example": {
@@ -181,7 +181,7 @@
   },
   {
     "id": 22,
-    "category": ["JavaScript", "React"],
+    "category": ["JavaScript"],
     "term": "Destructuring",
     "desc": "Destructuring, JavaScript'te bir nesne veya dizi içindeki değerleri ayrıştırma işlemidir. Bu işlem, tek tek öğeleri elde etmek yerine nesne veya dizinin özelliklerine doğrudan erişmenizi sağlar.",
     "example": {
@@ -289,7 +289,7 @@
   },
   {
     "id": 34,
-    "category": ["Web Development"],
+    "category": ["Web Development", "JavaScript"],
     "term": "Webpack",
     "desc": "Webpack, bir JavaScript modül paketleme aracıdır. Bu araç, web uygulamaları için gerekli olan JavaScript, CSS ve diğer statik dosyaları paketler, birleştirir ve optimize eder.",
     "example": {
@@ -451,7 +451,7 @@
   },
   {
     "id": 53,
-    "category": ["Web Development"],
+    "category": ["JavaScript", "Web Development"],
     "term": "Fetch",
     "desc": "Fetch, web tarayıcıları tarafından sunulan bir JavaScript API'sidir ve HTTP isteklerinin yapılmasını sağlar. Fetch API, XMLHttpRequest API'sine alternatif olarak kullanılabilir ve modern web uygulamaları için daha iyi bir seçenek olabilir.",
     "example": {
@@ -460,7 +460,7 @@
   },
   {
     "id": 54,
-    "category": ["Web Development"],
+    "category": ["CSS", "Web Development"],
     "term": "SASS",
     "desc": "SASS (Syntactically Awesome Style Sheets), CSS stil dosyaları oluşturmak için kullanılan bir CSS ön işlemcisi dilidir. SASS, daha kolay ve hızlı bir şekilde CSS yazmanıza olanak tanır ve CSS kodunun yeniden kullanılabilirliğini artırır.",
     "example": {
@@ -469,7 +469,7 @@
   },
   {
     "id": 55,
-    "category": ["Web Development"],
+    "category": ["Web Development", "HTML", "CSS"],
     "term": "ID",
     "desc": "ID (Identifier), HTML ve CSS'de bir öğenin benzersiz bir kimliğini tanımlamak için kullanılan bir özniteliktir. Bir ID, sayfadaki yalnızca bir öğeyi tanımlayabilir ve öğenin bir kimliği olduğu sürece diğer öğelerden ayırt edilir.",
     "example": {
@@ -523,7 +523,7 @@
   },
   {
     "id": 61,
-    "category": ["Programming"],
+    "category": ["JavaScript", "Web Development"],
     "term": "JSON",
     "desc": "JSON (JavaScript Object Notation), verileri okunaklı ve hafif bir format kullanarak depolamak, göndermek ve almak için kullanılan bir veri değişim formatıdır.",
     "example": {
@@ -541,7 +541,7 @@
   },
   {
     "id": 63,
-    "category": ["Web Development", "HTML"],
+    "category": ["HTML", "Web Development"],
     "term": "Attribute",
     "desc": "HTML'de öğelerin özelliklerini belirleyen özniteliklerdir. Örneğin, bir <img> etiketi için 'src' özniteliği, resmin kaynak dosyasını belirtir.",
     "example": {

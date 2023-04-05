@@ -26,17 +26,17 @@ html,
 body,
 #root {
   font-family: "Inter", sans-serif;
-  @apply scroll-smooth antialiased dark:bg-gradient-to-b dark:from-gray-950  dark:to-gray-900 dark:text-white md:h-full;
+  @apply h-full w-full scroll-smooth bg-white antialiased dark:bg-gradient-to-b dark:from-gray-950 dark:to-gray-900 dark:text-white md:h-full;
 }
 
 #root {
   display: grid;
   grid-template-columns: 1fr min(100%) 1fr;
-  grid-template-rows: 1fr minmax(calc(100vh - 100px), auto) 100px;
+  grid-template-rows: 1fr minmax(calc(100vh - 100px), auto) 50px;
 }
 #root > * {
   grid-column: 2;
 }
 main {
-  @apply flex flex-col md:flex-row;
+  @apply flex;
 }

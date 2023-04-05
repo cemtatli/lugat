@@ -4,7 +4,9 @@ import Button from "./Button";
 const Categories = () => {
   return (
     <section className="h-full w-full gap-y-5 px-5 md:flex md:w-50 md:flex-col">
-      <h3 className="text my-4 text-center font-bold text-black dark:text-white md:mb-0">Kategoriler</h3>
+      <h3 className="text my-4 text-center font-bold text-black dark:text-white md:mb-0">
+        Kategoriler
+      </h3>
       <nav className="flex w-full gap-2.5 overflow-auto md:flex-col ">
         <Button variant="HTML" className=" text-sm font-medium hover:text-gray-900">
           HTML
