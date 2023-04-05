@@ -3,6 +3,7 @@ import data from "@/data/data.json";
 import CodeBlock from "./CodeBlock";
 import Search from "./Search";
 import Badge from "./Badge";
+import Button from "./Button";
 
 const Layout = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -19,8 +20,22 @@ const Layout = () => {
 
   return (
     <section className="flex h-full w-full flex-col items-center">
-      <div className="flex w-full items-center justify-center px-8 py-4">
+      <div className="mt-4 flex w-full flex-col items-center justify-center gap-4 px-8">
         <Search onSearch={handleSearch} />
+      </div>
+      <div className="mb-1 flex w-[82.5%] gap-4 overflow-auto py-4 md:justify-center">
+        {categories.map((category) => {
+          const count = filteredData.filter(
+            (item) => Array.isArray(item.category) && item.category.includes(category)
+          ).length;
+          return (
+            <div key={category}>
+              <Button variant={category}>
+                {category} ({count})
+              </Button>
+            </div>
+          );
+        })}
       </div>
       <div className="h-full w-full overflow-auto p-8">
         <div className="flex flex-col gap-y-15">

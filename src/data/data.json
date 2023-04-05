@@ -73,7 +73,7 @@
   },
   {
     "id": 10,
-    "category": ["React", "JavaScript"],
+    "category": ["React"],
     "term": "Virtual DOM",
     "desc": "Virtual DOM, React'ın performansını artırmak için kullandığı bir tekniktir. React, bir bileşenin durumu değiştiğinde, önce sanal bir DOM ağacı oluşturur ve gerçek DOM ile karşılaştırır. Ardından, sadece değişen kısımları günceller ve gerçek DOM ağacını yeniden oluşturmak yerine bu değişiklikleri yansıtır. Bu işlem, gerçek DOM ağacını yeniden oluşturmaktan daha hızlıdır ve React uygulamalarının performansını artırır.",
     "example": {
@@ -82,7 +82,7 @@
   },
   {
     "id": 11,
-    "category": ["JavaScript", "React"],
+    "category": ["JavaScript", "React", "Vue.js"],
     "term": "let",
     "desc": "'let' anahtar kelimesi, JavaScript'te yeni bir değişken tanımlamak için kullanılır. 'let' kullanarak tanımlanan değişkenler, sadece tanımlandıkları blok içinde erişilebilir ve dışarıya sızamazlar. Ayrıca, 'let' ile tanımlanan değişkenlerin değerleri sonradan değiştirilebilir.",
     "example": {
@@ -100,7 +100,7 @@
   },
   {
     "id": 13,
-    "category": ["JavaScript", "React"],
+    "category": ["JavaScript", "React", "Vue.js"],
     "term": "Promise",
     "desc": "Promise, asenkron işlemleri kolaylaştırmak için JavaScript'te kullanılan bir nesnedir. Promise nesnesi, bir işlem tamamlandığında veya hata verdiğinde geri çağırma işlevlerini kullanarak işlemin sonucunu yönetir.",
     "example": {
@@ -244,7 +244,7 @@
   },
   {
     "id": 29,
-    "category": ["CSS"],
+    "category": ["CSS", "HTML"],
     "term": "Selectors",
     "desc": "Selectors, belirli HTML öğelerini veya özelliklerini seçerek stil uygulamak için kullanılan CSS özellikleridir. ID'ler, sınıflar, özellikler, yavrular, kardeşler ve daha birçok seçici türü vardır.",
     "example": {
@@ -289,7 +289,7 @@
   },
   {
     "id": 34,
-    "category": ["Web Development", "JavaScript"],
+    "category": ["Web Development"],
     "term": "Webpack",
     "desc": "Webpack, bir JavaScript modül paketleme aracıdır. Bu araç, web uygulamaları için gerekli olan JavaScript, CSS ve diğer statik dosyaları paketler, birleştirir ve optimize eder.",
     "example": {
@@ -309,7 +309,7 @@
     "id": 36,
     "category": ["Web Development"],
     "term": "SPA",
-    "desc": "Tek sayfa uygulaması (SPA), kullanıcının web sayfasının farklı bölümlerine erişirken sayfayı yeniden yüklemeden yalnızca değişen verileri yükleyen bir web uygulamasıdır.",
+    "desc": "Tek sayfa uygulaması (Single Page Application), kullanıcının web sayfasının farklı bölümlerine erişirken sayfayı yeniden yüklemeden yalnızca değişen verileri yükleyen bir web uygulamasıdır.",
     "example": {
       "codeBlock": "const App = () => {\n return (\n <div>\n <Header />\n <Main />\n <Footer />\n </div>\n );\n};"
     }
@@ -334,7 +334,7 @@
   },
   {
     "id": 39,
-    "category": ["Web Development"],
+    "category": ["Web Development", "Internet"],
     "term": "HTTPS",
     "desc": "HTTPS, İnternet üzerinden veri iletiminde güvenliği sağlamak için kullanılan bir protokoldür. Bu protokol, verilerin şifrelenmesi ve doğrulanması için SSL veya TLS gibi güvenlik protokolleri kullanır.",
     "example": {
@@ -343,11 +343,20 @@
   },
   {
     "id": 40,
-    "category": ["Web Development"],
+    "category": ["Web Development", "Internet"],
     "term": "DNS",
     "desc": "Alan adı sistemleri (DNS), İnternet adreslerini (IP adresleri) insanların anlayabileceği isimlere dönüştürmek için kullanılan bir sistemdir. Bu sistem, web sitelerine erişmek için kullanılan adreslerin yönetimini sağlar.",
     "example": {
       "codeBlock": "www.example.com"
+    }
+  },
+  {
+    "id": 41,
+    "category": ["Web Development"],
+    "term": "Static Site Generation (SSG)",
+    "desc": "Static Site Generation (SSG), web sitelerinin derlenerek, HTML, CSS ve JavaScript dosyaları şeklinde sunulduğu bir yöntemdir. SSG ile siteler hızlı bir şekilde yüklenebilir ve performansları artırılabilir. SSG, statik içerikli web siteleri için ideal bir seçenektir.",
+    "example": {
+      "codeBlock": "npm run build"
     }
   },
   {
@@ -460,7 +469,7 @@
   },
   {
     "id": 54,
-    "category": ["CSS", "Web Development"],
+    "category": ["CSS"],
     "term": "SASS",
     "desc": "SASS (Syntactically Awesome Style Sheets), CSS stil dosyaları oluşturmak için kullanılan bir CSS ön işlemcisi dilidir. SASS, daha kolay ve hızlı bir şekilde CSS yazmanıza olanak tanır ve CSS kodunun yeniden kullanılabilirliğini artırır.",
     "example": {
@@ -469,7 +478,7 @@
   },
   {
     "id": 55,
-    "category": ["Web Development", "HTML", "CSS"],
+    "category": ["HTML", "CSS"],
     "term": "ID",
     "desc": "ID (Identifier), HTML ve CSS'de bir öğenin benzersiz bir kimliğini tanımlamak için kullanılan bir özniteliktir. Bir ID, sayfadaki yalnızca bir öğeyi tanımlayabilir ve öğenin bir kimliği olduğu sürece diğer öğelerden ayırt edilir.",
     "example": {
@@ -523,7 +532,7 @@
   },
   {
     "id": 61,
-    "category": ["JavaScript", "Web Development"],
+    "category": ["JavaScript"],
     "term": "JSON",
     "desc": "JSON (JavaScript Object Notation), verileri okunaklı ve hafif bir format kullanarak depolamak, göndermek ve almak için kullanılan bir veri değişim formatıdır.",
     "example": {
@@ -532,7 +541,7 @@
   },
   {
     "id": 62,
-    "category": ["Web Development", "HTML"],
+    "category": ["HTML"],
     "term": "Anchor",
     "desc": "HTML'de <a> etiketi, bir metni veya resmi tıklanabilir bir bağlantıya dönüştürmek için kullanılır. Genellikle başka bir sayfaya, belirli bir bölüme veya bir e-posta adresine yönlendirmek için kullanılır.",
     "example": {
@@ -541,7 +550,7 @@
   },
   {
     "id": 63,
-    "category": ["HTML", "Web Development"],
+    "category": ["HTML", "CSS"],
     "term": "Attribute",
     "desc": "HTML'de öğelerin özelliklerini belirleyen özniteliklerdir. Örneğin, bir <img> etiketi için 'src' özniteliği, resmin kaynak dosyasını belirtir.",
     "example": {
@@ -550,11 +559,29 @@
   },
   {
     "id": 64,
-    "category": ["Web Development", "JavaScript"],
+    "category": ["JavaScript"],
     "term": "Property",
     "desc": "JavaScript'te, nesnelerin özellikleri olarak adlandırılan değerlerdir. Örneğin, bir HTML öğesi için 'innerHTML' özelliği, öğenin içeriğini belirtir.",
     "example": {
       "codeBlock": "document.getElementById('demo').innerHTML = 'Merhaba Dünya';"
+    }
+  },
+  {
+    "id": 65,
+    "category": ["Web Development"],
+    "term": "Server-Side Rendering (SSR)",
+    "desc": "Server-Side Rendering (SSR), web sayfalarının sunucu tarafında oluşturulması ve hazırlanması işlemidir. Bu işlemde, sunucu sayfa içeriğini hazırlayarak tarayıcıya gönderir. Bu sayede, sayfa içeriği tarayıcıda işlemci yükünü hafifletir ve kullanıcıya daha hızlı yükleme süresi sağlar.",
+    "example": {
+      "codeBlock": "const express = require('express');\nconst ReactDOMServer = require('react-dom/server');\nconst App = require('./App');\n\nconst app = express();\n\napp.get('/', (req, res) => {\n const html = ReactDOMServer.renderToString(\n <App />\n );\n res.send(\n <html>\n <body>\n <div id='app'>${html}</div>\n <script src='/app.js'></script>\n </body>\n </html>);\n});"
+    }
+  },
+  {
+    "id": 66,
+    "category": ["Web Development"],
+    "term": "Progressive Web Applications (PWA)",
+    "desc": "Progressive Web Applications (PWA), web uygulamalarının mobil uygulamalar gibi çalışmasını sağlayan bir teknolojidir. PWA, hızlı yükleme süreleri, offline desteği ve uygulama benzeri bir arayüz sunar. PWA, responsive tasarım ile birlikte kullanıldığında, web uygulamalarının mobil cihazlar için daha kullanışlı hale gelmesini sağlar.",
+    "example": {
+      "codeBlock": "manifest.json"
     }
   }
 ]

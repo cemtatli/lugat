@@ -18,6 +18,8 @@ const Button = ({ children, variant = "default" }) => {
           variant === "Web Development",
         "bg-cyan-200 text-cyan-800 dark:bg-cyan-900 dark:text-cyan-300":
           variant === "Package Managers",
+        "bg-violet-200 text-violet-800 dark:bg-violet-900 dark:text-violet-300":
+          variant === "Internet",
       })}
     >
       {children}
