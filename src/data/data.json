@@ -529,5 +529,32 @@
     "example": {
       "codeBlock": "{\n 'name': 'John',\n 'age': 30,\n 'city': 'New York'\n}"
     }
+  },
+  {
+    "id": 62,
+    "category": ["Web Development", "HTML"],
+    "term": "Anchor",
+    "desc": "HTML'de <a> etiketi, bir metni veya resmi tıklanabilir bir bağlantıya dönüştürmek için kullanılır. Genellikle başka bir sayfaya, belirli bir bölüme veya bir e-posta adresine yönlendirmek için kullanılır.",
+    "example": {
+      "codeBlock": "<a href=\"https://www.google.com/\">Google'a git</a>"
+    }
+  },
+  {
+    "id": 63,
+    "category": ["Web Development", "HTML"],
+    "term": "Attribute",
+    "desc": "HTML'de öğelerin özelliklerini belirleyen özniteliklerdir. Örneğin, bir <img> etiketi için 'src' özniteliği, resmin kaynak dosyasını belirtir.",
+    "example": {
+      "codeBlock": "<img src=\"resim.jpg\" alt=\"Bir resim\" width=\"300\" height=\"200\">"
+    }
+  },
+  {
+    "id": 64,
+    "category": ["Web Development", "JavaScript"],
+    "term": "Property",
+    "desc": "JavaScript'te, nesnelerin özellikleri olarak adlandırılan değerlerdir. Örneğin, bir HTML öğesi için 'innerHTML' özelliği, öğenin içeriğini belirtir.",
+    "example": {
+      "codeBlock": "document.getElementById('demo').innerHTML = 'Merhaba Dünya';"
+    }
   }
 ]

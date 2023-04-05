@@ -3,13 +3,13 @@ import Button from "./Button";
 
 const Categories = () => {
   return (
-    <section className="hidden h-full w-50 flex-col  gap-y-5  px-5 md:flex">
-      <h3 className="text mt-5 text-center font-bold text-black dark:text-white">Kategoriler</h3>
-      <nav className="flex flex-col gap-y-4 overflow-auto">
-        <Button variant="HTML" className="text-sm font-medium hover:text-gray-900">
+    <section className="h-full w-full gap-y-5 px-5 md:flex md:w-50 md:flex-col">
+      <h3 className="text my-4 text-center font-bold text-black dark:text-white md:mb-0">Kategoriler</h3>
+      <nav className="flex w-full gap-2.5 overflow-auto md:flex-col ">
+        <Button variant="HTML" className=" text-sm font-medium hover:text-gray-900">
           HTML
         </Button>
-        <Button variant="CSS" className="text-sm font-medium hover:text-gray-900">
+        <Button variant="CSS" className=" text-sm font-medium hover:text-gray-900">
           CSS
         </Button>
         <Button variant="JavaScript" className="text-sm font-medium hover:text-gray-900">
@@ -21,7 +21,7 @@ const Categories = () => {
         <Button variant="Vue.js" className="text-sm font-medium hover:text-gray-900">
           Vue.js
         </Button>
-        <Button variant="Git" className="text-sm font-medium hover:text-gray-900">
+        <Button variant="Git" className=" text-sm font-medium hover:text-gray-900">
           Git
         </Button>
         <Button variant="Web Development" className=" text-sm font-medium hover:text-gray-900">

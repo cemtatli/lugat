@@ -16,12 +16,12 @@ const Layout = () => {
     .sort((a, b) => a.term.localeCompare(b.term));
 
   return (
-    <section className="flex w-full flex-col items-center">
+    <section className="flex h-full w-full flex-col items-center">
       <div className="flex w-full items-center justify-center px-8 py-4">
         <Search onSearch={handleSearch} />
       </div>
-      <div className="h-full w-full flex-auto overflow-auto rounded-md p-8">
-        <div className="flex flex-col gap-15">
+      <div className="h-full w-full overflow-auto p-8">
+        <div className="flex flex-col gap-y-15">
           {filteredData.map((item) => (
             <div key={item.id}>
               <h2 className="text-xl font-semibold">{item.term} nedir ?</h2>

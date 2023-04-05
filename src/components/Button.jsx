@@ -5,7 +5,7 @@ const Button = ({ children, variant = "default" }) => {
   return (
     <button
       className={classNames({
-        "flex h-8 w-full items-center justify-center truncate rounded-md px-10 py-2 text-xs font-medium": true,
+        "flex h-8 w-fit shrink-0 items-center  justify-center truncate  rounded-md px-10 py-2 text-xs font-medium md:w-full": true,
         "bg-yellow-200 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300": variant === "JavaScript",
         "bg-indigo-200 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-300": variant === "React",
         "bg-red-200 text-red-800 dark:bg-red-900 dark:text-red-200": variant === "Git",
