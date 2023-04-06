@@ -145,7 +145,7 @@
   },
   {
     "id": 18,
-    "category": ["JavaScript"],
+    "category": ["Web Development"],
     "term": "Session Storage",
     "desc": "Session Storage, bir web sayfasında, kullanıcının tarayıcısında verileri depolamak için kullanılır. Session Storage, Local Storage gibi çalışır ancak tarayıcı kapatıldığında veriler otomatik olarak silinir.",
     "example": {
