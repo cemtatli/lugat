@@ -19,7 +19,7 @@ const Layout = () => {
   const categories = [...new Set(filteredData.flatMap((item) => item.category))];
 
   return (
-    <section className="flex h-full w-full  flex-col items-center">
+    <section className="mx-auto flex h-full w-full flex-col items-center 2xl:w-[95%]">
       <Search onSearch={handleSearch} />
       <div className="mb-1 flex w-[82.5%] gap-4 overflow-auto py-4 md:justify-center">
         {categories.map((category) => {

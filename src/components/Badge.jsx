@@ -5,7 +5,7 @@ const Badge = ({ children, variant = "default" }) => {
   return (
     <span
       className={classNames({
-        "flex items-center justify-center rounded-full px-2.5 py-0.5 text-xs font-medium": true,
+        "animate flex items-center justify-center rounded-full px-2.5 py-0.5 text-xs font-medium": true,
         "bg-yellow-200 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300": variant === "JavaScript",
         "bg-indigo-200 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-300": variant === "React",
         "bg-blue-200 text-blue-800 dark:bg-blue-900 dark:text-blue-300": variant === "CSS",
