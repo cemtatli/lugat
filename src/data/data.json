@@ -583,5 +583,59 @@
     "example": {
       "codeBlock": "manifest.json"
     }
+  },
+  {
+    "id": 67,
+    "category": ["React", "Web Development"],
+    "term": "Redux",
+    "desc": "Bir JavaScript kütüphanesi olan Redux, React uygulamaları için kullanılan bir durum yönetim aracıdır. Uygulama durumunu merkezi bir depoda saklar ve durum değişikliklerini yönetir.",
+    "example": {
+      "codeBlock": "const ADD_TODO = 'ADD_TODO'\n\nfunction addTodo(text) {\n return {\n type: ADD_TODO,\n text\n }\n}\n\n"
+    }
+  },
+  {
+    "id": 68,
+    "category": ["Web Development"],
+    "term": "GraphQL",
+    "desc": "GraphQL, bir API sorgulama dili ve çalıştırma ortamıdır. Geleneksel RESTful API'lerin yerini alabilir ve daha esnek ve verimli bir API sağlayabilir.",
+    "example": {
+      "codeBlock": "query {\n user(id: 1) {\n name\n email\n }\n}"
+    }
+  },
+  {
+    "id": 69,
+    "category": ["Web Development"],
+    "term": "Accessibility",
+    "desc": "Web sitelerinin ve uygulamaların, herkesin kullanabileceği şekilde tasarlanması ve geliştirilmesidir. Özellikle, engelli kullanıcıların ihtiyaçlarına yönelik olarak tasarlanmalıdır.",
+    "example": {
+      "codeBlock": "<button aria-label='Close menu'>X</button>"
+    }
+  },
+  {
+    "id": 70,
+    "category": ["CSS", "Web Development"],
+    "term": "Block Element Model (BEM)",
+    "desc": "CSS yöntemleriyle tasarlanmış bir web tasarım yaklaşımıdır. Bu yaklaşım, web sitelerinin ve uygulamalarının modüler hale getirilmesine olanak tanır ve stil sayfalarının kolay yönetimini sağlar.",
+    "example": {
+      "codeBlock": ".block__element--modifier {}"
+    }
+  },
+  {
+    "id": 71,
+    "category": ["Web Development"],
+    "term": "Microservices",
+    "desc": "Bir uygulamanın küçük, özerk hizmetlere bölünmesiyle oluşturulan bir mimaridir. Bu, uygulamaların daha ölçeklenebilir, esnek ve bakımı kolay hale getirilmesine olanak tanır.",
+    "example": {
+      "codeBlock": "docker run -p 8080:8080 my-microservice"
+    }
+  },
+  {
+    "id": 72,
+    "category": ["Web Development"],
+    "term": "Containerization",
+    "desc": "Yazılım uygulamalarının, kendi kendine yeterli bir ortamda çalışmasını sağlamak için bir işletim sistemi sanalizasyon tekniğidir. Özellikle DevOps ve dağıtım süreçlerinde kullanılır.",
+    "example": {
+      "codeBlock": "docker build -t my-app ."
+    }
   }
 ]
