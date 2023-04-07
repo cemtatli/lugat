@@ -655,5 +655,31 @@
     "example": {
       "codeBlock": "function sum(a, b) {\n  return a + b;\n}\n\ndescribe('sum function', () => {\n  it('should return the sum of two numbers', () => {\n    expect(sum(1, 2)).toBe(3);\n    expect(sum(2, 2)).toBe(4);\n    expect(sum(0, 0)).toBe(0);\n  });\n});"
     }
-  }
+  },{
+"id": 75,
+"category": ["Web Development"],
+"term": "Cookie",
+"desc": "Web tarayıcısı tarafından kullanıcının bilgisayarında depolanan küçük bir veri parçasıdır. Çerezler, kullanıcı tercihlerini, oturum açma bilgilerini ve kullanıcının bir web sitesindeki deneyimini kişiselleştirmek için kullanılabilecek diğer bilgileri hatırlamak için kullanılır.",
+"example": {
+"codeBlock": "document.cookie = 'kullanıcıadı=John Doe';"
+}
+},
+{
+"id": 76,
+"category": ["Web Development"],
+"term": "Meta Tag",
+"desc": "HTML meta etiketleri, anahtar kelimeler, açıklama, yazar ve diğer meta verileri gibi web sayfası hakkında bilgi sağlar. Bu etiketler, HTML belgesinin head bölümüne yerleştirilir.",
+"example": {
+"codeBlock": "<head>\n<meta name="description" content="Bu, web sayfamın açıklamasıdır." />\n</head>"
+}
+},
+{
+"id": 77,
+"category": ["Web Development"],
+"term": "AMP",
+"desc": "AMP, Accelerated Mobile Pages kelimelerinin kısaltmasıdır. Google tarafından geliştirilen açık kaynaklı bir çerçeve olan AMP, hızlı yükleme özelliğine sahip mobil web sayfalarının oluşturulmasını sağlar. AMP sayfaları, mobil cihazlarda daha iyi bir kullanıcı deneyimi sağlamak için tasarlanmıştır.",
+"example": {
+"codeBlock": "<html amp>\n<head>\n<meta charset="utf-8">\n<title>Benim AMP Sayfam</title>\n<link rel="canonical" href="https://www.example.com/benim-amp-sayfam.html\">\n<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">\n<script async src="https://cdn.ampproject.org/v0.js\"></script>\n<style amp-custom>\n/* AMP sayfalarınız için özel stiller */\n</style>\n</head>\n<body>\n<!-- AMP sayfanızın içeriği buraya gelecek -->\n</body>\n</html>"
+}
+}
 ]
