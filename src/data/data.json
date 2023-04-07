@@ -657,31 +657,48 @@
     }
   },
   {
-"id": 75,
-"category": ["Web Development"],
-"term": "Cookie",
-"desc": "Web tarayıcısı tarafından kullanıcının bilgisayarında depolanan küçük bir veri parçasıdır. Çerezler, kullanıcı tercihlerini, oturum açma bilgilerini ve kullanıcının bir web sitesindeki deneyimini kişiselleştirmek için kullanılabilecek diğer bilgileri hatırlamak için kullanılır.",
-"example": {
-"codeBlock": "document.cookie = 'kullanıcıadı=John Doe';"
-}
-},
-{
-"id": 76,
-"category": ["Web Development"],
-"term": "Meta Tag",
-"desc": "HTML meta etiketleri, anahtar kelimeler, açıklama, yazar ve diğer meta verileri gibi web sayfası hakkında bilgi sağlar. Bu etiketler, HTML belgesinin head bölümüne yerleştirilir.",
-"example": {
-"codeBlock": "<head>\n<meta name="description" content="Bu, web sayfamın açıklamasıdır." />\n</head>"
-}
-},
-{
-"id": 77,
-"category": ["Web Development"],
-"term": "AMP",
-"desc": "AMP, Accelerated Mobile Pages kelimelerinin kısaltmasıdır. Google tarafından geliştirilen açık kaynaklı bir çerçeve olan AMP, hızlı yükleme özelliğine sahip mobil web sayfalarının oluşturulmasını sağlar. AMP sayfaları, mobil cihazlarda daha iyi bir kullanıcı deneyimi sağlamak için tasarlanmıştır.",
-"example": {
-"codeBlock": "<html amp>\n<head>\n<meta charset="utf-8">\n<title>Benim AMP Sayfam</title>\n<link rel='canonical" href="https://www.example.com/benim-amp-sayfam.html\">\n<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">\n<script async src="https://cdn.ampproject.org/v0.js\"></script>\n<style amp-custom>\n/* AMP sayfalarınız için özel stiller */\n</style>\n</head>\n<body>\n<!-- AMP sayfanızın içeriği buraya gelecek -->\n</body>\n</html>"
-}
-}
-
+    "id": 75,
+    "category": ["Web Development"],
+    "term": "Cookie",
+    "desc": "Web tarayıcısı tarafından kullanıcının bilgisayarında depolanan küçük bir veri parçasıdır. Çerezler, kullanıcı tercihlerini, oturum açma bilgilerini ve kullanıcının bir web sitesindeki deneyimini kişiselleştirmek için kullanılabilecek diğer bilgileri hatırlamak için kullanılır.",
+    "example": {
+      "codeBlock": "document.cookie = 'kullanıcıadı=John Doe';"
+    }
+  },
+  {
+    "id": 76,
+    "category": ["Web Development", "HTML"],
+    "term": "Meta Tag",
+    "desc": "HTML meta etiketleri, anahtar kelimeler, açıklama, yazar ve diğer meta verileri gibi web sayfası hakkında bilgi sağlar. Bu etiketler, HTML belgesinin head bölümüne yerleştirilir.",
+    "example": {
+      "codeBlock": "<head>\n<meta name='description' content='Bu, web sayfamın açıklamasıdır.' />\n</head>"
+    }
+  },
+  {
+    "id": 77,
+    "category": ["Web Development"],
+    "term": "Cache",
+    "desc": "Cache, önbellek olarak da adlandırılır, sık kullanılan verilerin daha hızlı erişilebilir olmasını sağlamak için geçici olarak saklanır. Web sayfaları, JavaScript dosyaları ve diğer web kaynakları, kullanıcının web tarayıcısındaki önbelleğe alınabilir. Bu sayede, kullanıcıların kaynakları tekrar tekrar indirmesi gerekmez ve sayfalar daha hızlı yüklenir.",
+    "example": {
+      "codeBlock": "// Bir HTTP yanıtını önbelleğe almak için (Express.js kullanarak)\napp.get('/yayinlar', (req, res) => {\n res.set('Cache-Control', 'public, max-age=300, s-maxage=600');\n res.send('Yayınlar sayfası');\n});"
+    }
+  },
+  {
+    "id": 78,
+    "category": ["Web Development"],
+    "term": "Server Side",
+    "desc": "Sunucu tarafı, web uygulamasının işlevselliğinin sunucu üzerinde gerçekleştirildiği bir web uygulama modelidir. Sunucu tarafı kodlama, web tarayıcısında çalışan kodun yerini alır. Sunucu tarafı dilleri arasında PHP, Python, Ruby, Java ve .NET bulunur.",
+    "example": {
+      "codeBlock": "// Sunucu tarafında bir dosya okuma işlemi gerçekleştirme (Node.js kullanarak)\nconst fs = require('fs');\n\nfs.readFile('/path/to/file', 'utf8', (err, data) => {\n if (err) throw err;\n console.log(data);\n});"
+    }
+  },
+  {
+    "id": 81,
+    "category": ["Web Development"],
+    "term": "Client Side",
+    "desc": "Müşteri tarafı, web uygulamasının işlevselliğinin müşterinin web tarayıcısı üzerinde gerçekleştirildiği bir web uygulama modelidir. Müşteri tarafı kodlama, kullanıcı etkileşimi ve arayüz tasarımı için kullanılır. Müşteri tarafı dilleri arasında JavaScript, HTML ve CSS bulunur.",
+    "example": {
+      "codeBlock": "// Müşteri tarafında bir sayfa yenileme işlemi gerçekleştirme\nlocation.reload();"
+    }
+  }
 ]
