@@ -637,5 +637,23 @@
     "example": {
       "codeBlock": "docker build -t my-app ."
     }
+  },
+  {
+    "id": 73,
+    "category": ["Web Development", "React", "Vue.js"],
+    "term": "Vite",
+    "desc": "Vite, modern web uygulamaları oluşturmak için kullanılan bir geliştirici aracıdır. Vue.js ve React gibi popüler JavaScript çerçeveleri ile uyumlu olan Vite, geliştirme sunucusu, hızlı derleme zamanı ve modüler mimari gibi özelliklerle gelir.",
+    "example": {
+      "codeBlock": "import { createServer } from 'vite'\n\nconst server = await createServer()\nawait server.listen()"
+    }
+  },
+  {
+    "id": 74,
+    "category": ["Web Development"],
+    "term": "Unit Test",
+    "desc": "Unit Test, bir yazılım parçasının (genellikle bir fonksiyon veya sınıf) beklenen davranışı gösterip göstermediğini doğrulayan otomatik testlerdir.",
+    "example": {
+      "codeBlock": "function sum(a, b) {\n  return a + b;\n}\n\ndescribe('sum function', () => {\n  it('should return the sum of two numbers', () => {\n    expect(sum(1, 2)).toBe(3);\n    expect(sum(2, 2)).toBe(4);\n    expect(sum(0, 0)).toBe(0);\n  });\n});"
+    }
   }
 ]

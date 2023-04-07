@@ -10,7 +10,7 @@ function CodeBlock({ code }) {
     setCopied(true);
     setTimeout(() => {
       setCopied(false);
-    }, 1000);
+    }, 1500);
   };
 
   return (
@@ -33,7 +33,7 @@ function CodeBlock({ code }) {
           </button>
         </CopyToClipboard>
       </div>
-      <pre className="overflow-auto p-4 text-xs tracking-wide md:text-sm md:tracking-normal">{code}</pre>
+      <pre className="overflow-auto p-4 !font-mono text-xs tracking-wide md:text-sm md:tracking-normal">{code}</pre>
     </div>
   );
 }
