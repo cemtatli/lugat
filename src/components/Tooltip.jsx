@@ -18,7 +18,7 @@ export default function Tooltip() {
           document.querySelector(".tooltip").classList.toggle("hidden");
         }}
         aria-hidden="true"
-        className="absolute bottom-2.5 right-3 h-4 w-4 shrink-0 cursor-pointer rounded-full text-gray-900 transition duration-100 hover:scale-110 hover:text-gray-900 hover:ring-1 hover:ring-gray-900 hover:ring-offset-gray-900 md:bottom-3"
+        className="absolute right-3 top-1/2 h-4 w-4 shrink-0 -translate-y-1/2 cursor-pointer rounded-full text-gray-900 transition duration-100 hover:scale-110 hover:text-gray-900 hover:ring-1 hover:ring-gray-900 hover:ring-offset-gray-900 md:bottom-3"
       />
     </div>
   );

@@ -3,7 +3,7 @@ import Button from "./Button";
 
 const Categories = () => {
   return (
-    <aside className="h-full w-full gap-y-5 px-5 xl:flex xl:w-50 xl:flex-col">
+    <aside className="h-full w-full gap-y-5 px-5 xl:flex xl:flex-1 xl:flex-col">
       <nav className="flex w-full gap-2.5 overflow-auto xl:flex-col ">
         <Button variant="HTML" className=" text-sm font-medium hover:text-gray-900">
           HTML {}

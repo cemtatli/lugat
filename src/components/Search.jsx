@@ -50,7 +50,7 @@ const Search = ({onSearch}) => {
     <div className="mt-4 flex w-full flex-col items-center justify-center gap-4 px-8">
       <div className="relative flex w-full">
         <input
-          className="h-12 w-full border px-10 text-sm text-gray-700 outline-none"
+          className="h-12 w-full border px-10 text-sm text-gray-700 outline-none focus:border-b-4 focus:border-blue-200"
           type="text"
           placeholder="Ne aramıştınız?"
           value={searchTerm}
@@ -85,7 +85,7 @@ const Search = ({onSearch}) => {
               ))}
             </ul>
             <button
-              className="block w-full bg-gray-100 py-2 text-sm font-medium text-gray-500 hover:bg-gray-200 dark:text-gray-900"
+              className="block w-full bg-gray-100 py-2 text-sm font-medium text-gray-500 hover:bg-gray-200 hover:text-gray-900 dark:text-gray-900"
               onClick={handleClearHistory}>
               Arama Geçmişini Temizle
             </button>
