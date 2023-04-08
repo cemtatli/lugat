@@ -1,4 +1,4 @@
-import { ThemeProvider } from "@/context/ThemeContext";
+import {ThemeProvider} from "@/context/ThemeContext";
 
 import Header from "@/components/Header";
 import Layout from "@/components/Layout";

@@ -1,4 +1,4 @@
-import { XMarkIcon } from "@heroicons/react/24/solid";
+import {XMarkIcon} from "@heroicons/react/24/solid";
 
 export default function Tooltip() {
   return (
@@ -10,8 +10,7 @@ export default function Tooltip() {
       <a
         target="_blank"
         className="mr-2 shrink-0 rounded-full bg-blue-100 px-3 py-1 text-xs font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-300 "
-        href="https://github.com/cemtatli/lugat"
-      >
+        href="https://github.com/cemtatli/lugat">
         Repo'ya git
       </a>
       <XMarkIcon

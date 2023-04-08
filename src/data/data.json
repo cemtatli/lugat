@@ -63,6 +63,15 @@
     }
   },
   {
+    "id": 8,
+    "category": ["Web Development"],
+    "term": "Client Side",
+    "desc": "Müşteri tarafı, web uygulamasının işlevselliğinin müşterinin web tarayıcısı üzerinde gerçekleştirildiği bir web uygulama modelidir. Müşteri tarafı kodlama, kullanıcı etkileşimi ve arayüz tasarımı için kullanılır. Müşteri tarafı dilleri arasında JavaScript, HTML ve CSS bulunur.",
+    "example": {
+      "codeBlock": "// Müşteri tarafında bir sayfa yenileme işlemi gerçekleştirme\nlocation.reload();"
+    }
+  },
+  {
     "id": 9,
     "category": ["React", "JavaScript"],
     "term": "JSX",
@@ -690,15 +699,6 @@
     "desc": "Sunucu tarafı, web uygulamasının işlevselliğinin sunucu üzerinde gerçekleştirildiği bir web uygulama modelidir. Sunucu tarafı kodlama, web tarayıcısında çalışan kodun yerini alır. Sunucu tarafı dilleri arasında PHP, Python, Ruby, Java ve .NET bulunur.",
     "example": {
       "codeBlock": "// Sunucu tarafında bir dosya okuma işlemi gerçekleştirme (Node.js kullanarak)\nconst fs = require('fs');\n\nfs.readFile('/path/to/file', 'utf8', (err, data) => {\n if (err) throw err;\n console.log(data);\n});"
-    }
-  },
-  {
-    "id": 81,
-    "category": ["Web Development"],
-    "term": "Client Side",
-    "desc": "Müşteri tarafı, web uygulamasının işlevselliğinin müşterinin web tarayıcısı üzerinde gerçekleştirildiği bir web uygulama modelidir. Müşteri tarafı kodlama, kullanıcı etkileşimi ve arayüz tasarımı için kullanılır. Müşteri tarafı dilleri arasında JavaScript, HTML ve CSS bulunur.",
-    "example": {
-      "codeBlock": "// Müşteri tarafında bir sayfa yenileme işlemi gerçekleştirme\nlocation.reload();"
     }
   }
 ]

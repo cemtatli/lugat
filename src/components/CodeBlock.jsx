@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { CopyToClipboard } from "react-copy-to-clipboard";
-import { ClipboardDocumentCheckIcon, ClipboardDocumentIcon } from "@heroicons/react/24/solid";
+import {CopyToClipboard} from "react-copy-to-clipboard";
+import {ClipboardDocumentCheckIcon, ClipboardDocumentIcon} from "@heroicons/react/24/solid";
 
-function CodeBlock({ code }) {
+function CodeBlock({code}) {
   const [copied, setCopied] = React.useState(false);
 
   const handleCopy = () => {

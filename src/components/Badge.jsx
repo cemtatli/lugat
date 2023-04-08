@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 
-const Badge = ({ children, variant = "default" }) => {
+const Badge = ({children, variant = "default"}) => {
   return (
     <span
       className={classNames({
@@ -15,8 +15,7 @@ const Badge = ({ children, variant = "default" }) => {
         "bg-red-200 text-red-800 dark:bg-red-900 dark:text-red-200": variant === "Git",
         "bg-purple-200 text-purple-800 dark:bg-purple-900 dark:text-purple-300": variant === "Web Development",
         "truncate bg-cyan-200 text-cyan-800 dark:bg-cyan-900 dark:text-cyan-300": variant === "Package Managers",
-      })}
-    >
+      })}>
       {children}
     </span>
   );

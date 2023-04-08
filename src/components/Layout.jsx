@@ -1,4 +1,4 @@
-import { useState } from "react";
+import {useState} from "react";
 import data from "@/data/data.json";
 import CodeBlock from "./CodeBlock";
 import Search from "./Search";

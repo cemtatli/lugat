@@ -1,7 +1,7 @@
-import { useState, useEffect } from "react";
-import { MagnifyingGlassIcon, XCircleIcon } from "@heroicons/react/24/outline";
+import {useState, useEffect} from "react";
+import {MagnifyingGlassIcon, XCircleIcon} from "@heroicons/react/24/outline";
 
-const Search = ({ onSearch }) => {
+const Search = ({onSearch}) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [searchHistory, setSearchHistory] = useState([]);
   const [isFocused, setIsFocused] = useState(false);
@@ -59,14 +59,13 @@ const Search = ({ onSearch }) => {
           id="search"
           onFocus={() => setIsFocused(true)}
           onBlur={() => {
-            setIsFocused(true);
+            setIsFocused(false);
           }}
         />
         {searchTerm.length > 0 && isFocused && (
           <button
             className="absolute bottom-0 right-2 top-0 flex h-12 w-12 items-center justify-center text-gray-500 hover:text-gray-700 focus:outline-none"
-            onClick={handleClear}
-          >
+            onClick={handleClear}>
             <XCircleIcon className="h-5 w-5" />
           </button>
         )}
@@ -80,16 +79,14 @@ const Search = ({ onSearch }) => {
                 <li
                   key={item}
                   className="cursor-pointer px-4 py-3 transition-all hover:bg-gray-50 dark:text-gray-950"
-                  onClick={() => handleHistoryClick(item)}
-                >
+                  onClick={() => handleHistoryClick(item)}>
                   {item}
                 </li>
               ))}
             </ul>
             <button
               className="block w-full bg-gray-100 py-2 text-sm font-medium text-gray-500 hover:bg-gray-200 dark:text-gray-900"
-              onClick={handleClearHistory}
-            >
+              onClick={handleClearHistory}>
               Arama Geçmişini Temizle
             </button>
           </div>

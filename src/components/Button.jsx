@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import React from "react";
 
-const Button = ({ children, variant = "default" }) => {
+const Button = ({children, variant = "default"}) => {
   return (
     <button
       className={classNames({
@@ -15,8 +15,7 @@ const Button = ({ children, variant = "default" }) => {
         "bg-purple-200 text-purple-800 dark:bg-purple-900 dark:text-purple-300": variant === "Web Development",
         "bg-cyan-200 text-cyan-800 dark:bg-cyan-900 dark:text-cyan-300": variant === "Package Managers",
         "bg-heather-200 text-heather-800 dark:bg-heather-900 dark:text-heather-300": variant === "Internet",
-      })}
-    >
+      })}>
       {children}
     </button>
   );
