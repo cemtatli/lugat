@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import {CopyToClipboard} from "react-copy-to-clipboard";
-import {ClipboardDocumentCheckIcon, ClipboardDocumentIcon} from "@heroicons/react/24/solid";
+import {ClipboardDocumentIcon, DocumentCheckIcon} from "@heroicons/react/24/solid";
 
 function CodeBlock({code}) {
   const [copied, setCopied] = React.useState(false);
@@ -21,7 +21,7 @@ function CodeBlock({code}) {
           <button className="flex items-center rounded-md bg-gray-300 px-2 py-1 text-xs font-medium transition-colors duration-200 hover:bg-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2   dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600">
             {copied ? (
               <div className="flex items-center gap-1">
-                <ClipboardDocumentCheckIcon width={15} />
+                <DocumentCheckIcon width={15} />
                 <span>Kopyalandı</span>
               </div>
             ) : (
