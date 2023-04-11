@@ -21,7 +21,7 @@ const Layout = () => {
   return (
     <section className="mx-auto flex h-full w-full flex-col items-center">
       <Search onSearch={handleSearch} />
-      <div className="mb-1 flex w-5/6 gap-4  overflow-auto py-4 md:w-full md:justify-center">
+      <div className="mb-1 flex w-5/6 gap-4 overflow-auto py-4 md:w-full md:justify-center">
         {categories.map((category) => {
           const count = filteredData.filter((item) => Array.isArray(item.category) && item.category.includes(category)).length;
           return (

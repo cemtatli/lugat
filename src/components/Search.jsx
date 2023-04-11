@@ -50,7 +50,7 @@ const Search = ({onSearch}) => {
     <div className="mt-4 flex w-full flex-col items-center justify-center gap-4 px-8">
       <div className="relative flex w-full">
         <input
-          className="h-12 w-full border px-10 text-sm text-gray-700 outline-none focus:border-b-4 focus:border-blue-200"
+          className="h-12 w-full rounded-md border border-b-2  border-slate-950 px-10 text-sm text-gray-700 outline-none focus:border-b-2 focus:border-blue-200"
           type="text"
           placeholder="Ne aramıştınız?"
           value={searchTerm}
@@ -59,7 +59,7 @@ const Search = ({onSearch}) => {
           id="search"
           onFocus={() => setIsFocused(true)}
           onBlur={() => {
-            setIsFocused(false);
+            setIsFocused(true);
           }}
         />
         {searchTerm.length > 0 && isFocused && (
@@ -73,7 +73,7 @@ const Search = ({onSearch}) => {
           <MagnifyingGlassIcon className="h-5 w-5 text-black" />
         </div>
         {searchHistory.length > 0 && isFocused && (
-          <div className="absolute top-full z-10 w-full border border-gray-200 bg-white shadow-md">
+          <div className="absolute top-full z-10 w-full overflow-hidden rounded-md border border-gray-200 bg-white shadow-md">
             <ul className="divide-y divide-gray-200">
               {searchHistory.map((item) => (
                 <li

@@ -700,5 +700,41 @@
     "example": {
       "codeBlock": "// Sunucu tarafında bir dosya okuma işlemi gerçekleştirme (Node.js kullanarak)\nconst fs = require('fs');\n\nfs.readFile('/path/to/file', 'utf8', (err, data) => {\n if (err) throw err;\n console.log(data);\n});"
     }
+  },
+  {
+    "id": 79,
+    "category": ["Web Development", "Internet"],
+    "term": "HTTP",
+    "desc": "HTTP, bir istemcinin bir web sunucusuna bağlanarak web sayfaları ve diğer kaynaklar gibi çeşitli verilerin iletiminde kullanılan bir iletişim protokolüdür.",
+    "example": {
+      "codeBlock": "http://www.example.com"
+    }
+  },
+  {
+    "id": 80,
+    "category": ["Web Development", "Internet"],
+    "term": "Hosting",
+    "desc": "Hosting, web sitelerinin internet üzerinde erişilebilir olabilmesi için kullanılan bir hizmettir. Birden fazla hosting türü vardır, örneğin Shared Hosting ve VPS Hosting.",
+    "example": {
+      "codeBlock": "Bir web sitesini barındırmak için Hostinger, GoDaddy veya Bluehost gibi hosting şirketleri kullanılabilir."
+    }
+  },
+  {
+    "id": 81,
+    "category": ["HTML", "Web Development"],
+    "term": "Semantic HTML",
+    "desc": "Anlamlı HTML, bir web sayfasının içeriğini açıklayan HTML etiketleri kullanarak sayfayı daha anlaşılır ve erişilebilir hale getiren bir web geliştirme teknolojisidir.",
+    "example": {
+      "codeBlock": "<header>, <nav>, <main>, <article>, <section>, <aside>, <footer> gibi etiketler anlamlı HTML örnekleridir."
+    }
+  },
+  {
+    "id": 82,
+    "category": ["Web Development"],
+    "term": "Layout",
+    "desc": "Bir web sayfasının görünümünü belirleyen ve içeriğin nasıl yerleştirileceğini tanımlayan düzenleme öğeleridir. Bu öğeler, web sayfasının kullanılabilirliğini ve erişilebilirliğini artırmaya yardımcı olur.",
+    "example": {
+      "codeBlock": "Web sitesi düzeninde kullanılan öğeler arasında <header>, <nav>, <main>, <article>, <section>, <aside>, <footer>, <div>, <span> gibi HTML etiketleri sayılabilir."
+    }
   }
 ]
