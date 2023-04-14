@@ -736,5 +736,44 @@
     "example": {
       "codeBlock": "Web sitesi düzeninde kullanılan öğeler arasında <header>, <nav>, <main>, <article>, <section>, <aside>, <footer>, <div>, <span> gibi HTML etiketleri sayılabilir."
     }
+  },
+  {
+    "id": 83,
+    "category": ["Web Development"],
+    "term": "Framework",
+    "desc": "Framework, bir yazılım uygulaması veya bileşenlerinin tasarımı ve geliştirilmesi için bir temel oluşturmak üzere kullanılan bir yapılı programlama aracıdır. Framework, tekrar eden işlemleri otomatikleştirir ve geliştirme sürecini hızlandırır.",
+    "example": {
+      "codeBlock": "const express = require('express');\nconst app = express();\n\napp.get('/', function (req, res) {\n res.send('Hello World!');\n});\n\napp.listen(3000, function () {\n console.log('Example app listening on port 3000!');\n});"
+    }
+  },
+
+  {
+    "id": 84,
+    "category": ["Web Development"],
+    "term": "Library",
+    "desc": "Bir kütüphane, belirli bir programlama dilinde kullanılabilecek tekrar kullanılabilir kod bloklarının bir koleksiyonudur. Kullanıcılara belirli bir işlevsellik sağlar ve tekrar tekrar kod yazmak yerine hazır çözümler sunar.",
+    "example": {
+      "codeBlock": "import React, { Component } from 'react';\nimport { render } from 'react-dom';\n\nclass App extends Component {\n render() {\n return <h1>Hello World!</h1>;\n }\n}\n\nrender(<App />, document.getElementById('root'));"
+    }
+  },
+
+  {
+    "id": 85,
+    "category": ["JavaScript", "Web Development"],
+    "term": "Callback",
+    "desc": "Bir fonksiyon, başka bir fonksiyon tarafından çağrıldığında geri döndürülebilen bir fonksiyondur. Bir işlemin tamamlandığı zaman, bir işlevin çağrılması için geri çağrılabilir. Bu, programcılara asenkron işlemler için bir yol sağlar.",
+    "example": {
+      "codeBlock": "setTimeout(function() {\n console.log('Hello World!');\n}, 1000);"
+    }
+  },
+
+  {
+    "id": 86,
+    "category": ["JavaScript"],
+    "term": "Async",
+    "desc": "Async, bir programda asenkron işlemlerin gerçekleştirilmesine izin veren bir anahtar kelimedir. Async fonksiyonlar, diğer fonksiyonların çalışmasına izin verirken, bir arka planda işlem yapabilirler ve işlem tamamlandığında geri dönüş değeri döndürebilirler.",
+    "example": {
+      "codeBlock": "async function getUsers() {\n const response = await fetch('/users');\n const json = await response.json();\n return json;\n}"
+    }
   }
 ]
