@@ -1,9 +1,9 @@
 # 📖 Lugat
-Lugat, frontend geliştiricilerin bilmesi gereken terimleri Türkçe anlamlarıyla birlikte sunan açık kaynaklı bir sözlük projesidir. Proje, React ve Tailwind CSS teknolojileri kullanılarak oluşturulmuştur ve tamamen ücretsiz ve açık kaynak kodlu olarak yayınlanmaktadır.
+Lugat, frontend geliştiricilerin bilmesi gereken terimleri Türkçe anlamlarıyla birlikte sunan ayrıca terimleri kod örnekleriyle destekleyen açık kaynaklı bir sözlük projesidir. Proje, React ve Tailwind CSS teknolojileri kullanılarak oluşturulmuştur ve tamamen ücretsiz ve açık kaynak kodlu olarak yayınlanmaktadır.
 
 Bu sözlük, frontend dünyasında yolunu kaybetmiş veya daha yeni başlayan geliştiricilerin işlerini kolaylaştırmayı hedeflemektedir. Proje içerisinde yer alan terimler, açıklamalar ve örnekler sayesinde frontend geliştiricileri, terimlerin anlamlarını daha iyi anlayabilir ve projelerinde bu terimleri daha verimli bir şekilde kullanabilirler. 
 
-[🔗 Lugat'a hemen göz atmak için bağlantıya tıklayın!](https://lug-at.vercel.app)
+[🔗 Lugat'a hemen göz atmak için bağlantıya tıklayın!](https://lugat.surge.sh/)
 
 ### 🧰 Kullanılan Teknolojiler
 Lugat, React ve Tailwind CSS teknolojilerini kullanarak oluşturulmuştur.
