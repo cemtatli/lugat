@@ -1,5 +1,5 @@
-import {useState, useEffect} from "react";
-import {ChevronUpIcon} from "@heroicons/react/24/outline";
+import { useState, useEffect } from "react";
+import { ChevronUpIcon } from "@heroicons/react/24/outline";
 
 function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
@@ -23,7 +23,7 @@ function ScrollToTop() {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
+      behavior: "smooth"
     });
   };
 
@@ -32,7 +32,8 @@ function ScrollToTop() {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-5 right-5 z-50 flex h-10 w-10 items-center justify-center rounded-full border bg-white p-2 dark:text-black md:hidden lg:block">
+          className="fixed bottom-5 right-5 z-50 flex h-10 w-10 items-center justify-center rounded-full border bg-white p-2 dark:text-black md:hidden lg:block"
+        >
           <ChevronUpIcon className="h-4 w-4" />
         </button>
       )}

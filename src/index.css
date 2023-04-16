@@ -24,7 +24,7 @@ body,
 #root {
   display: grid;
   grid-template-columns: 1fr min(100%) 1fr;
-  grid-template-rows: 1fr minmax(calc(100vh - 120px), auto) 1fr;
+  grid-template-rows: 1fr minmax(calc(100vh - 100px), auto) 1fr;
 }
 #root > * {
   grid-column: 2;

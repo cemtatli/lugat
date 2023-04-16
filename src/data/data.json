@@ -504,15 +504,6 @@
     }
   },
   {
-    "id": 57,
-    "category": ["Web Development"],
-    "term": "SSL",
-    "desc": "SSL (Secure Sockets Layer), veri iletişiminde güvenliği sağlamak için kullanılan bir kriptografik protokoldür. Bu protokol, veri iletişiminde şifreleme, kimlik doğrulama ve bütünlük sağlar.",
-    "example": {
-      "codeBlock": ""
-    }
-  },
-  {
     "id": 58,
     "category": ["Web Development"],
     "term": "AJAX",
@@ -766,7 +757,6 @@
       "codeBlock": "setTimeout(function() {\n console.log('Hello World!');\n}, 1000);"
     }
   },
-
   {
     "id": 86,
     "category": ["JavaScript"],
@@ -774,6 +764,204 @@
     "desc": "Async, bir programda asenkron işlemlerin gerçekleştirilmesine izin veren bir anahtar kelimedir. Async fonksiyonlar, diğer fonksiyonların çalışmasına izin verirken, bir arka planda işlem yapabilirler ve işlem tamamlandığında geri dönüş değeri döndürebilirler.",
     "example": {
       "codeBlock": "async function getUsers() {\n const response = await fetch('/users');\n const json = await response.json();\n return json;\n}"
+    }
+  },
+  {
+    "id": 87,
+    "category": ["Web Development", "Web Design"],
+    "term": "Web Standards",
+    "desc": "Belirli bir web sitesinin uygun bir şekilde tasarlanması ve oluşturulması için belirlenmiş kurallar ve yönergelerdir.",
+    "example": {
+      "codeBlock": " <!DOCTYPE html>\n<html>\n<head>\n    <title>Web Standards Example</title>\n</head>\n<body>\n    <h1>Welcome to my website</h1>\n    <p>This is an example of a website that follows web standards.</p>\n</body>\n</html>"
+    }
+  },
+  {
+    "id": 88,
+    "category": ["Web Development", "Web Design"],
+    "term": "Mobile-First Design",
+    "desc": "Web sitelerinin mobil cihazlar için optimize edilerek tasarlanmasıdır. Bu yaklaşım, mobil cihazlardaki kullanıcı deneyimini arttırmak ve performansı iyileştirmek için kullanılır.",
+    "example": {
+      "codeBlock": "/* Example of mobile-first design */\n@media screen and (min-width: 600px) {\n  /* styles for tablets and desktops */\n}\n@media screen and (max-width: 599px) {\n  /* styles for mobile devices */\n}"
+    }
+  },
+  {
+    "id": 89,
+    "category": ["Web Design"],
+    "term": "Atomic Design",
+    "desc": "Bileşen tabanlı bir tasarım sistemidir. Sayfaların temel yapıtaşlarından başlayarak karmaşık bileşenlere kadar ayrıntılı bir tasarım süreci sunar.",
+    "example": {
+      "codeBlock": "// Example of using atomic design principles in CSS\n/* Atoms */\n.button {\n  /* styles for buttons */\n}\n\n/* Molecules */\n.header {\n  /* styles for header section */\n}\n\n/* Organisms */\n.navigation {\n  /* styles for navigation section */\n}\n\n/* Templates */\n.page {\n  /* styles for page layout */\n}\n\n/* Pages */\n.home-page {\n  /* styles for home page */\n}"
+    }
+  },
+  {
+    "id": 90,
+    "category": ["Web Development"],
+    "term": "CORS",
+    "desc": "Cross-Origin Resource Sharing, web sayfalarının farklı kaynaklardan veri almasına olanak tanıyan bir mekanizmadır.",
+    "example": {
+      "codeBlock": "/* Example of CORS implementation */\nconst cors = require('cors');\nconst express = require('express');\nconst app = express();\napp.use(cors());\napp.get('/api/data', (req, res) => {\n  /* handle data request */\n});"
+    }
+  },
+  {
+    "id": 91,
+    "category": ["Web Design"],
+    "term": "Wireframes",
+    "desc": "Web sitesinin temel yapısal özelliklerini ve düzenini gösteren bir taslak çizimidir. Genellikle tasarım sürecinin başlangıcında kullanılır.",
+    "example": {
+      "codeBlock": " [image of a wireframe]"
+    }
+  },
+  {
+    "id": 92,
+    "category": ["Web Design"],
+    "term": "Typography",
+    "desc": "Web sitesinde kullanılan yazı karakterleri, boyutları, aralıkları ve renkleri gibi özellikleri belirleyen tasarım.",
+    "example": {
+      "codeBlock": " font-family: 'Open Sans', sans-serif;\nfont-size: 16px;\nline-height: 1.5;\ncolor: #333;"
+    }
+  },
+  {
+    "id": 93,
+    "category": ["Web Development"],
+    "term": "A/B Testing",
+    "desc": "İki farklı web sayfası sürümü arasındaki performans farklarını karşılaştırarak hangi sürümün daha etkili olduğunu belirlemek için yapılan bir test türüdür.",
+    "example": {
+      "codeBlock": " <script>\n  function trackConversion() {\n    // code to track conversion goes here\n  }\n</script>\n\n<button onClick=\"trackConversion();\">Click here to convert</button>"
+    }
+  },
+  {
+    "id": 94,
+    "category": ["Web Design"],
+    "term": "Heatmap",
+    "desc": "Web sayfasında kullanıcı etkileşimlerini görsel olarak gösteren bir araçtır. Bu araç sayesinde, kullanıcıların hangi alanlara daha çok tıkladığı veya hangi alanlara daha az ilgi gösterdiği görülebilir.",
+    "example": {
+      "codeBlock": " [image of a heatmap]"
+    }
+  },
+  {
+    "id": 95,
+    "category": ["Web Design"],
+    "term": "Pagination",
+    "desc": "Web sayfalarında uzun içerikleri birden fazla sayfaya bölerek kullanıcının daha kolay bir şekilde gezinmesini sağlayan bir özelliktir.",
+    "example": {
+      "codeBlock": " <div class=\"pagination\">\n  <a href=\"#\">1</a>\n  <a href=\"#\">2</a>\n  <a href=\"#\">3</a>\n</div>"
+    }
+  },
+  {
+    "id": 96,
+    "category": ["Web Development"],
+    "term": "WebGL",
+    "desc": "Web tarayıcıları için 3 boyutlu grafikleri oluşturmak ve göstermek için kullanılan bir JavaScript API'sidir.",
+    "example": {
+      "codeBlock": " <canvas id=\"myCanvas\"></canvas>\n<script>\n  var canvas = document.getElementById('myCanvas');\n  var gl = canvas.getContext('webgl');\n</script>"
+    }
+  },
+  {
+    "id": 97,
+    "category": ["Web Design", "Web Development"],
+    "term": "Prototyping",
+    "desc": "Web sitesinin tasarımının ve işlevselliğinin test edilmesi için bir prototip oluşturulmasıdır. Bu sayede gerçek bir web sitesinin yapımı öncesinde fikirler test edilebilir.",
+    "example": {
+      "codeBlock": " [image of a website prototype]"
+    }
+  },
+  {
+    "id": 98,
+    "category": ["Web Development"],
+    "term": "Deploy",
+    "desc": "Bir web sitesinin veya uygulamanın canlı sunucuya yerleştirilmesi, yayınlanması ve kullanıcıların erişebilir hale getirilmesi işlemidir.",
+    "example": {
+      "codeBlock": " git push heroku master\n # assuming Heroku is the hosting provider and master is the branch you want to deploy"
+    }
+  },
+  {
+    "id": 99,
+    "category": ["Web Development"],
+    "term": "Issue",
+    "desc": "Bir yazılım projesinde karşılaşılan sorunları veya eksiklikleri ifade eden bir terimdir. Issue'lar, yazılım geliştirme ekipleri tarafından izlenir ve çözülür.",
+    "example": {
+      "codeBlock": " [screenshot of a software issue tracking tool]"
+    }
+  },
+  {
+    "id": 101,
+    "category": ["Web Design"],
+    "term": "Above the Fold",
+    "desc": "Web sayfasının üst kısmında yer alan ve kullanıcının sayfaya ilk baktığında göreceği alan.",
+    "example": {
+      "codeBlock": " [screenshot of the top of a website]"
+    }
+  },
+  {
+    "id": 103,
+    "category": ["Web Design"],
+    "term": "Tooltip",
+    "desc": "Bir web sayfasında bir öğenin ne olduğunu açıklayan bir açıklama metni gösteren bir grafik aracı.",
+    "example": {
+      "codeBlock": " [screenshot of a tooltip that appears when the user hovers over an element]"
+    }
+  },
+  {
+    "id": 104,
+    "category": ["Web Development", "HTML"],
+    "term": "Canvas",
+    "desc": "HTML5 standardının bir parçası olan bir özellik olan Canvas, programatik olarak grafikler, animasyonlar ve diğer görsel öğeler oluşturmak için kullanılır.",
+    "example": {
+      "codeBlock": " <canvas id=\"example-canvas\"></canvas>\n<script>\n  var canvas = document.getElementById('example-canvas');\n  var ctx = canvas.getContext('2d');\n  ctx.fillStyle = 'red';\n  ctx.fillRect(10, 10, 50, 50);\n</script>"
+    }
+  },
+  {
+    "id": 105,
+    "category": ["Web Development"],
+    "term": "GitHub",
+    "desc": "Git tabanlı bir sürüm kontrolü platformudur. Geliştiriciler, kodlarını barındırmak, revize etmek ve işbirliği yapmak için GitHub'u kullanırlar.",
+    "example": {
+      "codeBlock": " git clone https://github.com/example/repo.git\n # assuming the repository is hosted on GitHub and the URL is https://github.com/example/repo.git"
+    }
+  },
+  {
+    "id": 106,
+    "category": ["Web Development"],
+    "term": "Kanban",
+    "desc": "Bir iş akışı yönetimi aracıdır ve bir tahta üzerinde yapışkan not kağıtları kullanarak görevleri görselleştirir.",
+    "example": {
+      "codeBlock": " [screenshot of a Kanban board with cards representing tasks]"
+    }
+  },
+  {
+    "id": 107,
+    "category": ["Web Development"],
+    "term": "Storybook",
+    "desc": "Bir UI bileşeni kütüphanesi geliştirme aracıdır. Bileşenlerin ayrı ayrı test edilmesini ve belgelenmesini sağlar.",
+    "example": {
+      "codeBlock": " [screenshot of a Storybook interface showing UI components]"
+    }
+  },
+  {
+    "id": 108,
+    "category": ["JavaScript", "Web Development"],
+    "term": "TypeScript",
+    "desc": "JavaScript'in statik tipli bir üst kümesi olan TypeScript, isteğe bağlı tipler, arayüzler, sınıflar ve diğer özellikler ekleyerek, hataları çalışma zamanı yerine derleme zamanında yakalamak için yardımcı olur. Büyük ölçekli uygulamalar için daha iyi kod organizasyonu, ölçeklenebilirlik ve araç desteği sunar.",
+    "example": {
+      "codeBlock": "import React from 'react';\n\ntype Props = {\n  name: string;\n  age: number;\n}\n\nconst User: React.FC<Props> = ({ name, age }) => {\n  return (\n    <div>\n      <p>Name: {name}</p>\n      <p>Age: {age}</p>\n    </div>\n  );\n};\n\nexport default User;"
+    }
+  },
+  {
+    "id": 109,
+    "category": ["React", "Web Development"],
+    "term": "Redux",
+    "desc": "Bir JavaScript uygulama durum yönetimi kütüphanesi olan Redux, verilerin tek bir merkezi depoda saklanmasını ve yönetilmesini sağlar. Bileşenler, depodaki durumu okuyabilir ve güncelleyebilirler. Bu, uygulamanın durumunu tutarlı ve öngörülebilir hale getirir.",
+    "example": {
+      "codeBlock": "React, Angular, Vue"
+    }
+  },
+  {
+    "id": 110,
+    "category": ["React", "Web Development"],
+    "term": "Context API",
+    "desc": "React ile birlikte gelen bir özellik olan Context API, uygulamanın durumunu bileşenler arasında paylaşmaya ve iletmeye olanak tanır. Bu, durum yönetimi için Redux gibi diğer araçların kullanımına gerek kalmadan, verilerin ana bileşenlerden alt bileşenlere aktarılmasını kolaylaştırır.",
+    "example": {
+      "codeBlock": "React"
     }
   }
 ]
