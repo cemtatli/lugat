@@ -1067,5 +1067,85 @@
       "lang": "jsx",
       "codeBlock": "React"
     }
+  },
+  {
+    "id": 111,
+    "category": ["React", "Web Development"],
+    "term": "Injection",
+    "desc": "Injection, bir bileşenin başka bir bileşen tarafından manipüle edilmesi anlamına gelir. Özellikle React'ta yaygın olarak kullanılır ve JSX ve render ifadeleri içinde kullanılabilir.",
+    "example": {
+      "lang": "jsx",
+      "codeBlock": "import React, { useState } from 'react';\n\nconst App = () => {\n  const [count, setCount] = useState(0);\n  const handleClick = () => {\n    setCount(count + 1);\n  };\n  const buttonText = count === 0 ? 'Başla' : count;\n\n  return (\n    <div>\n      <h1>Injection Örneği</h1>\n      <Button onClick={handleClick} text={buttonText} />\n    </div>\n  );\n};\n\nconst Button = ({ onClick, text }) => {\n  return (\n    <button onClick={onClick}>{text}</button>\n  );\n};\n\nexport default App;"
+    }
+  },
+  {
+    "id": 112,
+    "category": ["React", "Web Development"],
+    "term": "Injection Saldırısı",
+    "desc": "Injection saldırısı, bir uygulamanın güvenliğini etkileyen bir saldırı türüdür. Genellikle kullanıcı tarafından sağlanan verilerin, programlama dili veya veritabanı sorguları gibi önemli bir bileşene doğrudan dahil edilmesiyle gerçekleştirilir.",
+    "example": {
+      "lang": "json",
+      "codeBlock": "const sqlQuery = `SELECT * FROM users WHERE username = '${username}' AND password = '${password}'`;\n\n// Injection saldırısı için örnek veriler\nconst username = \"' OR 1=1 --\";\nconst password = \"' OR 1=1 --\";"
+    }
+  },
+  {
+    "id": 113,
+    "category": ["React", "Web Development"],
+    "term": "children",
+    "desc": "React bileşenlerinde kullanılan bir özellik olan 'children', bir bileşenin içerisindeki diğer bileşenlerdir. Yani, bir bileşenin içinde başka bileşenler yer alabilir ve bu bileşenler 'children' olarak adlandırılır.",
+    "example": {
+      "lang": "jsx",
+      "codeBlock": "<Parent>\n  <Child1 />\n  <Child2 />\n</Parent>"
+    }
+  },
+  {
+    "id": 114,
+    "category": ["JavaScript", "Web Development"],
+    "term": "DOM",
+    "desc": "Document Object Model (DOM), web sayfalarının bir program tarafından manipüle edilmesini sağlayan bir API'dir. DOM, HTML, XHTML veya XML belgelerinin programlar tarafından değiştirilmesini, eklenmesini veya silinmesini sağlayarak dinamik web sayfalarının oluşturulmasına izin verir.",
+    "example": {
+      "lang": "js",
+      "codeBlock": "const myElement = document.getElementById('myElement');\nmyElement.innerHTML = 'Merhaba dünya!';"
+    }
+  },
+  {
+    "id": 115,
+    "category": ["JavaScript"],
+    "term": "Backtick",
+    "desc": "Backtick (``) veya backquote, bir string ifadesini tanımlamak için kullanılan bir karakterdir. Template literals özelliği ile kullanılır.",
+    "example": {
+      "lang": "js",
+      "codeBlock": "const name = 'Ahmet';\nconst message = `Merhaba ${name}!`;\nconsole.log(message); // 'Merhaba Ahmet!'"
+    }
+  },
+  {
+    "id": 116,
+    "category": ["Web Development"],
+    "term": "Tilde",
+    "desc": "Tilde (~) birçok farklı programlama dili ve ortamda kullanılan bir karakterdir. Değişken adının önüne veya sonuna eklenerek kullanılabilir ve genellikle bir işaretçi veya bellek adresi ile ilişkilendirilir.",
+    "example": {
+      "lang": "js",
+      "codeBlock": "const x = [1, 2, 3, 4, 5];\nconst y = x.slice(0, ~2); // [1, 2, 3]"
+    }
+  },
+  {
+    "id": 117,
+    "category": ["Web Development"],
+    "term": "Curly Bracket",
+    "desc": "Curly bracket ({}) veya brace, birçok programlama dili ve ortamda kullanılan bir karakterdir. Genellikle, kod bloklarını belirlemek veya nesne özelliklerini tanımlamak için kullanılır.",
+    "example": {
+      "lang": "js",
+      "codeBlock": "const person = {\n  name: 'Ali',\n  age: 25,\n  job: 'Software Developer'\n};\nconsole.log(person.name); // 'Ali'"
+    }
+  },
+  {
+    "id": 119,
+    "category": ["JavaScript"],
+    "term": "Ternary Operator",
+    "desc": "Bir koşula göre iki farklı değeri döndüren bir operatördür.",
+    "example": {
+      "lang": "js",
+      "codeBlock": "const age = 18;\nconst message = age >= 18 ? \"You are an adult.\" : \"You are not an adult yet.\";\nconsole.log(message);\n// Output: You are an adult."
+    }
   }
 ]
