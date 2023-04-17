@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 setCDN("https://cdn.jsdelivr.net/npm/shiki");
 
-export const useHiglighter = () => {
+export const useHighlighter = () => {
   const [theme, setTheme] = useState(null);
 
   const updateTheme = () => {
