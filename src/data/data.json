@@ -5,6 +5,7 @@
     "term": "Scope",
     "desc": "JavaScript'te 'scope' kavramı, bir değişkenin hangi kod bloğunda erişilebilir olduğunu belirler. Bir kod bloğu, genellikle süslü parantezler ({}) arasında yer alan ve belirli bir işlevi yerine getiren kod grubudur.",
     "example": {
+      "lang": "js",
       "codeBlock": "function scopeExample() {\n var x = 1; // x sadece bu fonksiyonun kapsamında erişilebilir\n console.log(x); // 1 yazdırılır\n}\n\nscopeExample();\nconsole.log(x); // hata verir, x is not defined\n"
     }
   },
@@ -14,6 +15,7 @@
     "term": "Closure",
     "desc": "JavaScript'te 'closure' kavramı, iç içe fonksiyonlar arasındaki bağlantıyı ifade eder. Bir iç fonksiyon, dış fonksiyonun değişkenlerine erişebilir, ancak dış fonksiyon içinde tanımlanan değişkenlere dışarıdan erişilemez.",
     "example": {
+      "lang": "js",
       "codeBlock": "function outer() {\n var x = 10;\n function inner() {\n console.log(x);\n }\n return inner;\n}\n\nvar closureExample = outer();\nclosureExample(); // 10 yazdırılır\n"
     }
   },
@@ -23,6 +25,7 @@
     "term": "Asenkron Programlama",
     "desc": "JavaScript'te 'asenkron programlama' kavramı, işlem sırasının sıralı olarak ilerlemesi yerine, işlemlerin belirli bir sırayla çalıştırılmadan önce tamamlanması ilkesine dayanır. Bu sayede, programda uzun süren işlemlerin yavaşlatması engellenir ve program daha hızlı çalışır.",
     "example": {
+      "lang": "js",
       "codeBlock": "function asyncExample() {\n console.log('Başla');\n setTimeout(function() {\n console.log('3 saniye sonra çalıştı');\n }, 3000);\n console.log('Bitir');\n}\n\nasyncExample();\n// 'Başla', 'Bitir', '3 saniye sonra çalıştı' şeklinde yazdırılır\n"
     }
   },
@@ -32,6 +35,7 @@
     "term": "State",
     "desc": "State, React component'lerindeki verilerin depolanması ve yönetilmesi için kullanılan bir özelliktir. State, component'in özellikleri (props) gibi dışarıdan değil, component'in içinde tanımlanır ve değiştirilebilir.",
     "example": {
+      "lang": "js",
       "codeBlock": "import React, { useState } from 'react';\n\nfunction Counter() {\n  const [count, setCount] = useState(0);\n\n  function handleIncrement() {\n    setCount(count + 1);\n  }\n\n  return (\n    <div>\n      <p>You clicked {count} times</p>\n      <button onClick={handleIncrement}>Click me</button>\n    </div>\n  );\n}"
     }
   },
@@ -41,6 +45,7 @@
     "term": "Component",
     "desc": "React uygulamalarında UI’ı, birkaç parçaya bölerek, her parçayı tekrar kullanılabilir, bağımsız ve kolayca yönetilebilir hale getiren yapıdır.",
     "example": {
+      "lang": "js",
       "codeBlock": "class MyComponent extends React.Component {\n render() {\n return <h1>Hello, {this.props.name}</h1>;\n }\n}\n\nReactDOM.render(<MyComponent name='John' />, document.getElementById('root'));\n"
     }
   },
@@ -50,6 +55,7 @@
     "term": "Props",
     "desc": "React bileşenleri arasında veri iletmek için kullanılır. Veriler, bileşenin çağrıldığı yerden başka bir bileşene, özellikle ebeveyn bileşenlerden alt bileşenlere iletilir.",
     "example": {
+      "lang": "jsx",
       "codeBlock": "function Welcome(props) {\n return <h1>Hello, {props.name}</h1>;\n}\n\nconst element = <Welcome name='John' />;\nReactDOM.render(element, document.getElementById('root'));\n"
     }
   },
@@ -59,6 +65,7 @@
     "term": "Box Model",
     "desc": "Box Model, her HTML öğesi için bir kutu modeli oluşturarak öğelerin boyutlandırılmasını ve yerleştirilmesini sağlayan bir CSS özelliğidir. Kutu modeli, içerik, dolgu, sınır ve kenar boşluğu olarak dört bileşenden oluşur.",
     "example": {
+      "lang": "css",
       "codeBlock": "/* Kutu modelindeki bileşenlerin genişlikleri ve yükseklikleri ayrı ayrı belirlenebilir. */\ndiv {\n  width: 200px;\n  height: 100px;\n  padding: 20px;\n  border: 1px solid black;\n  margin: 10px;\n}"
     }
   },
@@ -68,6 +75,7 @@
     "term": "Client Side",
     "desc": "Müşteri tarafı, web uygulamasının işlevselliğinin müşterinin web tarayıcısı üzerinde gerçekleştirildiği bir web uygulama modelidir. Müşteri tarafı kodlama, kullanıcı etkileşimi ve arayüz tasarımı için kullanılır. Müşteri tarafı dilleri arasında JavaScript, HTML ve CSS bulunur.",
     "example": {
+      "lang": "js",
       "codeBlock": "// Müşteri tarafında bir sayfa yenileme işlemi gerçekleştirme\nlocation.reload();"
     }
   },
@@ -77,6 +85,7 @@
     "term": "JSX",
     "desc": "JSX, JavaScript sözdizimini genişleten bir XML benzeri sözdizimidir. React bileşenlerini tanımlamak ve bu bileşenlere özellikler ve çocuk bileşenler eklemek için kullanılır. JSX, React uygulamalarının okunaklılığını artırır ve hataları önceden tespit etmeye yardımcı olur.",
     "example": {
+      "lang": "js",
       "codeBlock": "function formatName(user) {\n return user.firstName + ' ' + user.lastName;\n}\n\nconst user = {\n firstName: 'John',\n lastName: 'Doe'\n};\n\nconst element = <h1>Hello, {formatName(user)}!</h1>;\n\nReactDOM.render(\n element,\n document.getElementById('root')\n);"
     }
   },
@@ -86,6 +95,7 @@
     "term": "Virtual DOM",
     "desc": "Virtual DOM, React'ın performansını artırmak için kullandığı bir tekniktir. React, bir bileşenin durumu değiştiğinde, önce sanal bir DOM ağacı oluşturur ve gerçek DOM ile karşılaştırır. Ardından, sadece değişen kısımları günceller ve gerçek DOM ağacını yeniden oluşturmak yerine bu değişiklikleri yansıtır. Bu işlem, gerçek DOM ağacını yeniden oluşturmaktan daha hızlıdır ve React uygulamalarının performansını artırır.",
     "example": {
+      "lang": "js",
       "codeBlock": "// Normal DOM:\n\n<div id='myDiv'>\n <p>Hello, world!</p>\n</div>\n\n// Virtual DOM:\n\n{\n type: 'div',\n props: {\n id: 'myDiv',\n children: [\n {\n type: 'p',\n props: {\n children: 'Hello, world!' }}]}}"
     }
   },
@@ -95,6 +105,7 @@
     "term": "let",
     "desc": "'let' anahtar kelimesi, JavaScript'te yeni bir değişken tanımlamak için kullanılır. 'let' kullanarak tanımlanan değişkenler, sadece tanımlandıkları blok içinde erişilebilir ve dışarıya sızamazlar. Ayrıca, 'let' ile tanımlanan değişkenlerin değerleri sonradan değiştirilebilir.",
     "example": {
+      "lang": "js",
       "codeBlock": "let x = 5;\nconsole.log(x); // 5\n\n{\n let x = 10;\n console.log(x); // 10\n}\n\nconsole.log(x); // 5"
     }
   },
@@ -104,6 +115,7 @@
     "term": "Hoisting",
     "desc": "Hoisting, JavaScript'te bir değişkenin ya da fonksiyonun tanımlanmasının, kodun çalıştırılması sırasında nereye konulduğundan bağımsız olarak, en üstteki blokta tanımlandığı varsayımıdır.",
     "example": {
+      "lang": "js",
       "codeBlock": "x = 5;\nconsole.log(x);\nvar x;"
     }
   },
@@ -113,6 +125,7 @@
     "term": "Promise",
     "desc": "Promise, asenkron işlemleri kolaylaştırmak için JavaScript'te kullanılan bir nesnedir. Promise nesnesi, bir işlem tamamlandığında veya hata verdiğinde geri çağırma işlevlerini kullanarak işlemin sonucunu yönetir.",
     "example": {
+      "lang": "js",
       "codeBlock": "const fetchData = () => {\n return new Promise((resolve, reject) => {\n setTimeout(() => {\n resolve('Data fetched!');\n }, 2000);\n });\n}\n\nfetchData().then(data => console.log(data));"
     }
   },
@@ -122,6 +135,7 @@
     "term": "Event Loop",
     "desc": "Event Loop, JavaScript'in asenkron çalışmasının temelidir. Event Loop, bir JavaScript programının çalıştığı ortamda, iş parçacıklarını yönetir ve ana iş parçacığı dışındaki işleri işlemek için bir sıra oluşturur.",
     "example": {
+      "lang": "js",
       "codeBlock": "console.log('start');\n\nsetTimeout(() => {\n console.log('setTimeout');\n}, 0);\n\nPromise.resolve().then(() => {\n console.log('Promise');\n});\n\nconsole.log('end');"
     }
   },
@@ -131,6 +145,7 @@
     "term": "Spread Operator",
     "desc": "Spread Operator, bir dizi ya da nesne içindeki elemanları tek tek ayırarak yeni bir dizi ya da nesne oluşturur. Spread Operator, kodun daha okunaklı ve kısa olmasına yardımcı olur.",
     "example": {
+      "lang": "js",
       "codeBlock": "const arr1 = [1, 2, 3];\nconst arr2 = [4, 5, 6];\nconst newArr = [...arr1, ...arr2];\nconsole.log(newArr);\n\nconst obj1 = {a: 1, b: 2};\nconst obj2 = {c: 3, d: 4};\nconst newObj = {...obj1, ...obj2};\nconsole.log(newObj);"
     }
   },
@@ -140,6 +155,7 @@
     "term": "Rest Parameter",
     "desc": "Rest Parameter, bir fonksiyona değişken sayıda argüman geçmek için kullanılır. Rest Parameter, argümanların bir dizi olarak toplanmasını sağlar.",
     "example": {
+      "lang": "js",
       "codeBlock": "function sum(...args) {\n return args.reduce((total, num) => total + num);\n}\n\nconsole.log(sum(1, 2, 3, 4));"
     }
   },
@@ -149,6 +165,7 @@
     "term": "Local Storage",
     "desc": "Local Storage, bir web sayfasında, kullanıcının tarayıcısında verileri depolamak için kullanılır. Local Storage, anahtar-değer çiftleri halinde verileri saklar ve veriler tarayıcıyı kapatsanız bile kalıcıdır.",
     "example": {
+      "lang": "js",
       "codeBlock": "localStorage.setItem('username', 'John');\nconsole.log(localStorage.getItem('username'));\nlocalStorage.removeItem('username');"
     }
   },
@@ -158,6 +175,7 @@
     "term": "Session Storage",
     "desc": "Session Storage, bir web sayfasında, kullanıcının tarayıcısında verileri depolamak için kullanılır. Session Storage, Local Storage gibi çalışır ancak tarayıcı kapatıldığında veriler otomatik olarak silinir.",
     "example": {
+      "lang": "js",
       "codeBlock": "sessionStorage.setItem('username', 'John');\nconsole.log(sessionStorage.getItem('username'));\nsessionStorage.removeItem('username');"
     }
   },
@@ -167,6 +185,7 @@
     "term": "Call Stack",
     "desc": "Call Stack, JavaScript'in fonksiyon çağrılarını izlediği veri yapısıdır. Bir fonksiyon çağrısı yapıldığında, bu çağrı Call Stack'e eklenir ve fonksiyonun tamamlanmasıyla birlikte Call Stack'den çıkarılır.",
     "example": {
+      "lang": "js",
       "codeBlock": "function first() {\n second();\n}\n\nfunction second() {\n third();\n}\n\nfunction third() {\n console.log('Hello, world!');\n}\n\nfirst();"
     }
   },
@@ -176,6 +195,7 @@
     "term": "Higher-Order Function",
     "desc": "Higher-Order Function, bir fonksiyonun, diğer bir fonksiyonu parametre olarak alması veya bir fonksiyon döndürmesi durumudur. Bu özellik sayesinde, fonksiyonlar daha esnek ve yeniden kullanılabilir hale gelir.",
     "example": {
+      "lang": "js",
       "codeBlock": "function sayHello() {\n console.log('Hello, world!');\n}\n\nfunction repeat(func, n) {\n for(let i = 0; i < n; i++) {\n func();\n }\n}\n\nrepeat(sayHello, 3);"
     }
   },
@@ -185,6 +205,7 @@
     "term": "ES6",
     "desc": "ES6, ECMAScript 2015 olarak da bilinen bir JavaScript sürümüdür. Bu sürüm, birçok yeni özellik ve geliştirme içermektedir, örneğin arrow functionlar, let ve const anahtar kelimeleri, template literals, destructuring, spread ve rest operatörleri gibi.",
     "example": {
+      "lang": "js",
       "codeBlock": "const sum = (a, b) => a + b;\nconst message = The sum of 2 and 3 is ${sum(2, 3)}.;\nlet arr = [1, 2, 3];\nlet [first, ...rest] = arr;\nconsole.log(first);\nconsole.log(rest);"
     }
   },
@@ -194,6 +215,7 @@
     "term": "Destructuring",
     "desc": "Destructuring, JavaScript'te bir nesne veya dizi içindeki değerleri ayrıştırma işlemidir. Bu işlem, tek tek öğeleri elde etmek yerine nesne veya dizinin özelliklerine doğrudan erişmenizi sağlar.",
     "example": {
+      "lang": "js",
       "codeBlock": "// Destructuring with an object:\n\nconst person = { name: 'John Doe', age: 30 };\nconst { name, age } = person;\nconsole.log(name); // Output: John Doe\nconsole.log(age); // Output: 30\n\n// Destructuring with an array:\n\nconst numbers = [1, 2, 3];\nconst [first, second, third] = numbers;\nconsole.log(first); // Output: 1\nconsole.log(second); // Output: 2\nconsole.log(third); // Output: 3"
     }
   },
@@ -203,6 +225,7 @@
     "term": "Template Literals",
     "desc": "Template Literals, ECMAScript 6 (ES6) ile birlikte gelen bir özelliktir ve string ifadelerini daha esnek hale getirir. Bu özellik, string ifadelerini tek tırnak veya çift tırnak içine almaktansa, backtick karakterleri (``) arasına almanıza izin verir ve içinde değişkenler veya ifadeler kullanmanızı sağlar.",
     "example": {
+      "lang": "js",
       "codeBlock": "const name = 'John';\nconst age = 30;\nconsole.log(My name is ${name} and I am ${age} years old.); // Output: My name is John and I am 30 years old."
     }
   },
@@ -212,6 +235,7 @@
     "term": "Object Oriented Programming (OOP)",
     "desc": "Object Oriented Programming (OOP), JavaScript'te bir programın nesne ve sınıflar üzerine kurulmasını sağlayan bir programlama paradigmadır. Bu paradigmada, bir program birbirleriyle etkileşim halinde olan nesnelerin kümesinden oluşur ve her nesne bir sınıfın örneğidir.",
     "example": {
+      "lang": "js",
       "codeBlock": "class Person {\n constructor(name, age) {\n this.name = name;\n this.age = age;\n }\n\n sayHello() {\n console.log(Hello, my name is ${this.name} and I am ${this.age} years old);\n }\n}\n\nconst john = new Person('John', 30);\njohn.sayHello(); // Output: Hello, my name is John and I am 30 years old"
     }
   },
@@ -221,6 +245,7 @@
     "term": "Prototype",
     "desc": "Prototype, JavaScript'teki nesne tabanlı programlama modelinde kullanılan bir özelliktir ve her nesnenin bir prototipi vardır. Bu özellik, bir nesnenin özellikleri veya metotlarına erişmek için kullanılır ve nesne tabanlı programlamada miras alma kavramını destekler.",
     "example": {
+      "lang": "js",
       "codeBlock": "function Person(name, age) {\n this.name = name;\n this.age = age;\n}\n\nPerson.prototype.sayHello = function() {\n console.log(Hello, my name is ${this.name} and I am ${this.age} years old);\n};\n\nconst john = new Person('John', 30);\njohn.sayHello(); // Output: Hello, my name is John and I am 30 years old"
     }
   },
@@ -230,6 +255,7 @@
     "term": "Array Methods",
     "desc": "Array Methods, JavaScript'teki dizilerde kullanılan özel metodlardır ve dizilerin işlenmesini kolaylaştırır. Bu metodlar arasında, eleman ekleme ve silme, sıralama, filtreleme ve dönüştürme işlemleri bulunur.",
     "example": {
+      "lang": "js",
       "codeBlock": "// Adding elements\nconst arr = [1, 2, 3];\narr.push(4);\nconsole.log(arr); // Output: [1, 2, 3, 4]\n\n// Removing elements\nconst arr = [1, 2, 3];\narr.pop();\nconsole.log(arr); // Output: [1, 2]\n\n// Sorting elements\nconst arr = [3, 1, 2];\narr.sort();\nconsole.log(arr); // Output: [1, 2, 3]\n\n// Filtering elements\nconst arr = [1, 2, 3];\nconst filteredArr = arr.filter(item => item > 1);\nconsole.log(filteredArr); // Output: [2, 3]\n\n// Transforming elements\nconst arr = [1, 2, 3];\nconst transformedArr = arr.map(item => item * 2);\nconsole.log(transformedArr); // Output: [2, 4, 6]"
     }
   },
@@ -239,6 +265,7 @@
     "term": "Flexbox",
     "desc": "Flexbox, esnek kutu modeli kullanarak bir HTML öğesi içindeki öğelerin yerleştirilmesini ve hizalanmasını yöneten bir CSS özelliğidir. Flexbox, öğelerin yatay veya dikey olarak hizalanmasını ve öğeler arasındaki boşluğu yönetmek için kullanılabilir.",
     "example": {
+      "lang": "css",
       "codeBlock": "/* Öğeleri yatay olarak hizalamak için flexbox özelliği kullanılabilir. */\n.container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.container > div {\n  margin: 10px;\n}"
     }
   },
@@ -248,6 +275,7 @@
     "term": "Media Queries",
     "desc": "Media Queries, belirli ekran boyutları veya cihaz özellikleri gibi koşullar için farklı CSS kuralları belirleyerek duyarlı web tasarımı yapmayı mümkün kılan bir CSS özelliğidir.",
     "example": {
+      "lang": "css",
       "codeBlock": "/* Ekran genişliği 600 pikselin altındaysa metin rengini değiştir. */\n@media (max-width: 600px) {\n  body {\n    color: red;\n  }\n}"
     }
   },
@@ -257,6 +285,7 @@
     "term": "Selectors",
     "desc": "Selectors, belirli HTML öğelerini veya özelliklerini seçerek stil uygulamak için kullanılan CSS özellikleridir. ID'ler, sınıflar, özellikler, yavrular, kardeşler ve daha birçok seçici türü vardır.",
     "example": {
+      "lang": "css",
       "codeBlock": "/* Sınıf seçicisi kullanarak belirli bir öğeye stil uygulayın. */\n.my-class {\n  font-weight: bold;\n}"
     }
   },
@@ -266,6 +295,7 @@
     "term": "Transitions",
     "desc": "Transitions, belirli bir öğenin belirli bir özelliğinde (genellikle renk veya boyut gibi) bir değişiklik olduğunda, değişikliğin düzenli ve yumuşak bir şekilde gerçekleşmesini sağlayan bir CSS özelliğidir.",
     "example": {
+      "lang": "css",
       "codeBlock": "/* Renk değişimini yavaşça gerçekleştirmek için transition özelliği kullanılabilir. */\nbutton {\n  background-color: red;\n  transition: background-color 0.5s ease;\n}\n\nbutton:hover {\n  background-color: blue;\n}"
     }
   },
@@ -275,6 +305,7 @@
     "term": "Transforms",
     "desc": "Transforms, bir HTML öğesinin boyutunu, şeklini, konumunu ve oryantasyonunu değiştirmek için kullanılan bir CSS özelliğidir. Döndürme, ölçeklendirme, eğimleme ve konumlandırma gibi birçok değişiklik yapılabilir.",
     "example": {
+      "lang": "css",
       "codeBlock": "/* Bir div öğesini döndürmek için transform özelliği kullanılabilir. */\ndiv {\n  transform: rotate(45deg);\n}"
     }
   },
@@ -284,6 +315,7 @@
     "term": "Grid",
     "desc": "Grid, bir HTML öğesinin içindeki öğeleri satır ve sütunlar halinde yerleştirmek ve hizalamak için kullanılan bir CSS özelliğidir. Grid, Flexbox'tan daha karmaşık yerleştirme işlemleri yapmak için kullanılabilir.",
     "example": {
+      "lang": "css",
       "codeBlock": "/* Öğeleri bir 2x2 kare oluşturacak şekilde yerleştirmek için grid özelliği kullanılabilir. */\n.container {\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  grid-template-rows: repeat(2, 1fr);\n  gap: 10px;\n}\n\n.container > div {\n  background-color: lightblue;\n}"
     }
   },
@@ -293,6 +325,7 @@
     "term": "Merge",
     "desc": "Git versiyon kontrol sisteminde iki veya daha fazla branch'i birleştirmek için kullanılan bir işlemdir. Bu işlem, değişikliklerin kaynak kodu deposundaki ana branch'e dahil edilmesini sağlar.",
     "example": {
+      "lang": "bash",
       "codeBlock": "git merge feature-branch"
     }
   },
@@ -302,6 +335,7 @@
     "term": "Webpack",
     "desc": "Webpack, bir JavaScript modül paketleme aracıdır. Bu araç, web uygulamaları için gerekli olan JavaScript, CSS ve diğer statik dosyaları paketler, birleştirir ve optimize eder.",
     "example": {
+      "lang": "js",
       "codeBlock": "const path = require('path');\nconst HtmlWebpackPlugin = require('html-webpack-plugin');\n\nmodule.exports = {\n entry: './src/index.js',\n output: {\n path: path.resolve(__dirname, 'dist'),\n filename: 'bundle.js'\n },\n plugins: [new HtmlWebpackPlugin({\n template: './src/index.html'\n })],\n module: {\n rules: [\n {\n test: /.js$/,\n exclude: /node_modules/,\n use: {\n loader: 'babel-loader'\n } }, { test: /.css$/,\n use: ['style-loader','css-loader']}]}};"
     }
   },
@@ -311,6 +345,7 @@
     "term": "MVC",
     "desc": "Model-View-Controller, bir yazılım mimarisidir ve web geliştirme sürecinde kullanılır. Bu mimari, uygulamanın veri (Model), kullanıcı arayüzü (View) ve iş mantığının (Controller) birbirinden ayrılmasını sağlar.",
     "example": {
+      "lang": "js",
       "codeBlock": "public class StudentModel {\n private String name;\n private int age;\n //Getter and Setter methods\n}\n\npublic class StudentView {\n public void printStudentDetails(String name, int age) {\n System.out.println('Name: ' + name);\n System.out.println('Age: ' + age);\n }\n}\n\npublic class StudentController {\n private StudentModel model;\n private StudentView view;\n\n public StudentController(StudentModel model, StudentView view){\n this.model = model;\n this.view = view;\n }\n\n public void updateView(){\n view.printStudentDetails(model.getName(), model.getAge());\n }\n}"
     }
   },
@@ -320,7 +355,8 @@
     "term": "SPA",
     "desc": "Tek sayfa uygulaması (Single Page Application), kullanıcının web sayfasının farklı bölümlerine erişirken sayfayı yeniden yüklemeden yalnızca değişen verileri yükleyen bir web uygulamasıdır.",
     "example": {
-      "codeBlock": "const App = () => {\n return (\n <div>\n <Header />\n <Main />\n <Footer />\n </div>\n );\n};"
+      "lang": "js",
+      "codeBlock": "const App = () => {\n  return (\n\t<div>\n\t  <Header />\n\t  <Main />\n\t  <Footer />\n\t</div>\n  );\n};"
     }
   },
   {
@@ -329,6 +365,7 @@
     "term": "Gulp",
     "desc": "Gulp, JavaScript tabanlı bir yapım aracıdır. Bu araç, web geliştiricilerinin proje için özelleştirilmiş iş akışlarını otomatikleştirmelerine ve kolaylaştırmalarına olanak tanır.",
     "example": {
+      "lang": "js",
       "codeBlock": "const gulp = require('gulp');\nconst sass = require('gulp-sass');\n\nfunction compileSass() {\n return gulp\n .src('./src/scss/**/*.scss')\n .pipe(sass())\n .pipe(gulp.dest('./dist/css'));\n}\n\ngulp.task('sass', compileSass);\n\ngulp.task('default', gulp.series('sass'));"
     }
   },
@@ -338,6 +375,7 @@
     "term": "ESLint",
     "desc": "ESLint, JavaScript kodlarının stil ve hata denetimini otomatikleştiren bir araçtır. Bu araç, kodun okunabilirliğini ve bakımını kolaylaştırır ve hataları erken aşamada tespit ederek geliştirme sürecini hızlandırır.",
     "example": {
+      "lang": "js",
       "codeBlock": "module.exports = {\n env: {\n browser: true,\n es2021: true\n },\n extends: [\n 'eslint:recommended',\n 'plugin:react/recommended'\n ],\n parserOptions: {\n ecmaFeatures: {\n jsx: true\n },\n ecmaVersion: 12,\n sourceType: 'module'\n },\n plugins: ['react'],\n rules: {\n 'react/prop-types': 'off',\n 'no-unused-vars': 'warn'\n }\n};"
     }
   },
@@ -365,6 +403,7 @@
     "term": "Static Site Generation (SSG)",
     "desc": "Static Site Generation (SSG), web sitelerinin derlenerek, HTML, CSS ve JavaScript dosyaları şeklinde sunulduğu bir yöntemdir. SSG ile siteler hızlı bir şekilde yüklenebilir ve performansları artırılabilir. SSG, statik içerikli web siteleri için ideal bir seçenektir.",
     "example": {
+      "lang": "bash",
       "codeBlock": "npm run build"
     }
   },
@@ -374,6 +413,7 @@
     "term": "CDN",
     "desc": "İçerik dağıtım ağı (CDN), statik içeriklerin dağıtımını kolaylaştırmak ve hızlandırmak için kullanılan bir ağdır. Bu ağ, sunucuların dünya genelindeki birçok konumda barındırılmasını sağlar.",
     "example": {
+      "lang": "html",
       "codeBlock": "<script src='https://cdn.example.com/jquery.min.js\"></script>"
     }
   },
@@ -383,6 +423,7 @@
     "term": "Push",
     "desc": "Git'te, yerel değişiklikleri uzak bir deposuna göndermek için kullanılan bir komuttur. Bu işlem, yerel değişikliklerin uzak bir depoda saklanmasını, diğer kullanıcıların bu değişiklikleri görebilmesini ve işbirliği yapmalarını sağlar.",
     "example": {
+      "lang": "bash",
       "codeBlock": "git push origin master"
     }
   },
@@ -392,6 +433,7 @@
     "term": "Pull",
     "desc": "Git'te, uzak bir depodaki değişiklikleri yerel bir depoya çekmek için kullanılan bir komuttur. Bu işlem, yerel depoda bulunmayan değişikliklerin alınmasını ve birleştirilmesini sağlar.",
     "example": {
+      "lang": "bash",
       "codeBlock": "git pull origin master"
     }
   },
@@ -401,6 +443,7 @@
     "term": "Branch",
     "desc": "Git'te, bağımsız bir kod parçası oluşturmak için kullanılan bir kavramdır. Bu kavram, birden çok geliştiricinin aynı projede çalışmasını sağlar ve her geliştiricinin kendi kod parçasını ayrı bir dalda tutmasını mümkün kılar.",
     "example": {
+      "lang": "bash",
       "codeBlock": "git branch feature-branch"
     }
   },
@@ -410,6 +453,7 @@
     "term": "Repository",
     "desc": "Git'te, projenin tüm sürüm geçmişini ve dosyalarını içeren depodur. Bu depo, yerel bir bilgisayarda veya bir web sunucusunda barındırılabilir.",
     "example": {
+      "lang": "bash",
       "codeBlock": "git clone https://github.com/example/repository.git"
     }
   },
@@ -419,6 +463,7 @@
     "term": "Commit",
     "desc": "Git'te, değişiklikleri yerel bir depoya kaydetmek için kullanılan bir komuttur. Bu işlem, değişikliklerin tarihçesini ve açıklamasını tutar ve projenin belirli bir noktasına geri dönülebilmesini sağlar.",
     "example": {
+      "lang": "bash",
       "codeBlock": "git commit -m 'Add new feature'"
     }
   },
@@ -428,6 +473,7 @@
     "term": "npm",
     "desc": "npm (Node Package Manager), Node.js için açık kaynaklı bir paket yöneticisidir. npm, Node.js topluluğu tarafından oluşturulmuştur ve paketlerin indirilmesi, yüklenmesi ve yönetimi için kullanılır.",
     "example": {
+      "lang": "bash",
       "codeBlock": "npm install lodash"
     }
   },
@@ -437,6 +483,7 @@
     "term": "yarn",
     "desc": "yarn, Facebook tarafından oluşturulan açık kaynaklı bir paket yöneticisidir. npm'e benzer şekilde çalışır ve daha hızlı ve güvenilir paket yükleme ve yönetim özellikleri sunar.",
     "example": {
+      "lang": "bash",
       "codeBlock": "yarn add lodash"
     }
   },
@@ -446,6 +493,7 @@
     "term": "pnpm",
     "desc": "pnpm, Node.js için açık kaynaklı bir paket yöneticisidir. npm ve yarn'a benzer şekilde çalışır ve özellikle disk alanı tasarrufu sağlayan bir özelliğe sahiptir. Ayrıca, birden fazla proje için paylaşılan bağımlılıkların tek bir yerde saklanmasını sağlar.",
     "example": {
+      "lang": "bash",
       "codeBlock": "pnpm install lodash"
     }
   },
@@ -455,6 +503,7 @@
     "term": "API",
     "desc": "API (Application Programming Interface), yazılım uygulamaları arasında veri alışverişi yapmak için kullanılan bir arayüzdür. İki farklı uygulama arasında bilgi alışverişi yapmak için standartlaştırılmış bir yol sağlar.",
     "example": {
+      "lang": "js",
       "codeBlock": "fetch('https://api.example.com/data')"
     }
   },
@@ -473,6 +522,7 @@
     "term": "Fetch",
     "desc": "Fetch, web tarayıcıları tarafından sunulan bir JavaScript API'sidir ve HTTP isteklerinin yapılmasını sağlar. Fetch API, XMLHttpRequest API'sine alternatif olarak kullanılabilir ve modern web uygulamaları için daha iyi bir seçenek olabilir.",
     "example": {
+      "lang": "js",
       "codeBlock": "fetch('https://api.example.com/data')"
     }
   },
@@ -482,6 +532,7 @@
     "term": "SASS",
     "desc": "SASS (Syntactically Awesome Style Sheets), CSS stil dosyaları oluşturmak için kullanılan bir CSS ön işlemcisi dilidir. SASS, daha kolay ve hızlı bir şekilde CSS yazmanıza olanak tanır ve CSS kodunun yeniden kullanılabilirliğini artırır.",
     "example": {
+      "lang": "sass",
       "codeBlock": "$primary-color: #333;\n\nbody {\n background-color: $primary-color;\n}"
     }
   },
@@ -491,6 +542,7 @@
     "term": "ID",
     "desc": "ID (Identifier), HTML ve CSS'de bir öğenin benzersiz bir kimliğini tanımlamak için kullanılan bir özniteliktir. Bir ID, sayfadaki yalnızca bir öğeyi tanımlayabilir ve öğenin bir kimliği olduğu sürece diğer öğelerden ayırt edilir.",
     "example": {
+      "lang": "html",
       "codeBlock": "<div id='header'>Header</div>"
     }
   },
@@ -500,8 +552,15 @@
     "term": "WebSockets",
     "desc": "WebSockets, istemci ve sunucu arasında tam çift yönlü iletişim sağlayan bir ağ protokolüdür. Bu protokol, sürekli bağlantı kurarak veri alışverişi yapmanızı sağlar ve gerçek zamanlı uygulamalar için idealdir.",
     "example": {
+      "lang": "js",
       "codeBlock": "const socket = new WebSocket('wss://ornek.com');\n\nsocket.onopen = function() {\n  console.log('Bağlantı açıldı');\n};\n\nsocket.onmessage = function(event) {\n  console.log('Alınan mesaj: ' + event.data);\n};\n\nsocket.onclose = function() {\n  console.log('Bağlantı kapandı');\n};"
     }
+  },
+  {
+    "id": 57,
+    "category": ["Web Development"],
+    "term": "SSL",
+    "desc": "SSL (Secure Sockets Layer), veri iletişiminde güvenliği sağlamak için kullanılan bir kriptografik protokoldür. Bu protokol, veri iletişiminde şifreleme, kimlik doğrulama ve bütünlük sağlar."
   },
   {
     "id": 58,
@@ -509,6 +568,7 @@
     "term": "AJAX",
     "desc": "AJAX, sayfa yeniden yüklenmeden web sayfaları aracılığıyla sunucu ile iletişim kurmayı sağlayan bir teknolojidir.",
     "example": {
+      "lang": "js",
       "codeBlock": "const xhr = new XMLHttpRequest();\nxhr.open('GET', 'https://example.com/api/data', true);\nxhr.onload = function() {\n  if (this.status === 200) {\n    const data = JSON.parse(this.responseText);\n    console.log(data);\n  }\n};\nxhr.send();"
     }
   },
@@ -518,6 +578,7 @@
     "term": "RESTful API",
     "desc": "RESTful API, temel HTTP protokolünü kullanarak web servislerine erişim sağlamak için kullanılan bir arayüzdür.",
     "example": {
+      "lang": "js",
       "codeBlock": "app.get('/api/users', function(req, res) {\n  const users = [\n    { id: 1, name: 'John Doe' },\n    { id: 2, name: 'Jane Smith' }\n  ];\n  res.json(users);\n});"
     }
   },
@@ -527,6 +588,7 @@
     "term": "Node.js",
     "desc": "Node.js, JavaScript ile sunucu tarafı uygulama geliştirme için kullanılan bir çalıştırma ortamıdır.",
     "example": {
+      "lang": "js",
       "codeBlock": "const http = require('http');\n\nconst server = http.createServer((req, res) => {\n  res.statusCode = 200;\n  res.setHeader('Content-Type', 'text/plain');\n  res.end('Hello, World!');\n});\n\nserver.listen(3000, () => {\n  console.log('Server running at http://localhost:3000/');\n});"
     }
   },
@@ -536,6 +598,7 @@
     "term": "JSON",
     "desc": "JSON (JavaScript Object Notation), verileri okunaklı ve hafif bir format kullanarak depolamak, göndermek ve almak için kullanılan bir veri değişim formatıdır.",
     "example": {
+      "lang": "json",
       "codeBlock": "{\n 'name': 'John',\n 'age': 30,\n 'city': 'New York'\n}"
     }
   },
@@ -545,6 +608,7 @@
     "term": "Anchor",
     "desc": "HTML'de <a> etiketi, bir metni veya resmi tıklanabilir bir bağlantıya dönüştürmek için kullanılır. Genellikle başka bir sayfaya, belirli bir bölüme veya bir e-posta adresine yönlendirmek için kullanılır.",
     "example": {
+      "lang": "html",
       "codeBlock": "<a href=\"https://www.google.com/\">Google'a git</a>"
     }
   },
@@ -554,6 +618,7 @@
     "term": "Attribute",
     "desc": "HTML'de öğelerin özelliklerini belirleyen özniteliklerdir. Örneğin, bir <img> etiketi için 'src' özniteliği, resmin kaynak dosyasını belirtir.",
     "example": {
+      "lang": "html",
       "codeBlock": "<img src=\"resim.jpg\" alt=\"Bir resim\" width=\"300\" height=\"200\">"
     }
   },
@@ -563,6 +628,7 @@
     "term": "Property",
     "desc": "JavaScript'te, nesnelerin özellikleri olarak adlandırılan değerlerdir. Örneğin, bir HTML öğesi için 'innerHTML' özelliği, öğenin içeriğini belirtir.",
     "example": {
+      "lang": "js",
       "codeBlock": "document.getElementById('demo').innerHTML = 'Merhaba Dünya';"
     }
   },
@@ -572,7 +638,8 @@
     "term": "Server-Side Rendering (SSR)",
     "desc": "Server-Side Rendering (SSR), web sayfalarının sunucu tarafında oluşturulması ve hazırlanması işlemidir. Bu işlemde, sunucu sayfa içeriğini hazırlayarak tarayıcıya gönderir. Bu sayede, sayfa içeriği tarayıcıda işlemci yükünü hafifletir ve kullanıcıya daha hızlı yükleme süresi sağlar.",
     "example": {
-      "codeBlock": "const express = require('express');\nconst ReactDOMServer = require('react-dom/server');\nconst App = require('./App');\n\nconst app = express();\n\napp.get('/', (req, res) => {\n const html = ReactDOMServer.renderToString(\n <App />\n );\n res.send(\n <html>\n <body>\n <div id='app'>${html}</div>\n <script src='/app.js'></script>\n </body>\n </html>);\n});"
+      "lang": "js",
+      "codeBlock": "const express = require('express');\nconst ReactDOMServer = require('react-dom/server');\nconst App = require('./App');\n\nconst app = express();\n\napp.get('/', (req, res) => {\n const html = ReactDOMServer.renderToString(\n <App />\n );\n res.send(\n <html>\n   <body>\n    <div id='app'>${html}</div>\n    <script src='/app.js'></script>\n   </body>\n </html>);\n});"
     }
   },
   {
@@ -590,7 +657,8 @@
     "term": "Redux",
     "desc": "Bir JavaScript kütüphanesi olan Redux, React uygulamaları için kullanılan bir durum yönetim aracıdır. Uygulama durumunu merkezi bir depoda saklar ve durum değişikliklerini yönetir.",
     "example": {
-      "codeBlock": "const ADD_TODO = 'ADD_TODO'\n\nfunction addTodo(text) {\n return {\n type: ADD_TODO,\n text\n }\n}\n\n"
+      "lang": "js",
+      "codeBlock": "const ADD_TODO = 'ADD_TODO'\n\nfunction addTodo(text) {\n  return {\n\ttype: ADD_TODO,\n\ttext\n  }\n}\n\n"
     }
   },
   {
@@ -599,7 +667,8 @@
     "term": "GraphQL",
     "desc": "GraphQL, bir API sorgulama dili ve çalıştırma ortamıdır. Geleneksel RESTful API'lerin yerini alabilir ve daha esnek ve verimli bir API sağlayabilir.",
     "example": {
-      "codeBlock": "query {\n user(id: 1) {\n name\n email\n }\n}"
+      "lang": "graphql",
+      "codeBlock": "query {\n  user(id: 1) {\n\tname\n\temail\n  }\n}"
     }
   },
   {
@@ -608,6 +677,7 @@
     "term": "Accessibility",
     "desc": "Web sitelerinin ve uygulamaların, herkesin kullanabileceği şekilde tasarlanması ve geliştirilmesidir. Özellikle, engelli kullanıcıların ihtiyaçlarına yönelik olarak tasarlanmalıdır.",
     "example": {
+      "lang": "html",
       "codeBlock": "<button aria-label='Close menu'>X</button>"
     }
   },
@@ -626,6 +696,7 @@
     "term": "Microservices",
     "desc": "Bir uygulamanın küçük, özerk hizmetlere bölünmesiyle oluşturulan bir mimaridir. Bu, uygulamaların daha ölçeklenebilir, esnek ve bakımı kolay hale getirilmesine olanak tanır.",
     "example": {
+      "lang": "bash",
       "codeBlock": "docker run -p 8080:8080 my-microservice"
     }
   },
@@ -635,6 +706,7 @@
     "term": "Containerization",
     "desc": "Yazılım uygulamalarının, kendi kendine yeterli bir ortamda çalışmasını sağlamak için bir işletim sistemi sanalizasyon tekniğidir. Özellikle DevOps ve dağıtım süreçlerinde kullanılır.",
     "example": {
+      "lang": "bash",
       "codeBlock": "docker build -t my-app ."
     }
   },
@@ -644,6 +716,7 @@
     "term": "Vite",
     "desc": "Vite, modern web uygulamaları oluşturmak için kullanılan bir geliştirici aracıdır. Vue.js ve React gibi popüler JavaScript çerçeveleri ile uyumlu olan Vite, geliştirme sunucusu, hızlı derleme zamanı ve modüler mimari gibi özelliklerle gelir.",
     "example": {
+      "lang": "js",
       "codeBlock": "import { createServer } from 'vite'\n\nconst server = await createServer()\nawait server.listen()"
     }
   },
@@ -653,6 +726,7 @@
     "term": "Unit Test",
     "desc": "Unit Test, bir yazılım parçasının (genellikle bir fonksiyon veya sınıf) beklenen davranışı gösterip göstermediğini doğrulayan otomatik testlerdir.",
     "example": {
+      "lang": "js",
       "codeBlock": "function sum(a, b) {\n  return a + b;\n}\n\ndescribe('sum function', () => {\n  it('should return the sum of two numbers', () => {\n    expect(sum(1, 2)).toBe(3);\n    expect(sum(2, 2)).toBe(4);\n    expect(sum(0, 0)).toBe(0);\n  });\n});"
     }
   },
@@ -662,6 +736,7 @@
     "term": "Cookie",
     "desc": "Web tarayıcısı tarafından kullanıcının bilgisayarında depolanan küçük bir veri parçasıdır. Çerezler, kullanıcı tercihlerini, oturum açma bilgilerini ve kullanıcının bir web sitesindeki deneyimini kişiselleştirmek için kullanılabilecek diğer bilgileri hatırlamak için kullanılır.",
     "example": {
+      "lang": "js",
       "codeBlock": "document.cookie = 'kullanıcıadı=John Doe';"
     }
   },
@@ -671,6 +746,7 @@
     "term": "Meta Tag",
     "desc": "HTML meta etiketleri, anahtar kelimeler, açıklama, yazar ve diğer meta verileri gibi web sayfası hakkında bilgi sağlar. Bu etiketler, HTML belgesinin head bölümüne yerleştirilir.",
     "example": {
+      "lang": "html",
       "codeBlock": "<head>\n<meta name='description' content='Bu, web sayfamın açıklamasıdır.' />\n</head>"
     }
   },
@@ -680,6 +756,7 @@
     "term": "Cache",
     "desc": "Cache, önbellek olarak da adlandırılır, sık kullanılan verilerin daha hızlı erişilebilir olmasını sağlamak için geçici olarak saklanır. Web sayfaları, JavaScript dosyaları ve diğer web kaynakları, kullanıcının web tarayıcısındaki önbelleğe alınabilir. Bu sayede, kullanıcıların kaynakları tekrar tekrar indirmesi gerekmez ve sayfalar daha hızlı yüklenir.",
     "example": {
+      "lang": "js",
       "codeBlock": "// Bir HTTP yanıtını önbelleğe almak için (Express.js kullanarak)\napp.get('/yayinlar', (req, res) => {\n res.set('Cache-Control', 'public, max-age=300, s-maxage=600');\n res.send('Yayınlar sayfası');\n});"
     }
   },
@@ -689,6 +766,7 @@
     "term": "Server Side",
     "desc": "Sunucu tarafı, web uygulamasının işlevselliğinin sunucu üzerinde gerçekleştirildiği bir web uygulama modelidir. Sunucu tarafı kodlama, web tarayıcısında çalışan kodun yerini alır. Sunucu tarafı dilleri arasında PHP, Python, Ruby, Java ve .NET bulunur.",
     "example": {
+      "lang": "js",
       "codeBlock": "// Sunucu tarafında bir dosya okuma işlemi gerçekleştirme (Node.js kullanarak)\nconst fs = require('fs');\n\nfs.readFile('/path/to/file', 'utf8', (err, data) => {\n if (err) throw err;\n console.log(data);\n});"
     }
   },
@@ -734,6 +812,7 @@
     "term": "Framework",
     "desc": "Framework, bir yazılım uygulaması veya bileşenlerinin tasarımı ve geliştirilmesi için bir temel oluşturmak üzere kullanılan bir yapılı programlama aracıdır. Framework, tekrar eden işlemleri otomatikleştirir ve geliştirme sürecini hızlandırır.",
     "example": {
+      "lang": "js",
       "codeBlock": "const express = require('express');\nconst app = express();\n\napp.get('/', function (req, res) {\n res.send('Hello World!');\n});\n\napp.listen(3000, function () {\n console.log('Example app listening on port 3000!');\n});"
     }
   },
@@ -744,6 +823,7 @@
     "term": "Library",
     "desc": "Bir kütüphane, belirli bir programlama dilinde kullanılabilecek tekrar kullanılabilir kod bloklarının bir koleksiyonudur. Kullanıcılara belirli bir işlevsellik sağlar ve tekrar tekrar kod yazmak yerine hazır çözümler sunar.",
     "example": {
+      "lang": "js",
       "codeBlock": "import React, { Component } from 'react';\nimport { render } from 'react-dom';\n\nclass App extends Component {\n render() {\n return <h1>Hello World!</h1>;\n }\n}\n\nrender(<App />, document.getElementById('root'));"
     }
   },
@@ -754,6 +834,7 @@
     "term": "Callback",
     "desc": "Bir fonksiyon, başka bir fonksiyon tarafından çağrıldığında geri döndürülebilen bir fonksiyondur. Bir işlemin tamamlandığı zaman, bir işlevin çağrılması için geri çağrılabilir. Bu, programcılara asenkron işlemler için bir yol sağlar.",
     "example": {
+      "lang": "js",
       "codeBlock": "setTimeout(function() {\n console.log('Hello World!');\n}, 1000);"
     }
   },
@@ -763,6 +844,7 @@
     "term": "Async",
     "desc": "Async, bir programda asenkron işlemlerin gerçekleştirilmesine izin veren bir anahtar kelimedir. Async fonksiyonlar, diğer fonksiyonların çalışmasına izin verirken, bir arka planda işlem yapabilirler ve işlem tamamlandığında geri dönüş değeri döndürebilirler.",
     "example": {
+      "lang": "js",
       "codeBlock": "async function getUsers() {\n const response = await fetch('/users');\n const json = await response.json();\n return json;\n}"
     }
   },

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { ThemeContext } from "@/context/ThemeContext";
 import { SunIcon, MoonIcon } from "@heroicons/react/24/solid";
 

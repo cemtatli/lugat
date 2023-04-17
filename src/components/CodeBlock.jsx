@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { ClipboardDocumentIcon, DocumentCheckIcon } from "@heroicons/react/24/solid";
 
-function CodeBlock({ code }) {
-  const [copied, setCopied] = useState(false);
+function CodeBlock({ code, lang }) {
+  const [copied, setCopied] = React.useState(false);
 
   const handleCopy = () => {
     setCopied(true);
@@ -37,7 +37,11 @@ function CodeBlock({ code }) {
           </button>
         </CopyToClipboard>
       </div>
-      <pre className="overflow-auto p-4 !font-mono text-xs tracking-wide md:text-sm md:tracking-normal">
+
+      <pre
+        data-language={lang}
+        className="overflow-auto p-4 !font-mono text-xs tracking-wide md:text-sm md:tracking-normal"
+      >
         {code}
       </pre>
     </div>

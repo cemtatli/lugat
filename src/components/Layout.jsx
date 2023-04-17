@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import data from "@/data/data.json";
 import CodeBlock from "./CodeBlock";
 import Search from "./Search";
@@ -12,11 +12,13 @@ const Layout = () => {
     setSearchTerm(term);
   };
 
-  const filteredData = data
-    .filter(item => item.term.toLowerCase().includes(searchTerm.toLowerCase().trim("")))
-    .sort((a, b) => a.term.localeCompare(b.term));
+  const filteredData = useMemo(() =>
+    data
+      .filter(item => item.term.toLowerCase().includes(searchTerm.toLowerCase().trim("")))
+      .sort((a, b) => a.term.localeCompare(b.term))
+  );
 
-  const categories = [...new Set(filteredData.flatMap(item => item.category))];
+  const categories = useMemo(() => [...new Set(filteredData.flatMap(item => item.category))]);
 
   return (
     <section className="mx-auto flex h-full w-full flex-col items-center">
@@ -49,7 +51,9 @@ const Layout = () => {
                     </Badge>
                   ))}
               </div>
-              <CodeBlock code={item.example.codeBlock} />
+              {item.example?.codeBlock && (
+                <CodeBlock lang={item.example.lang} code={item.example.codeBlock} />
+              )}
             </div>
           ))}
         </div>
