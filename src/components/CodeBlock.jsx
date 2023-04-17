@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
-import {CopyToClipboard} from "react-copy-to-clipboard";
-import {ClipboardDocumentIcon, DocumentCheckIcon} from "@heroicons/react/24/solid";
+import { CopyToClipboard } from "react-copy-to-clipboard";
+import { ClipboardDocumentIcon, DocumentCheckIcon } from "@heroicons/react/24/solid";
 
 function CodeBlock({ code, lang }) {
   const [copied, setCopied] = React.useState(false);
@@ -18,15 +18,19 @@ function CodeBlock({ code, lang }) {
       <div className="flex items-center justify-between border-b px-4 py-2 dark:border-gray-700">
         <span className="text-xs font-medium text-gray-500 dark:text-white">Kod Örneği</span>
         <CopyToClipboard text={code} onCopy={handleCopy}>
-          <button className="flex items-center rounded-md bg-gray-300 px-2 py-1 text-xs font-medium transition-colors duration-200 hover:bg-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2   dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600">
+          <button
+            className={
+              "flex items-center rounded-md bg-gray-300 px-2 py-1 text-xs font-medium transition-colors duration-200 hover:bg-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600"
+            }
+          >
             {copied ? (
               <div className="flex items-center gap-1">
-                <DocumentCheckIcon width={15} />
+                <DocumentCheckIcon width={16} />
                 <span>Kopyalandı</span>
               </div>
             ) : (
               <div className="flex items-center gap-1">
-                <ClipboardDocumentIcon width={15} />
+                <ClipboardDocumentIcon width={16} />
                 <span>Kopyala</span>
               </div>
             )}
@@ -45,8 +49,7 @@ function CodeBlock({ code, lang }) {
 }
 
 CodeBlock.propTypes = {
-  code: PropTypes.string.isRequired,
-  /* language: PropTypes.string.isRequired, */
+  code: PropTypes.string.isRequired
 };
 
 export default CodeBlock;

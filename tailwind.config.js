@@ -7,14 +7,14 @@ export default {
     extend: {
       spacing: {
         15: "3.75rem",
-        18: "4.5rem",
+        18: "4.5rem"
       },
       screens: {
         xs: "425px",
-        xxs: "325px",
+        xxs: "325px"
       },
       width: {
-        50: "200px",
+        50: "200px"
       },
       colors: {
         heather: {
@@ -27,9 +27,9 @@ export default {
           600: "#9EB1BF",
           700: "#69767F",
           800: "#4F595F",
-          900: "#353B40",
+          900: "#353B40"
         },
-        "moody-blue": {
+        moody: {
           50: "#F8F8FD",
           100: "#F0F1FB",
           200: "#DADCF4",
@@ -39,7 +39,7 @@ export default {
           600: "#6066BD",
           700: "#40447E",
           800: "#30335F",
-          900: "#20223F",
+          900: "#20223F"
         },
         shark: {
           50: "#F4F4F4",
@@ -51,10 +51,10 @@ export default {
           600: "#171E1F",
           700: "#101414",
           800: "#0C0F0F",
-          900: "#080A0A",
-        },
-      },
-    },
+          900: "#080A0A"
+        }
+      }
+    }
   },
-  plugins: [],
+  plugins: []
 };

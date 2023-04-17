@@ -1,4 +1,4 @@
-import React, {useState, useEffect, createContext} from "react";
+import React, { useState, useEffect, createContext } from "react";
 
 const LIGHT_THEME_CLASS = "light";
 const DARK_THEME_CLASS = "dark";
@@ -15,10 +15,10 @@ const getInitialTheme = () => {
 
 export const ThemeContext = createContext();
 
-export const ThemeProvider = ({initialTheme, children}) => {
+export const ThemeProvider = ({ initialTheme, children }) => {
   const [theme, setTheme] = useState(initialTheme || getInitialTheme);
 
-  const rawSetTheme = (theme) => {
+  const rawSetTheme = theme => {
     const root = window.document.documentElement;
     const isDark = theme === "dark";
     root.classList.remove(isDark ? LIGHT_THEME_CLASS : DARK_THEME_CLASS);
@@ -31,5 +31,5 @@ export const ThemeProvider = ({initialTheme, children}) => {
     rawSetTheme(theme);
   }, [theme]);
 
-  return <ThemeContext.Provider value={{theme, setTheme}}>{children}</ThemeContext.Provider>;
+  return <ThemeContext.Provider value={{ theme, setTheme }}>{children}</ThemeContext.Provider>;
 };
