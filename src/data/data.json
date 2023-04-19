@@ -1049,16 +1049,6 @@
     }
   },
   {
-    "id": 109,
-    "category": ["React", "Web Development"],
-    "term": "Redux",
-    "desc": "Bir JavaScript uygulama durum yönetimi kütüphanesi olan Redux, verilerin tek bir merkezi depoda saklanmasını ve yönetilmesini sağlar. Bileşenler, depodaki durumu okuyabilir ve güncelleyebilirler. Bu, uygulamanın durumunu tutarlı ve öngörülebilir hale getirir.",
-    "example": {
-      "lang": "jsx",
-      "codeBlock": "React, Angular, Vue"
-    }
-  },
-  {
     "id": 110,
     "category": ["React", "Web Development"],
     "term": "Context API",
@@ -1091,7 +1081,7 @@
   {
     "id": 113,
     "category": ["React", "Web Development"],
-    "term": "children",
+    "term": "Children",
     "desc": "React bileşenlerinde kullanılan bir özellik olan 'children', bir bileşenin içerisindeki diğer bileşenlerdir. Yani, bir bileşenin içinde başka bileşenler yer alabilir ve bu bileşenler 'children' olarak adlandırılır.",
     "example": {
       "lang": "jsx",

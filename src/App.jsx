@@ -6,18 +6,22 @@ import Layout from "@/components/Layout";
 import ScrollToTop from "@/components/ScrollToTop";
 import Tooltip from "@/components/Tooltip";
 
+import { Provider } from "react-wrap-balancer";
+
 function App() {
   useHighlighter();
 
   return (
-    <ThemeProvider>
-      <Header />
-      <main>
-        <Tooltip />
-        <Layout />
-      </main>
-      <ScrollToTop />
-    </ThemeProvider>
+    <Provider>
+      <ThemeProvider>
+        <Header />
+        <main>
+          <Tooltip />
+          <Layout />
+        </main>
+        <ScrollToTop />
+      </ThemeProvider>
+    </Provider>
   );
 }
 

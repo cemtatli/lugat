@@ -32,7 +32,7 @@ function ScrollToTop() {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-5 right-5 z-50 flex h-10 w-10 items-center justify-center rounded-full border bg-white   dark:text-black md:hidden lg:block"
+          className="fixed bottom-4 right-4 z-50 flex h-10 w-10 items-center justify-center rounded-full border bg-white dark:text-black md:hidden lg:block"
         >
           <ChevronUpIcon className="h-5 w-5" />
         </button>

@@ -47,7 +47,7 @@ const Search = ({ onSearch }) => {
   };
 
   return (
-    <div className="mt-4 flex w-full flex-col items-center justify-center gap-4 px-8">
+    <div className="mt-4 flex w-full flex-col items-center justify-center gap-4 ">
       <div className="relative flex w-full">
         <input
           className="h-12 w-full border px-10 text-sm text-gray-700 outline-none "
