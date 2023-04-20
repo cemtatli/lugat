@@ -381,7 +381,7 @@
   },
   {
     "id": 39,
-    "category": ["Web Development", "Internet"],
+    "category": ["Web Development", "Network"],
     "term": "HTTPS",
     "desc": "HTTPS, İnternet üzerinden veri iletiminde güvenliği sağlamak için kullanılan bir protokoldür. Bu protokol, verilerin şifrelenmesi ve doğrulanması için SSL veya TLS gibi güvenlik protokolleri kullanır.",
     "example": {
@@ -390,7 +390,7 @@
   },
   {
     "id": 40,
-    "category": ["Web Development", "Internet"],
+    "category": ["Web Development", "Network"],
     "term": "DNS",
     "desc": "Alan adı sistemleri (DNS), İnternet adreslerini (IP adresleri) insanların anlayabileceği isimlere dönüştürmek için kullanılan bir sistemdir. Bu sistem, web sitelerine erişmek için kullanılan adreslerin yönetimini sağlar.",
     "example": {
@@ -511,7 +511,7 @@
     "id": 52,
     "category": ["Web Development"],
     "term": "SSL",
-    "desc": "SSL (Secure Sockets Layer), internet bağlantılarının güvenli hale getirilmesi için kullanılan bir protokoldür. SSL sertifikaları, kullanıcının güvenli bir web sitesine bağlandığını ve bilgilerinin şifrelendiğini doğrular.",
+    "desc": "SSL (Secure Sockets Layer), Network bağlantılarının güvenli hale getirilmesi için kullanılan bir protokoldür. SSL sertifikaları, kullanıcının güvenli bir web sitesine bağlandığını ve bilgilerinin şifrelendiğini doğrular.",
     "example": {
       "codeBlock": "https://www.example.com"
     }
@@ -772,7 +772,7 @@
   },
   {
     "id": 79,
-    "category": ["Web Development", "Internet"],
+    "category": ["Web Development", "Network"],
     "term": "HTTP",
     "desc": "HTTP, bir istemcinin bir web sunucusuna bağlanarak web sayfaları ve diğer kaynaklar gibi çeşitli verilerin iletiminde kullanılan bir iletişim protokolüdür.",
     "example": {
@@ -781,9 +781,9 @@
   },
   {
     "id": 80,
-    "category": ["Web Development", "Internet"],
+    "category": ["Web Development", "Network"],
     "term": "Hosting",
-    "desc": "Hosting, web sitelerinin internet üzerinde erişilebilir olabilmesi için kullanılan bir hizmettir. Birden fazla hosting türü vardır, örneğin Shared Hosting ve VPS Hosting.",
+    "desc": "Hosting, web sitelerinin Network üzerinde erişilebilir olabilmesi için kullanılan bir hizmettir. Birden fazla hosting türü vardır, örneğin Shared Hosting ve VPS Hosting.",
     "example": {
       "codeBlock": "Bir web sitesini barındırmak için Hostinger, GoDaddy veya Bluehost gibi hosting şirketleri kullanılabilir."
     }
@@ -1136,6 +1136,46 @@
     "example": {
       "lang": "js",
       "codeBlock": "const age = 18;\nconst message = age >= 18 ? \"You are an adult.\" : \"You are not an adult yet.\";\nconsole.log(message);\n// Output: You are an adult."
+    }
+  },
+  {
+    "id": 120,
+    "category": ["Network", "Next.js"],
+    "term": "Dynamic Route",
+    "desc": "Ağdaki mevcut duruma dayalı olarak bir yönlendirme protokolü tarafından dinamik olarak öğrenilen bir rota türüdür. Topolojinin değişmesiyle birlikte yönlendirme tablosu otomatik olarak güncellenir.",
+    "example": {
+      "lang": "js",
+      "codeBlock": "import { useRouter } from 'next/router';\n\nfunction MyComponent() {\n const router = useRouter();\n\n // Dynamic Route: '/post/1'\n return <div>Post: {router.query.id}</div>\n}"
+    }
+  },
+  {
+    "id": 121,
+    "category": ["Network", "Next.js"],
+    "term": "Static Route",
+    "desc": "Manuel olarak yapılandırılan bir rota türüdür. Yönlendirme tablosuna elle eklenir ve ağ topolojisi değişse bile değişmez.",
+    "example": {
+      "lang": "js",
+      "codeBlock": "import Link from 'next/link';\n\nfunction MyComponent() {\n // Static Route: '/about'\n return <Link href='/about'><a>About Us</a></Link>\n}"
+    }
+  },
+  {
+    "id": 122,
+    "category": ["Network", "Next.js"],
+    "term": "Route",
+    "desc": "Bir kaynak ağ adresinden hedef ağ adresine yönlendirme için kullanılan bir yol veya yollar kümesidir.",
+    "example": {
+      "lang": "js",
+      "codeBlock": "import { useRouter } from 'next/router';\n\nfunction MyComponent() {\n const router = useRouter();\n\n // Route: '/products/laptop'\n return <div>Product: {router.query.category}/{router.query.product}</div>\n}"
+    }
+  },
+  {
+    "id": 123,
+    "category": ["Network", "Next.js"],
+    "term": "Catch All Routes",
+    "desc": "Tüm hedef ağ adresleri için geçerli olan bir rota veya rota kümesidir. Bu tür rotalar, önceden tanımlanmış rotalar dışındaki tüm trafik için kullanılır.",
+    "example": {
+      "lang": "js",
+      "codeBlock": "import { useRouter } from 'next/router';\n\nfunction MyComponent() {\n const router = useRouter();\n\n // Catch All Route: '/blog/*'\n return <div>Blog Post: {router.query.slug}</div>\n}"
     }
   }
 ]
