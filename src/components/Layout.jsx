@@ -8,6 +8,7 @@ import Categories from "./Categories";
 const Layout = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredData, setFilteredData] = useState([]);
+  const [filteredCategory, setFilteredCategory] = useState("");
 
   const handleSearch = term => {
     setSearchTerm(term);
@@ -18,18 +19,17 @@ const Layout = () => {
   const handleCategoryClick = category => {
     const filtered = data.filter(item => Array.isArray(item.category) && item.category.includes(category));
     setFilteredData(filtered);
+    setFilteredCategory(category);
   };
 
   useEffect(() => {
     const filteredSearch = () => {
       const filteredSearchData = data.filter(item => item.term.toLowerCase().includes(searchTerm.toLowerCase().trim("")));
       setFilteredData(filteredSearchData);
+      setFilteredCategory("");
     };
     filteredSearch();
   }, [searchTerm]);
-
-  console.log(filteredData);
-  console.log(searchTerm);
 
   const renderedData = filteredData.length ? filteredData : data;
 
@@ -40,7 +40,11 @@ const Layout = () => {
         {categories.map(category => {
           const count = data.filter(item => Array.isArray(item.category) && item.category.includes(category)).length;
           return (
-            <div key={category} onClick={() => handleCategoryClick(category)}>
+            <div
+              className={`${filteredCategory == category ? "animate-bounce" : ""}`}
+              key={category}
+              onClick={() => handleCategoryClick(category)}
+            >
               <Categories variant={category}>
                 {category} ({count})
               </Categories>
