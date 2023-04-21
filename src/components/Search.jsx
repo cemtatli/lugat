@@ -1,10 +1,25 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { MagnifyingGlassIcon, XCircleIcon } from "@heroicons/react/24/outline";
 
 const Search = ({ onSearch }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [searchHistory, setSearchHistory] = useState([]);
   const [isFocused, setIsFocused] = useState(false);
+
+  const menuRef = useRef(null);
+
+  const handleMenuHide = event => {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      setIsFocused(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleMenuHide);
+    return () => {
+      document.removeEventListener("mousedown", handleMenuHide);
+    };
+  }, []);
 
   useEffect(() => {
     if (searchTerm === "") {
@@ -46,6 +61,10 @@ const Search = ({ onSearch }) => {
     setIsFocused(false);
   };
 
+  const handleMenuToggle = () => {
+    setIsFocused(prevState => !prevState);
+  };
+
   return (
     <div className="mt-4 flex w-full flex-col items-center justify-center gap-4 ">
       <div className="relative flex w-full">
@@ -58,11 +77,8 @@ const Search = ({ onSearch }) => {
           onKeyDown={handleKeyDown}
           id="search"
           onFocus={() => setIsFocused(true)}
-          onBlur={() => {
-            setIsFocused(true);
-          }}
         />
-        {searchTerm.length > 0 && isFocused && (
+        {searchTerm.length > 0 && (
           <button
             className="absolute bottom-0 right-2 top-0 flex h-12 w-12 items-center justify-center text-gray-500 hover:text-gray-700 focus:outline-none"
             onClick={handleClear}
@@ -70,16 +86,17 @@ const Search = ({ onSearch }) => {
             <XCircleIcon className="h-5 w-5" />
           </button>
         )}
-        <div className="absolute left-0 top-0 flex h-12 w-12 items-center justify-center text-gray-500">
+        <div className="absolute left-0 top-0 flex h-12 w-12 items-center justify-center text-gray-500" onClick={handleMenuToggle}>
           <MagnifyingGlassIcon className="h-5 w-5 text-black" />
         </div>
         {searchHistory.length > 0 && isFocused && (
-          <div className="absolute top-full z-10 w-full overflow-hidden  border border-gray-200 bg-white shadow-md">
+          <div ref={menuRef} className="absolute top-full z-10 w-full overflow-hidden  border border-gray-200 bg-white shadow-md">
             <ul className="divide-y divide-gray-200">
               {searchHistory.map(item => (
                 <li
                   key={item}
-                  className="cursor-pointer px-4 py-3 transition-all hover:bg-gray-50 dark:text-gray-950"
+                  className=" cursor-pointer px-4
+                  py-3 transition-all hover:bg-gray-50 dark:text-gray-950"
                   onClick={() => handleHistoryClick(item)}
                 >
                   {item}
