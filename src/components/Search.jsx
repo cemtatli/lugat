@@ -36,6 +36,17 @@ const Search = ({ onSearch }) => {
     }
   };
 
+  useEffect(() => {
+    const history = localStorage.getItem("searchHistory");
+    if (history) {
+      setSearchHistory(JSON.parse(history));
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("searchHistory", JSON.stringify(searchHistory));
+  }, [searchHistory]);
+
   const handleKeyDown = event => {
     if (event.key === "Enter") {
       event.preventDefault();
