@@ -17,6 +17,12 @@ const Layout = () => {
   const categories = useMemo(() => [...new Set(data.flatMap(item => item.category))]);
 
   const handleCategoryClick = category => {
+    if (filteredCategory == category) {
+      setFilteredData([]);
+      setFilteredCategory("");
+      return;
+    }
+
     const filtered = data.filter(item => Array.isArray(item.category) && item.category.includes(category));
     setFilteredData(filtered);
     setFilteredCategory(category);
