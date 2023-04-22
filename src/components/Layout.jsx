@@ -4,6 +4,7 @@ import CodeBlock from "./CodeBlock";
 import Search from "./Search";
 import Badge from "./Badge";
 import Categories from "./Categories";
+import { XMarkIcon } from "@heroicons/react/20/solid";
 
 const Layout = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -17,7 +18,7 @@ const Layout = () => {
   const categories = useMemo(() => [...new Set(data.flatMap(item => item.category))]);
 
   const handleCategoryClick = category => {
-    if (filteredCategory == category) {
+    if (filteredCategory === category) {
       setFilteredData([]);
       setFilteredCategory("");
       return;
@@ -42,17 +43,17 @@ const Layout = () => {
   return (
     <section className="m-auto flex h-full w-10/12 flex-col items-center">
       <Search onSearch={handleSearch} />
-      <div className="mb-1 flex w-full gap-4 overflow-auto py-4 md:justify-center">
+      <div className="flex w-full gap-5 overflow-auto py-5 md:justify-center">
         {categories.map(category => {
           const count = data.filter(item => Array.isArray(item.category) && item.category.includes(category)).length;
           return (
             <div
-              className={`${filteredCategory == category ? "animate-bounce" : ""}`}
+              className={`${filteredCategory === category ? "animate-bounce" : ""}`}
               key={category}
               onClick={() => handleCategoryClick(category)}
             >
               <Categories variant={category}>
-                {category} ({count})
+                {category} ({count}){filteredCategory === category && <XMarkIcon className="ml-2 inline-block h-4 w-4" />}
               </Categories>
             </div>
           );
@@ -60,21 +61,23 @@ const Layout = () => {
       </div>
       <div className="h-full w-full overflow-auto">
         <div className="flex flex-col gap-y-15">
-          {renderedData.map(item => (
-            <div key={item.id}>
-              <h2 className="text-xl font-semibold">{item.term} nedir ?</h2>
-              <p className="mt-2 text-sm ">{item.desc}</p>
-              <div className="mt-4 flex items-center gap-2">
-                {Array.isArray(item.category) &&
-                  item.category.map((category, index) => (
-                    <Badge variant={category} key={index}>
-                      {category}
-                    </Badge>
-                  ))}
+          {renderedData
+            .sort((a, b) => a.term.localeCompare(b.term))
+            .map(item => (
+              <div key={item.id}>
+                <h2 className="text-xl font-semibold">{item.term} nedir ?</h2>
+                <p className="mt-2.5 text-sm">{item.desc}</p>
+                <div className="mt-5 flex items-center gap-2.5">
+                  {Array.isArray(item.category) &&
+                    item.category.map((category, index) => (
+                      <Badge variant={category} key={index}>
+                        {category}
+                      </Badge>
+                    ))}
+                </div>
+                {item.example?.codeBlock && <CodeBlock lang={item.example.lang} code={item.example.codeBlock} />}
               </div>
-              {item.example?.codeBlock && <CodeBlock lang={item.example.lang} code={item.example.codeBlock} />}
-            </div>
-          ))}
+            ))}
         </div>
       </div>
     </section>

@@ -14,7 +14,7 @@
     "classnames": "^2.3.2",
     "downshift": "^7.6.0",
     "highlight.js": "^11.7.0",
-    "postcss-clean": "^1.2.2",
+    "postcss-clean": "^1.2.0",
     "postcss-cli": "^10.1.0",
     "prismjs": "^1.29.0",
     "react": "^18.2.0",
