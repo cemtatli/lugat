@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState, useEffect } from "react";
 import data from "@/data/data.json";
 import CodeBlock from "./CodeBlock";
 import Search from "./Search";
@@ -7,25 +7,50 @@ import Categories from "./Categories";
 
 const Layout = () => {
   const [searchTerm, setSearchTerm] = useState("");
+  const [filteredData, setFilteredData] = useState([]);
+  const [filteredCategory, setFilteredCategory] = useState("");
 
   const handleSearch = term => {
     setSearchTerm(term);
   };
 
-  const filteredData = useMemo(() =>
-    data.filter(item => item.term.toLowerCase().includes(searchTerm.toLowerCase().trim(""))).sort((a, b) => a.term.localeCompare(b.term))
-  );
+  const categories = useMemo(() => [...new Set(data.flatMap(item => item.category))]);
 
-  const categories = useMemo(() => [...new Set(filteredData.flatMap(item => item.category))]);
+  const handleCategoryClick = category => {
+    if (filteredCategory == category) {
+      setFilteredData([]);
+      setFilteredCategory("");
+      return;
+    }
+
+    const filtered = data.filter(item => Array.isArray(item.category) && item.category.includes(category));
+    setFilteredData(filtered);
+    setFilteredCategory(category);
+  };
+
+  useEffect(() => {
+    const filteredSearch = () => {
+      const filteredSearchData = data.filter(item => item.term.toLowerCase().includes(searchTerm.toLowerCase().trim("")));
+      setFilteredData(filteredSearchData);
+      setFilteredCategory("");
+    };
+    filteredSearch();
+  }, [searchTerm]);
+
+  const renderedData = filteredData.length ? filteredData : data;
 
   return (
     <section className="m-auto flex h-full w-10/12 flex-col items-center">
       <Search onSearch={handleSearch} />
       <div className="mb-1 flex w-full gap-4 overflow-auto py-4 md:justify-center">
         {categories.map(category => {
-          const count = filteredData.filter(item => Array.isArray(item.category) && item.category.includes(category)).length;
+          const count = data.filter(item => Array.isArray(item.category) && item.category.includes(category)).length;
           return (
-            <div key={category}>
+            <div
+              className={`${filteredCategory == category ? "animate-bounce" : ""}`}
+              key={category}
+              onClick={() => handleCategoryClick(category)}
+            >
               <Categories variant={category}>
                 {category} ({count})
               </Categories>
@@ -35,7 +60,7 @@ const Layout = () => {
       </div>
       <div className="h-full w-full overflow-auto">
         <div className="flex flex-col gap-y-15">
-          {filteredData.map(item => (
+          {renderedData.map(item => (
             <div key={item.id}>
               <h2 className="text-xl font-semibold">{item.term} nedir ?</h2>
               <p className="mt-2 text-sm ">{item.desc}</p>
