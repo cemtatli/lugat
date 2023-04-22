@@ -15,11 +15,7 @@ export default function ThemeChanger() {
           theme === "light" ? "translate-x-5 rotate-45 " : "translate-x-0"
         }`}
       >
-        {theme === "dark" ? (
-          <MoonIcon width={12} className=" text-blue-600" />
-        ) : (
-          <SunIcon width={14} className=" text-yellow-500" />
-        )}
+        {theme === "dark" ? <MoonIcon width={12} className=" text-blue-600" /> : <SunIcon width={14} className=" text-yellow-500" />}
       </span>
     </button>
   );

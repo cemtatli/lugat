@@ -2,8 +2,8 @@ export default function Tooltip() {
   return (
     <div className="tooltip group relative flex w-full flex-col items-start justify-center gap-2.5 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-200 px-4 py-2.5 dark:bg-gradient-to-r dark:from-yellow-200 dark:via-yellow-300 dark:to-yellow-400 sm:items-center md:flex-row md:gap-4">
       <div className="line-clamp-3 pr-4 text-xs dark:text-yellow-950 sm:text-sm">
-        Başta Frontend terimlerini olmak üzere geliştiricilerin bilinmesi gereken terimleri Türkçe
-        anlamlarını gösteren, örneklerle açıklayan açık kaynaklı bir sözlük hizmetidir.
+        Başta frontend terimleri olmak üzere, geliştiricilerin bilmesi gereken terimleri Türkçe anlamlarıyla birlikte açıklayan ve
+        örneklerle destekleyen bir açık kaynaklı sözlük hizmeti sunuyoruz.
       </div>
       <a
         target="_blank"

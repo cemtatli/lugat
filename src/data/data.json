@@ -1177,5 +1177,55 @@
       "lang": "js",
       "codeBlock": "import { useRouter } from 'next/router';\n\nfunction MyComponent() {\n const router = useRouter();\n\n // Catch All Route: '/blog/*'\n return <div>Blog Post: {router.query.slug}</div>\n}"
     }
+  },
+  {
+    "id": 124,
+    "category": ["Vue.js"],
+    "term": "Directive",
+    "desc": "Vue.js direktifleri, DOM manipülasyonlarını gerçekleştirmek için kullanılır. Örneğin, v-bind direktifi, bir HTML özelliğinin bir Vue bileşeni özelliğiyle eşleştirilmesine izin verir.",
+    "example": {
+      "lang": "html",
+      "codeBlock": "<div v-bind:title=\"message\">\n  Hover your mouse over me for a few seconds\n</div>"
+    }
+  },
+  {
+    "id": 125,
+    "category": ["Vue.js", "React"],
+    "term": "Lifecycle Hooks",
+    "desc": "Vue.js ve React bileşenlerinin hayat döngüsü olayları, bileşenin oluşturulması, güncellenmesi ve yok edilmesi gibi aşamalarda gerçekleşir. Bileşenin hayat döngüsü olaylarına bağlı işlevler tanımlayabilirsiniz.",
+    "example": {
+      "lang": "js",
+      "codeBlock": "export default {\n  created() {\n    console.log('Component created.')\n  },\n  updated() {\n    console.log('Component updated.')\n  },\n  destroyed() {\n    console.log('Component destroyed.')\n  }\n}"
+    }
+  },
+  {
+    "id": 126,
+    "category": ["Vue.js"],
+    "term": "V",
+    "desc": "v-model, bir form elemanının değerini Vue bileşeninin veri öğesiyle eşleştirmek için kullanılan bir direktiftir.",
+    "example": {
+      "lang": "html",
+      "codeBlock": "<input v-model=\"message\" type=\"text\">"
+    }
+  },
+  {
+    "id": 127,
+    "category": ["Vue.js"],
+    "term": "Computed",
+    "desc": "Vue.js bileşenlerinde hesaplanan özellikler, bileşenin verilerini kullanarak bir hesaplama yapar ve sonucunu döndürür.",
+    "example": {
+      "lang": "js",
+      "codeBlock": "computed: {\n  fullName() {\n    return this.firstName + ' ' + this.lastName\n  }\n}"
+    }
+  },
+  {
+    "id": 128,
+    "category": ["Vue.js"],
+    "term": "Watch",
+    "desc": "Vue.js bileşenleri içinde izlenen özellikler, değer değiştiğinde çağrılan işlevleri tanımlamak için kullanılır.",
+    "example": {
+      "lang": "js",
+      "codeBlock": "watch: {\n  message: function (newVal, oldVal) {\n    console.log('Message changed from ' + oldVal + ' to ' + newVal)\n  }\n}"
+    }
   }
 ]
