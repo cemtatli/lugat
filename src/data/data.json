@@ -1227,5 +1227,155 @@
       "lang": "js",
       "codeBlock": "watch: {\n  message: function (newVal, oldVal) {\n    console.log('Message changed from ' + oldVal + ' to ' + newVal)\n  }\n}"
     }
+  },
+  {
+    "id": 129,
+    "category": ["CSS"],
+    "term": "Element Selector",
+    "desc": "Belirtilen etikete sahip tüm öğeleri seçer.",
+    "example": {
+      "lang": "css",
+      "codeBlock": "/* Tüm <p> etiketlerinin font ailesini Ayarlar'a ayarla */\np {\n  font-family: Arial, sans-serif;\n}"
+    }
+  },
+  {
+    "id": 130,
+    "category": ["CSS"],
+    "term": "Class Selector",
+    "desc": "Belirtilen sınıf adına sahip tüm öğeleri seçer.",
+    "example": {
+      "lang": "css",
+      "codeBlock": "/* Tüm <p> etiketlerine 'my-class' sınıfını ekle */\np.my-class {\n  color: blue;\n}"
+    }
+  },
+  {
+    "id": 131,
+    "category": ["CSS"],
+    "term": "ID Selector",
+    "desc": "Belirtilen ID'ye sahip öğeyi seçer.",
+    "example": {
+      "lang": "css",
+      "codeBlock": "/* #my-id ID'sine sahip olan öğenin arka plan rengini kırmızı yap */\n#my-id {\n  background-color: red;\n}"
+    }
+  },
+  {
+    "id": 132,
+    "category": ["CSS"],
+    "term": "Universal Selector",
+    "desc": "Tüm öğeleri seçer.",
+    "example": {
+      "lang": "css",
+      "codeBlock": "/* Tüm öğelerin padding ve margin değerlerini sıfırla */\n* {\n  margin: 0;\n  padding: 0;\n}"
+    }
+  },
+  {
+    "id": 133,
+    "category": ["CSS"],
+    "term": "Attribute Selector",
+    "desc": "Belirtilen öznitelik değerine sahip öğeleri seçer.",
+    "example": {
+      "lang": "css",
+      "codeBlock": "/* data-attribute='value' özniteliğine sahip tüm <a> etiketlerini kırmızı yap */\na[data-attribute='value'] {\n  color: red;\n}"
+    }
+  },
+  {
+    "id": 134,
+    "category": ["CSS"],
+    "term": "Child Selector",
+    "desc": "Belirtilen üst öğenin doğrudan alt öğesini seçer.",
+    "example": {
+      "lang": "css",
+      "codeBlock": "/* Tüm <ul> etiketlerinin altındaki ilk <li> etiketinin liste biçimini kare yap */\nul > li:first-child {\n  list-style-type: square;\n}"
+    }
+  },
+  {
+    "id": 135,
+    "category": ["CSS"],
+    "term": "Descendant Selector",
+    "desc": "Belirtilen üst öğenin alt öğelerinden herhangi birini seçer.",
+    "example": {
+      "lang": "css",
+      "codeBlock": "/* <div> etiketlerinin içindeki <p> etiketlerinin yazı tipini bold yap */\ndiv p {\n font-weight: bold;\n}"
+    }
+  },
+  {
+    "id": 136,
+    "category": ["CSS"],
+    "term": "Adjacent Sibling Selector",
+    "desc": "Belirtilen öğenin hemen yanındaki kardeş öğeyi seçer.",
+    "example": {
+      "lang": "css",
+      "codeBlock": "/* input etiketi ile hemen yanındaki <label> etiketinin metin rengini mavi yap */\ninput + label {\n color: blue;\n}"
+    }
+  },
+  {
+    "id": 137,
+    "category": ["CSS"],
+    "term": "General Sibling Selector",
+    "desc": "Belirtilen öğenin yanındaki tüm kardeş öğeleri seçer.",
+    "example": {
+      "lang": "css",
+      "codeBlock": "/* input etiketi ile aynı seviyedeki tüm <p> etiketlerinin arka plan rengini yeşil yap */\ninput ~ p {\n background-color: green;\n}"
+    }
+  },
+  {
+    "id": 138,
+    "category": ["HTML"],
+    "term": "Element",
+    "desc": "HTML belgelerindeki yapısal öğelerdir ve açılış ve kapanış etiketleriyle belirtilirler.",
+    "example": {
+      "lang": "html",
+      "codeBlock": "<p>This is a paragraph element.</p>"
+    }
+  },
+  {
+    "id": 139,
+    "category": ["HTML"],
+    "term": "header etiketi",
+    "desc": "Belge veya bölüm başlığını tanımlar.",
+    "example": {
+      "lang": "html",
+      "codeBlock": "<header>\n  <h1>Page Title</h1>\n  <nav>\n    <ul>\n      <li><a href='#'>Home</a></li>\n      <li><a href='#'>About</a></li>\n      <li><a href='#'>Contact</a></li>\n    </ul>\n  </nav>\n</header>"
+    }
+  },
+  {
+    "id": 140,
+    "category": ["HTML"],
+    "term": "nav etiketi",
+    "desc": "Belgede gezinme bağlantılarını veya navigasyon menülerini içeren bir bölümü tanımlar.",
+    "example": {
+      "lang": "html",
+      "codeBlock": "<nav>\n  <ul>\n    <li><a href='#'>Home</a></li>\n    <li><a href='#'>About</a></li>\n    <li><a href='#'>Contact</a></li>\n  </ul>\n</nav>"
+    }
+  },
+  {
+    "id": 141,
+    "category": ["HTML"],
+    "term": "main etiketi",
+    "desc": "Belge içeriğinin ana bölümünü tanımlar.",
+    "example": {
+      "lang": "html",
+      "codeBlock": "<main>\n  <h1>Page Title</h1>\n  <p>This is the main content of the page.</p>\n</main>"
+    }
+  },
+  {
+    "id": 142,
+    "category": ["HTML"],
+    "term": "article Etiketi",
+    "desc": "Belge veya bölüm içindeki, bağımsız ve tamamlanmış bir içeriği tanımlar.",
+    "example": {
+      "lang": "html",
+      "codeBlock": "<article>\n  <h2>Article Title</h2>\n  <p>This is the article content.</p>\n</article>"
+    }
+  },
+  {
+    "id": 143,
+    "category": ["HTML"],
+    "term": "section Etiketi",
+    "desc": "Belge veya bölüm içindeki bir kısmı veya bölümü tanımlar.",
+    "example": {
+      "lang": "html",
+      "codeBlock": "<section>\n  <h2>Section Title</h2>\n  <p>This is the section content.</p>\n</section>"
+    }
   }
 ]
