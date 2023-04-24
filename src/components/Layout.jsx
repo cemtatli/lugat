@@ -43,7 +43,7 @@ const Layout = () => {
   return (
     <section className="m-auto flex h-full w-10/12 flex-col items-center">
       <Search onSearch={handleSearch} />
-      <div className="flex w-full gap-5 overflow-auto py-5 md:justify-center">
+      <div className="mb-1 flex w-full gap-5 overflow-auto py-5 md:justify-center">
         {categories.map(category => {
           const count = data.filter(item => Array.isArray(item.category) && item.category.includes(category)).length;
           return (

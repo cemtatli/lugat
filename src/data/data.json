@@ -1331,7 +1331,7 @@
   {
     "id": 139,
     "category": ["HTML"],
-    "term": "header etiketi",
+    "term": "Header etiketi",
     "desc": "Belge veya bölüm başlığını tanımlar.",
     "example": {
       "lang": "html",
@@ -1341,7 +1341,7 @@
   {
     "id": 140,
     "category": ["HTML"],
-    "term": "nav etiketi",
+    "term": "Nav etiketi",
     "desc": "Belgede gezinme bağlantılarını veya navigasyon menülerini içeren bir bölümü tanımlar.",
     "example": {
       "lang": "html",
@@ -1351,7 +1351,7 @@
   {
     "id": 141,
     "category": ["HTML"],
-    "term": "main etiketi",
+    "term": "Main etiketi",
     "desc": "Belge içeriğinin ana bölümünü tanımlar.",
     "example": {
       "lang": "html",
@@ -1361,7 +1361,7 @@
   {
     "id": 142,
     "category": ["HTML"],
-    "term": "article Etiketi",
+    "term": "Article Etiketi",
     "desc": "Belge veya bölüm içindeki, bağımsız ve tamamlanmış bir içeriği tanımlar.",
     "example": {
       "lang": "html",
@@ -1371,11 +1371,181 @@
   {
     "id": 143,
     "category": ["HTML"],
-    "term": "section Etiketi",
+    "term": "Section Etiketi",
     "desc": "Belge veya bölüm içindeki bir kısmı veya bölümü tanımlar.",
     "example": {
       "lang": "html",
       "codeBlock": "<section>\n  <h2>Section Title</h2>\n  <p>This is the section content.</p>\n</section>"
+    }
+  },
+  {
+    "id": 144,
+    "category": ["JavaScript"],
+    "term": "Heap",
+    "desc": "Heap, bir bilgisayar programında dinamik bellek tahsisi yapmak için kullanılan bir veri yapısıdır.",
+    "example": {
+      "lang": "js",
+      "codeBlock": "let arr = [1, 2, 3];\narr.push(4); // 4, array'in heap belleğindeki yeni bir konumda depolanır."
+    }
+  },
+  {
+    "id": 145,
+    "category": ["JavaScript"],
+    "term": "Stack",
+    "desc": "Stack, programda yerel değişkenlerin depolandığı veri yapısıdır ve son giren ilk çıkar (LIFO) kuralına göre çalışır.",
+    "example": {
+      "lang": "js",
+      "codeBlock": "function foo() {\n  let x = 5;\n  return x;\n}\n\nfunction main() {\n  let y = foo();\n  return 0;\n}\n\n// stack: main -> y -> foo -> x"
+    }
+  },
+  {
+    "id": 146,
+    "category": ["JavaScript"],
+    "term": "Callback queue",
+    "desc": "Callback queue, JavaScript'te asynchronous (işlemi devam eden) işlemleri takip etmek için kullanılan bir yapıdır. Event loop'un bir parçasıdır.",
+    "example": {
+      "lang": "js",
+      "codeBlock": "setTimeout(() => console.log('hello'), 1000);\n\n// callback queue: () => console.log('hello')"
+    }
+  },
+  {
+    "id": 147,
+    "category": ["JavaScript"],
+    "term": "Higher order function",
+    "desc": "Higher order function, bir fonksiyonu parametre olarak alan veya fonksiyonu döndüren bir fonksiyondur.",
+    "example": {
+      "lang": "js",
+      "codeBlock": "function multiplyBy(factor) {\n return function(number) {\n return number * factor;\n }\n}\n\nconst double = multiplyBy(2);\nconsole.log(double(5)); // 10"
+    }
+  },
+  {
+    "id": 148,
+    "category": ["JavaScript"],
+    "term": "setTimeout",
+    "desc": "setTimeout, belirtilen süre sonunda bir fonksiyonu çalıştırmak için kullanılan bir JavaScript yöntemidir.",
+    "example": {
+      "lang": "js",
+      "codeBlock": "setTimeout(function() {\n console.log('Merhaba dünya!');\n}, 1000);\n\n// 1 saniye sonra 'Merhaba dünya!' yazdırılır."
+    }
+  },
+  {
+    "id": 149,
+    "category": ["JavaScript"],
+    "term": "setInterval",
+    "desc": "setInterval, belirtilen aralıklarla bir fonksiyonu tekrar tekrar çalıştırmak için kullanılan bir JavaScript yöntemidir.",
+    "example": {
+      "lang": "js",
+      "codeBlock": "var sayac = 0;\nsetInterval(function() {\n sayac++;\n console.log(sayac);\n}, 1000);\n\n// Her saniyede bir sayac değeri artar ve yazdırılır."
+    }
+  },
+  {
+    "id": 150,
+    "category": ["JavaScript"],
+    "term": "Constructor",
+    "desc": "Constructor, JavaScript'te bir nesne için bir şablon veya model oluşturmak için kullanılan bir işlevdir. Yeni bir nesne oluşturmak için 'new' anahtar kelimesi ile birlikte kullanılır.",
+    "example": {
+      "lang": "js",
+      "codeBlock": "function Person(ad, soyad, yas) {\n this.ad = ad;\n this.soyad = soyad;\n this.yas = yas;\n}\n\nvar ali = new Person('Ali', 'Demir', 25);\nconsole.log(ali.ad); // 'Ali'"
+    }
+  },
+  {
+    "id": 151,
+    "category": ["JavaScript"],
+    "term": "Call",
+    "desc": "Call, bir fonksiyonu belirtilen bir bağlamda (obje) çağırmak için kullanılan bir JavaScript yöntemidir. İlk argüman, çağrılacak fonksiyonun bağlamını belirtir.",
+    "example": {
+      "lang": "js",
+      "codeBlock": "function selam() {\n console.log('Merhaba ' + this.name);\n}\n\nvar obje = { name: 'Ahmet' };\nselam.call(obje); // 'Merhaba Ahmet'"
+    }
+  },
+  {
+    "id": 152,
+    "category": ["JavaScript"],
+    "term": "Apply",
+    "desc": "Apply, bir fonksiyonu belirtilen bir bağlamda (obje) ve bir dizi argümanla çağırmak için kullanılan bir JavaScript yöntemidir. İlk argüman, çağrılacak fonksiyonun bağlamını belirtir, ikinci argüman ise dizi olarak fonksiyona geçirilecek argümanları içerir.",
+    "example": {
+      "lang": "js",
+      "codeBlock": "function selam(yas) {\n console.log('Merhaba ' + this.name + ', ' + yas + ' yaşındasın.');\n}\n\nvar obje = { name: 'Ahmet' };\nselam.apply(obje, [25]); // 'Merhaba Ahmet, 25 yaşındasın.'"
+    }
+  },
+  {
+    "id": 153,
+    "category": ["JavaScript"],
+    "term": "Bind",
+    "desc": "Bind, bir fonksiyona belirtilen bir bağlamı (obje) ve/veya argümanları bağlamak için kullanılan bir JavaScript yöntemidir. Bir fonksiyonu bağlamak, o fonksiyonun belirtilen bağlamda çalıştırılmasını sağlar.",
+    "example": {
+      "lang": "js",
+      "codeBlock": "function selam() {\n console.log('Merhaba ' + this.name);\n}\n\nvar obje = { name: 'Ahmet' };\nvar selamAhmet = selam.bind(obje);\nselamAhmet(); // 'Merhaba Ahmet'"
+    }
+  },
+  {
+    "id": 154,
+    "category": ["JavaScript"],
+    "term": "this",
+    "desc": "'this' anahtar kelimesi, bir fonksiyon içinde, o fonksiyonun çağrıldığı bağlama (context) referans alır. 'this', fonksiyonun hangi obje üzerinden çağrıldığına bağlı olarak farklı değerler alabilir. ",
+    "example": {
+      "lang": "js",
+      "codeBlock": "var person = {\n name: 'Ahmet',\n sayHello: function() {\n console.log('Merhaba, ben ' + this.name);\n }\n};\nperson.sayHello(); // 'Merhaba, ben Ahmet'"
+    }
+  },
+  {
+    "id": 155,
+    "category": ["JavaScript"],
+    "term": "global this",
+    "desc": "global this terimi, JavaScript'te global kapsamda (scope) kullanılan 'this' değerini ifade eder. Bu değer, global nesne olan 'window' nesnesine referans verir. Ancak, 'use strict' ifadesi kullanıldığında, global kapsamda 'this' değeri undefined olur.",
+    "example": {
+      "lang": "js",
+      "codeBlock": "console.log(this === window); // true\n\nfunction f() {\n console.log(this === window); // true\n}\nf();"
+    }
+  },
+  {
+    "id": 156,
+    "category": ["JavaScript"],
+    "term": "Babel",
+    "desc": "Babel, JavaScript kodunu eski tarayıcılarda çalışacak şekilde derlemek için kullanılan bir transpiler (source-to-source compiler) aracıdır. Babel, ECMAScript 6 (ES6) ve sonraki sürümlerdeki (ES7, ES8 vb.) kodu, eski tarayıcılarda desteklenen ES5 ve öncesindeki sürümlere dönüştürebilir.",
+    "example": {
+      "lang": "js",
+      "codeBlock": "// ES6 kodu\nconst sayHello = (name) => console.log(Merhaba, ${name}!);\n\n// Babel tarafından ES5'e dönüştürülmüş kod\n'use strict';\n\nvar sayHello = function sayHello(name) {\n return console.log('Merhaba, ' + name + '!');\n};"
+    }
+  },
+  {
+    "id": 157,
+    "category": ["React"],
+    "term": "Hooks",
+    "desc": "Hooks, React sınıf bileşenleri yerine fonksiyonel bileşenlerin kullanımını sağlar. React bileşenlerine özelliklerin (state) ve yaşam döngüsü yöntemlerinin (lifecycle methods) yanı sıra, Hooks API'si sayesinde fonksiyonel bileşenler de bu özelliklere sahip olabilir.",
+    "example": {
+      "lang": "jsx",
+      "codeBlock": "import React, { useState } from 'react';\n\nfunction MyComponent() {\n const [count, setCount] = useState(0);\n return (\n <div>\n <p>You clicked {count} times</p>\n <button onClick={() => setCount(count + 1)}>Click me</button>\n </div>\n );\n}"
+    }
+  },
+  {
+    "id": 158,
+    "category": ["React"],
+    "term": "useState",
+    "desc": "useState, bir fonksiyonel bileşenin durumunu tutmak için kullanılan bir Hook'tur. useState, bir dizi içindeki ilk öğe olarak mevcut durumu, ikinci öğe olarak ise durumu güncellemek için kullanılan bir işlevi döndürür.",
+    "example": {
+      "lang": "jsx",
+      "codeBlock": "import React, { useState } from 'react';\n\nfunction MyComponent() {\n const [count, setCount] = useState(0);\n return (\n <div>\n <p>You clicked {count} times</p>\n <button onClick={() => setCount(count + 1)}>Click me</button>\n </div>\n );\n}"
+    }
+  },
+  {
+    "id": 159,
+    "category": ["React"],
+    "term": "useEffect",
+    "desc": "useEffect, fonksiyonel bileşenlerde yaşam döngüsü yöntemlerine benzer bir işlev gören bir Hook'tur. useEffect, bileşen her render edildiğinde çalışacak bir işlevi alır ve bileşenin önceki durumu ile karşılaştırarak işlevi çağırır.",
+    "example": {
+      "lang": "jsx",
+      "codeBlock": "import React, { useState, useEffect } from 'react';\n\nfunction MyComponent() {\n const [count, setCount] = useState(0);\n useEffect(() => {\n document.title = You clicked ${count} times;\n });\n return (\n <div>\n <p>You clicked {count} times</p>\n <button onClick={() => setCount(count + 1)}>Click me</button>\n </div>\n );\n}"
+    }
+  },
+  {
+    "id": 160,
+    "category": ["React"],
+    "term": "useRef",
+    "desc": "useRef, bir değeri tutmak ve değiştirmek için kullanılan bir Hook'tur. useRef, bir nesne döndürür ve bu nesnenin 'current' özelliği, depolanan değeri içerir.",
+    "example": {
+      "lang": "jsx",
+      "codeBlock": "import React, { useRef } from 'react';\n\nfunction MyComponent() {\n const inputRef = useRef(null);\n const handleClick = () => {\n inputRef.current.focus();\n };\n return (\n <div>\n <input type='text' ref={inputRef} />\n <button onClick={handleClick}>Focus</button>\n </div>\n );\n}"
     }
   }
 ]
