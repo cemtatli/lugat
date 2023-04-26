@@ -1,11 +1,9 @@
-import { getHighlighter, setCDN } from "shiki";
 import { useEffect, useState, useCallback } from "react";
+import { getHighlighter, setCDN } from "shiki";
 
 setCDN("https://cdn.jsdelivr.net/npm/shiki");
 
-const langs = ["html", "css", "js", "bash", "vue", "json", "graphql", "jsx", "sass"];
-
-export const useHighlighter = () => {
+export const useHighlighter = data => {
   const [theme, setTheme] = useState(null);
   const [highlighter, setHighlighter] = useState(null);
 
@@ -13,17 +11,17 @@ export const useHighlighter = () => {
     if (!highlighter) return;
 
     const elements = document.querySelectorAll("pre[data-language]");
-    for (const element of elements) {
+    elements.forEach(async element => {
       const language = element.dataset.language;
       const code = element.textContent;
-      const html = highlighter.codeToHtml(code, { lang: language });
+      const html = await highlighter.codeToHtml(code, { lang: language });
       const parser = new DOMParser();
       const doc = parser.parseFromString(html, "text/html");
       const pre = doc.querySelector("pre");
 
-      pre.removeAttribute("style");
+      pre.removeAttribute("style"); // Arka planı kaldırma işlemi !!!$$
       element.innerHTML = pre.innerHTML;
-    }
+    });
   }, [highlighter]);
 
   const onThemeChanged = useCallback(() => {
@@ -44,15 +42,13 @@ export const useHighlighter = () => {
 
     getHighlighter({
       theme: `github-${theme}`,
-      themes: ["github-dark", "github-light"],
-      langs
+      themes: ["github-dark", "github-light"]
     }).then(setHighlighter);
   }, [theme]);
 
   useEffect(() => {
-    if (!highlighter) return;
     updateElements();
-  }, [highlighter, updateElements]);
+  }, [data, updateElements]);
 
   return null;
 };

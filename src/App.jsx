@@ -1,5 +1,4 @@
 import { ThemeProvider } from "@/context/ThemeContext";
-import { useHighlighter } from "@/hooks/useHighlighter";
 
 import Header from "@/components/Header";
 import Layout from "@/components/Layout";
@@ -9,8 +8,6 @@ import Tooltip from "@/components/Tooltip";
 import { Provider } from "react-wrap-balancer";
 
 function App() {
-  useHighlighter();
-
   return (
     <Provider>
       <ThemeProvider>

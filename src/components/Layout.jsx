@@ -1,10 +1,11 @@
-import { useMemo, useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import data from "@/data/data.json";
 import CodeBlock from "./CodeBlock";
 import Search from "./Search";
 import Badge from "./Badge";
 import Categories from "./Categories";
 import { XMarkIcon } from "@heroicons/react/20/solid";
+import { useHighlighter } from "@/hooks/useHighlighter";
 
 const Layout = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -15,7 +16,7 @@ const Layout = () => {
     setSearchTerm(term);
   };
 
-  const categories = useMemo(() => [...new Set(data.flatMap(item => item.category))]);
+  const categories = [...new Set(data.flatMap(item => item.category))];
 
   const handleCategoryClick = category => {
     if (filteredCategory === category) {
@@ -30,15 +31,16 @@ const Layout = () => {
   };
 
   useEffect(() => {
-    const filteredSearch = () => {
-      const filteredSearchData = data.filter(item => item.term.toLowerCase().includes(searchTerm.toLowerCase().trim("")));
-      setFilteredData(filteredSearchData);
-      setFilteredCategory("");
-    };
-    filteredSearch();
+    const filteredSearchData = data.filter(item => item.term.toLowerCase().includes(searchTerm.toLowerCase().trim()));
+    setFilteredData(filteredSearchData);
+    setFilteredCategory("");
   }, [searchTerm]);
 
   const renderedData = filteredData.length ? filteredData : data;
+
+  // useHighlighter hook'unu kullan
+
+  useHighlighter(renderedData);
 
   return (
     <section className="m-auto flex h-full w-10/12 flex-col items-center">
@@ -53,7 +55,7 @@ const Layout = () => {
               onClick={() => handleCategoryClick(category)}
             >
               <Categories variant={category}>
-                {category} ({count}){filteredCategory === category && <XMarkIcon className="ml-2 inline-block h-4 w-4" />}
+                {category} ({count}){filteredCategory === category && <XMarkIcon className="ml-1 h-4 w-4" />}
               </Categories>
             </div>
           );
