@@ -19,7 +19,7 @@ export const useHighlighter = data => {
       const doc = parser.parseFromString(html, "text/html");
       const pre = doc.querySelector("pre");
 
-      pre.removeAttribute("style"); // Arka planı kaldırma işlemi !!!$$
+      pre.removeAttribute("style");
       element.innerHTML = pre.innerHTML;
     });
   }, [highlighter]);

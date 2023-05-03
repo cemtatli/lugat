@@ -38,8 +38,6 @@ const Layout = () => {
 
   const renderedData = filteredData.length ? filteredData : data;
 
-  // useHighlighter hook'unu kullan
-
   useHighlighter(renderedData);
 
   return (
