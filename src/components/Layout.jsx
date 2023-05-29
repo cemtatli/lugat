@@ -4,16 +4,22 @@ import CodeBlock from "./CodeBlock";
 import Search from "./Search";
 import Badge from "./Badge";
 import Categories from "./Categories";
-import { XMarkIcon } from "@heroicons/react/20/solid";
 import { useHighlighter } from "@/hooks/useHighlighter";
+import { XMarkIcon } from "@heroicons/react/24/outline";
+
+const ITEMS_PER_PAGE = 10;
 
 const Layout = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredData, setFilteredData] = useState([]);
   const [filteredCategory, setFilteredCategory] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
 
   const handleSearch = term => {
     setSearchTerm(term);
+    if (currentPage > totalPages) {
+      setCurrentPage(1);
+    }
   };
 
   const categories = [...new Set(data.flatMap(item => item.category))];
@@ -22,26 +28,38 @@ const Layout = () => {
     if (filteredCategory === category) {
       setFilteredData([]);
       setFilteredCategory("");
+      setCurrentPage(1);
       return;
     }
 
     const filtered = data.filter(item => Array.isArray(item.category) && item.category.includes(category));
     setFilteredData(filtered);
     setFilteredCategory(category);
+    setCurrentPage(1);
   };
 
   useEffect(() => {
     const filteredSearchData = data.filter(item => item.term.toLowerCase().includes(searchTerm.toLowerCase().trim()));
     setFilteredData(filteredSearchData);
     setFilteredCategory("");
+    setCurrentPage(1);
   }, [searchTerm]);
 
-  const renderedData = filteredData.length ? filteredData : data;
+  const handlePageChange = page => {
+    setCurrentPage(page);
+    window.scrollTo(0, 0);
+  };
 
-  useHighlighter(renderedData);
+  const indexOfLastItem = currentPage * ITEMS_PER_PAGE;
+  const indexOfFirstItem = indexOfLastItem - ITEMS_PER_PAGE;
+  const currentItems = filteredData.slice(indexOfFirstItem, indexOfLastItem);
+
+  const totalPages = Math.ceil(filteredData.length / ITEMS_PER_PAGE);
+
+  useHighlighter(currentItems);
 
   return (
-    <section className="m-auto flex h-full w-10/12 flex-col items-center">
+    <section className="m-auto flex h-full w-4/5 flex-col items-center">
       <Search onSearch={handleSearch} />
       <div className="mb-1 flex w-full gap-5 overflow-auto py-5 md:justify-center">
         {categories.map(category => {
@@ -61,11 +79,11 @@ const Layout = () => {
       </div>
       <div className="h-full w-full overflow-auto">
         <div className="flex flex-col gap-y-15">
-          {renderedData
+          {currentItems
             .sort((a, b) => a.term.localeCompare(b.term))
             .map(item => (
               <div key={item.id}>
-                <h2 className="text-xl font-semibold">{item.term} nedir ?</h2>
+                <h2 className="text-xl font-semibold">{item.term} nedir?</h2>
                 <p className="mt-2.5 text-sm">{item.desc}</p>
                 <div className="mt-5 flex items-center gap-2.5">
                   {Array.isArray(item.category) &&
@@ -77,6 +95,20 @@ const Layout = () => {
                 </div>
                 {item.example?.codeBlock && <CodeBlock lang={item.example.lang} code={item.example.codeBlock} />}
               </div>
+            ))}
+        </div>
+        <div className="mt-10 flex overflow-auto md:mb-5 md:justify-center">
+          {totalPages > 1 &&
+            Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
+              <button
+                key={page}
+                className={`mx-1 h-8 w-8 shrink-0 rounded-lg font-medium ${
+                  currentPage === page ? "bg-gray-900 text-white" : "bg-gray-100 text-gray-800"
+                }`}
+                onClick={() => handlePageChange(page)}
+              >
+                {page}
+              </button>
             ))}
         </div>
       </div>

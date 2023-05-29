@@ -17,15 +17,5 @@ html,
 body,
 #root {
   font-family: "Inter", sans-serif;
-  @apply scroll-smooth antialiased dark:bg-gradient-to-t dark:from-gray-950 dark:to-gray-950 dark:text-white xl:h-full;
-}
-
-/* Layout */
-#root {
-  display: grid;
-  grid-template-columns: 1fr min(100%) 1fr;
-  grid-template-rows: 1fr minmax(calc(100vh - 120px), auto) 120px;
-}
-#root > * {
-  grid-column: 2;
+  @apply w-full scroll-smooth antialiased dark:bg-gradient-to-t dark:from-gray-950 dark:to-gray-950 dark:text-white;
 }
