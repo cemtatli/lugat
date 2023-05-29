@@ -26,7 +26,6 @@ const Layout = () => {
 
   const handleCategoryClick = category => {
     if (filteredCategory === category) {
-      setFilteredData([]);
       setFilteredCategory("");
       setCurrentPage(1);
       return;
@@ -102,7 +101,7 @@ const Layout = () => {
             Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
               <button
                 key={page}
-                className={`mx-1 h-8 w-8 shrink-0 rounded-lg font-medium ${
+                className={`mx-1 h-8 w-8 shrink-0 rounded-md font-medium ${
                   currentPage === page ? "bg-gray-900 text-white" : "bg-gray-100 text-gray-800"
                 }`}
                 onClick={() => handlePageChange(page)}
