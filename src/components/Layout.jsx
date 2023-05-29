@@ -32,14 +32,14 @@ const Layout = () => {
     }
 
     const filtered = data.filter(item => Array.isArray(item.category) && item.category.includes(category));
-    setFilteredData(filtered);
+    setFilteredData(filtered.sort((a, b) => a.term.localeCompare(b.term)));
     setFilteredCategory(category);
     setCurrentPage(1);
   };
 
   useEffect(() => {
     const filteredSearchData = data.filter(item => item.term.toLowerCase().includes(searchTerm.toLowerCase().trim()));
-    setFilteredData(filteredSearchData);
+    setFilteredData(filteredSearchData.sort((a, b) => a.term.localeCompare(b.term)));
     setFilteredCategory("");
     setCurrentPage(1);
   }, [searchTerm]);
@@ -51,7 +51,7 @@ const Layout = () => {
 
   const indexOfLastItem = currentPage * ITEMS_PER_PAGE;
   const indexOfFirstItem = indexOfLastItem - ITEMS_PER_PAGE;
-  const currentItems = filteredData.slice(indexOfFirstItem, indexOfLastItem);
+  const currentItems = filteredData.slice(indexOfFirstItem, indexOfLastItem).sort((a, b) => a.term.localeCompare(b.term));
 
   const totalPages = Math.ceil(filteredData.length / ITEMS_PER_PAGE);
 
@@ -78,23 +78,21 @@ const Layout = () => {
       </div>
       <div className="h-full w-full overflow-auto">
         <div className="flex flex-col gap-y-15">
-          {currentItems
-            .sort((a, b) => a.term.localeCompare(b.term))
-            .map(item => (
-              <div key={item.id}>
-                <h2 className="text-xl font-semibold">{item.term} nedir?</h2>
-                <p className="mt-2.5 text-sm">{item.desc}</p>
-                <div className="mt-5 flex items-center gap-2.5">
-                  {Array.isArray(item.category) &&
-                    item.category.map((category, index) => (
-                      <Badge variant={category} key={index}>
-                        {category}
-                      </Badge>
-                    ))}
-                </div>
-                {item.example?.codeBlock && <CodeBlock lang={item.example.lang} code={item.example.codeBlock} />}
+          {currentItems.map(item => (
+            <div key={item.id}>
+              <h2 className="text-xl font-semibold">{item.term} nedir?</h2>
+              <p className="mt-2.5 text-sm">{item.desc}</p>
+              <div className="mt-5 flex items-center gap-2.5">
+                {Array.isArray(item.category) &&
+                  item.category.map((category, index) => (
+                    <Badge variant={category} key={index}>
+                      {category}
+                    </Badge>
+                  ))}
               </div>
-            ))}
+              {item.example?.codeBlock && <CodeBlock lang={item.example.lang} code={item.example.codeBlock} />}
+            </div>
+          ))}
         </div>
         <div className="mb-5 mt-10 flex overflow-auto md:justify-center">
           {totalPages > 1 &&
