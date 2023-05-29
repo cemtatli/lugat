@@ -59,7 +59,7 @@ const Layout = () => {
   useHighlighter(currentItems);
 
   return (
-    <section className="m-auto flex h-full w-4/5 flex-col items-center">
+    <section className="m-auto flex h-full flex-col items-center px-6 md:w-4/5">
       <Search onSearch={handleSearch} />
       <div className="mb-1 flex w-full gap-5 overflow-auto py-5 md:justify-center">
         {categories.map(category => {
@@ -97,7 +97,7 @@ const Layout = () => {
               </div>
             ))}
         </div>
-        <div className="mt-10 flex overflow-auto md:mb-5 md:justify-center">
+        <div className="mb-5 mt-10 flex overflow-auto md:justify-center">
           {totalPages > 1 &&
             Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
               <button
