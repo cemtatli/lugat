@@ -16,7 +16,7 @@ function CodeBlock({ code, lang }) {
   return (
     <div className="mt-4 rounded-lg border bg-gray-100 dark:border-gray-700 dark:bg-gray-800 ">
       <div className="flex items-center justify-between border-b px-4 py-2 dark:border-gray-700">
-        <span className="text-xs font-semibold text-gray-500 dark:text-white">Kod Örneği</span>
+        <span className="text-xs font-semibold text-gray-500 dark:text-white/90">Kod Örneği</span>
         <CopyToClipboard text={code} onCopy={handleCopy}>
           <button
             className={
@@ -37,7 +37,6 @@ function CodeBlock({ code, lang }) {
           </button>
         </CopyToClipboard>
       </div>
-
       <pre data-language={lang} className="overflow-auto p-4 text-xs md:text-sm">
         {code}
       </pre>

@@ -5,7 +5,7 @@ const Categories = ({ children, variant = "default" }) => {
   return (
     <button
       className={classNames({
-        " flex h-8 w-fit shrink-0 items-center justify-center truncate rounded-md px-3 py-1 text-xs font-medium transition duration-300 ease-in-out": true,
+        " flex items-center justify-center truncate rounded-md px-3 py-1.5 text-xs font-medium transition duration-300 ease-in-out": true,
         "bg-sky-200 text-sky-800 dark:bg-sky-900 dark:text-sky-300": variant === "Network",
         "bg-yellow-200 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300": variant === "JavaScript",
         "bg-indigo-200 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-300": variant === "React",

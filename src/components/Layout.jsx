@@ -28,6 +28,7 @@ const Layout = () => {
     if (filteredCategory === category) {
       setFilteredCategory("");
       setCurrentPage(1);
+      setFilteredData([]);
       return;
     }
 
@@ -43,6 +44,12 @@ const Layout = () => {
     setFilteredCategory("");
     setCurrentPage(1);
   }, [searchTerm]);
+
+  useEffect(() => {
+    if (!filteredCategory) {
+      setFilteredData(data.sort((a, b) => a.term.localeCompare(b.term)));
+    }
+  }, [filteredCategory]);
 
   const handlePageChange = page => {
     setCurrentPage(page);
@@ -70,7 +77,7 @@ const Layout = () => {
               onClick={() => handleCategoryClick(category)}
             >
               <Categories variant={category}>
-                {category} ({count}){filteredCategory === category && <XMarkIcon className="ml-1 h-4 w-4" />}
+                {category} ({count}){filteredCategory === category && <XMarkIcon className="ml-0.5 h-4 w-4" />}
               </Categories>
             </div>
           );
@@ -99,8 +106,8 @@ const Layout = () => {
             Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
               <button
                 key={page}
-                className={`mx-1 h-8 w-8 shrink-0 rounded-md font-medium ${
-                  currentPage === page ? "bg-gray-900 text-white" : "bg-gray-100 text-gray-800"
+                className={`mx-1.5 h-8 w-8 shrink-0 rounded-md font-medium ${
+                  currentPage === page ? "bg-gray-800 text-white" : "bg-gray-100 text-gray-800"
                 }`}
                 onClick={() => handlePageChange(page)}
               >

@@ -31,7 +31,6 @@ const Header = () => {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
           </svg>
         </button>
-
         {isMenuOpen && (
           <div className="absolute right-0 mt-2 w-40 overflow-hidden rounded-lg bg-white text-sm shadow-lg dark:bg-gray-800">
             <ul className="py-2">
