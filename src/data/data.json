@@ -1554,7 +1554,7 @@
     "term": "dotenv",
     "desc": "dotenv, uygulama ortamında kullanılan yapılandırma değişkenlerini yönetmek için kullanılan bir kütüphanedir. .env dosyasında tanımlanan değişkenlere erişmek ve kullanmak için kullanılır.",
     "example": {
-      "lang": "JavaScript",
+      "lang": "js",
       "codeBlock": "require('dotenv').config();\n\nconsole.log(process.env.MY_VARIABLE);"
     }
   },
@@ -1570,7 +1570,7 @@
   },
   {
     "id": 163,
-    "category": ["Programming Concepts"],
+    "category": ["Development"],
     "term": "boolean",
     "desc": "Boolean, sadece iki olası değeri olan bir veri tipidir. Bu değerler true (doğru) veya false (yanlış) olabilir. Programlamada sıklıkla kullanılır, örneğin bir durumu (state) temsil etmek veya bir koşulu değerlendirmek için kullanılabilir.",
     "example": {
@@ -1580,7 +1580,7 @@
   },
   {
     "id": 164,
-    "category": ["Programming Concepts"],
+    "category": ["Development"],
     "term": "string",
     "desc": "String, karakterlerin birleşiminden oluşan bir veri tipidir. Metinleri, kelime veya cümleleri temsil etmek için kullanılır. Programlamada sıklıkla kullanılır, örneğin kullanıcı arayüzünde metinleri göstermek veya girdi almak için kullanılabilir.",
     "example": {
@@ -1590,7 +1590,7 @@
   },
   {
     "id": 165,
-    "category": ["Programming Concepts"],
+    "category": ["Development"],
     "term": "integer",
     "desc": "Integer, tam sayıları temsil eden bir veri tipidir. Negatif veya pozitif olabilir. Programlamada genellikle hesaplamalar veya sayaçlar gibi sayısal değerleri temsil etmek için kullanılır.",
     "example": {
@@ -1600,7 +1600,7 @@
   },
   {
     "id": 166,
-    "category": ["Development Tools"],
+    "category": ["Development"],
     "term": "bundle",
     "desc": "Bir JavaScript projesi geliştirildiğinde, projedeki tüm dosyalar ve bağımlılıklar genellikle bir araya getirilerek bir paket oluşturulur. Bu pakete genellikle 'bundle' denir. React projelerinde de kaynak dosyaları birleştirilerek bir bundle oluşturulur.",
     "example": {
@@ -1611,7 +1611,7 @@
 
   {
     "id": 167,
-    "category": ["Web Development"],
+    "category": ["Development"],
     "term": "charset",
     "desc": "Charset, karakter kodlaması anlamına gelir ve belirli bir karakter kümesini temsil etmek için kullanılır. Web geliştirmede genellikle HTML belgelerinde belirtilir ve doğru karakterlerin düzgün bir şekilde görüntülenmesini sağlar.",
     "example": {
@@ -1622,7 +1622,7 @@
 
   {
     "id": 168,
-    "category": ["Web Development"],
+    "category": ["Development"],
     "term": "cors",
     "desc": "CORS (Cross-Origin Resource Sharing), web tarayıcısının güvenlik önlemleri nedeniyle, bir kaynağın başka bir etki alanından yüklenmesini engelleyen bir mekanizmadır. CORS, web uygulamaları arasındaki kaynak paylaşımını yönetmek için kullanılır.",
     "example": {

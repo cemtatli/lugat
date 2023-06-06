@@ -7,7 +7,7 @@ import Categories from "./Categories";
 import { useHighlighter } from "@/hooks/useHighlighter";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 
-const ITEMS_PER_PAGE = 10;
+const ITEMS_PER_PAGE = 15;
 
 const Layout = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -58,7 +58,9 @@ const Layout = () => {
 
   const indexOfLastItem = currentPage * ITEMS_PER_PAGE;
   const indexOfFirstItem = indexOfLastItem - ITEMS_PER_PAGE;
-  const currentItems = filteredData.slice(indexOfFirstItem, indexOfLastItem).sort((a, b) => a.term.localeCompare(b.term));
+  const currentItems = filteredData
+    .slice(indexOfFirstItem, indexOfLastItem)
+    .sort((a, b) => a.term.localeCompare(b.term));
 
   const totalPages = Math.ceil(filteredData.length / ITEMS_PER_PAGE);
 
@@ -67,7 +69,7 @@ const Layout = () => {
   return (
     <section className="m-auto flex h-full flex-col items-center px-6 md:w-4/5">
       <Search onSearch={handleSearch} />
-      <div className="mb-1 flex w-full gap-5 overflow-auto py-5 md:justify-center">
+      <div className="mb-1 flex w-full gap-5 overflow-auto py-5 ">
         {categories.map(category => {
           const count = data.filter(item => Array.isArray(item.category) && item.category.includes(category)).length;
           return (
