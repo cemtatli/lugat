@@ -6,7 +6,7 @@ function ScrollToTop() {
 
   useEffect(() => {
     const toggleVisibility = () => {
-      if (window.pageYOffset > 300 && window.innerWidth < 768) {
+      if (window.pageYOffset > 5800 && window.innerWidth < 768) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
@@ -32,7 +32,7 @@ function ScrollToTop() {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-20 right-4 z-50 flex h-10 w-10 items-center justify-center rounded-full border bg-white dark:text-black md:hidden lg:block"
+          className="fixed bottom-0  z-50 flex h-8 w-full items-center justify-center border bg-white dark:text-black md:hidden lg:block"
         >
           <ChevronUpIcon className="h-5 w-5" />
         </button>

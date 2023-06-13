@@ -103,12 +103,12 @@ const Layout = () => {
             </div>
           ))}
         </div>
-        <div className="mb-5 mt-10 flex overflow-auto md:justify-center">
+        <div className="my-10 flex overflow-auto md:justify-center">
           {totalPages > 1 &&
             Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
               <button
                 key={page}
-                className={`mx-1.5 h-8 w-8 shrink-0 rounded-md font-medium ${
+                className={`mx-2 h-8 w-8 shrink-0 rounded font-semibold ${
                   currentPage === page ? "bg-gray-800 text-white" : "bg-gray-100 text-gray-800"
                 }`}
                 onClick={() => handlePageChange(page)}
