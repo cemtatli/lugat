@@ -1639,5 +1639,196 @@
       "lang": "",
       "codeBlock": ""
     }
+  },
+
+  {
+    "id": 172,
+    "category": ["Git"],
+    "term": "git config",
+    "desc": "Git yapılandırma ayarlarını belirlemek veya değiştirmek için kullanılan bir komuttur. Kullanıcı adı, e-posta adresi, renk temaları vb. gibi ayarları yapılandırmak için kullanılır.",
+    "example": {
+      "lang": "bash",
+      "codeBlock": "git config --global user.name 'John Doe'\ngit config --global user.email 'johndoe@example.com'"
+    }
+  },
+  {
+    "id": 173,
+    "category": ["Git"],
+    "term": "git init",
+    "desc": "Bir dizini Git deposu olarak başlatmak için kullanılan bir komuttur. Bu komut, mevcut bir projeyi Git deposuna dönüştürür ve takip etmeye başlar.",
+    "example": {
+      "lang": "bash",
+      "codeBlock": "git init"
+    }
+  },
+  {
+    "id": 174,
+    "category": ["Git"],
+    "term": "git clone",
+    "desc": "Bir uzak Git deposunu kopyalamak ve yerel bir kopya oluşturmak için kullanılan bir komuttur. Bu komut, uzak bir depoyu yerel bir dizine klonlar.",
+    "example": {
+      "lang": "bash",
+      "codeBlock": "git clone <repository_url>"
+    }
+  },
+  {
+    "id": 175,
+    "category": ["Git"],
+    "term": "git add",
+    "desc": "Değişiklikleri Git tarafından takip edilen bir projeye eklemek için kullanılan bir komuttur. Bu komut, dosyaları geçici depolama alanına ekler (staging area).",
+    "example": {
+      "lang": "bash",
+      "codeBlock": "git add <file_name>"
+    }
+  },
+  {
+    "id": 176,
+    "category": ["Git"],
+    "term": "git commit",
+    "desc": "Proje geçmişine bir snapshot (anlık görüntü) eklemek için kullanılan bir komuttur. Bu komut, geçici depolama alanında bulunan dosyaları bir commit olarak kaydeder.",
+    "example": {
+      "lang": "bash",
+      "codeBlock": "git commit -m 'Initial commit'"
+    }
+  },
+  {
+    "id": 177,
+    "category": ["Git"],
+    "term": "git diff",
+    "desc": "Değişiklikleri görmek için kullanılan bir komuttur. Bu komut, geçici depolama alanında (staging area) bulunan dosyalar ile son commit arasındaki farkları gösterir.",
+    "example": {
+      "lang": "bash",
+      "codeBlock": "git diff"
+    }
+  },
+  {
+    "id": 178,
+    "category": ["Git"],
+    "term": "git reset",
+    "desc": "Değişiklikleri geri almak veya geçici depolama alanını (staging area) sıfırlamak için kullanılan bir komuttur. Bu komut, dosyaları belirli bir duruma geri getirebilir.",
+    "example": {
+      "lang": "bash",
+      "codeBlock": "git reset <commit_id>"
+    }
+  },
+  {
+    "id": 179,
+    "category": ["Git"],
+    "term": "git status",
+    "desc": "Projenin mevcut durumunu görmek için kullanılan bir komuttur. Bu komut, değişikliklerin durumunu, geçici depolama alanındaki (staging area) dosyaları ve diğer bilgileri gösterir.",
+    "example": {
+      "lang": "bash",
+      "codeBlock": "git status"
+    }
+  },
+  {
+    "id": 180,
+    "category": ["Git"],
+    "term": "git rm",
+    "desc": "Git tarafından takip edilen bir dosyayı silmek için kullanılan bir komuttur. Bu komut, dosyayı hem dosya sistemi hem de Git deposundan kaldırır.",
+    "example": {
+      "lang": "bash",
+      "codeBlock": "git rm <file_name>"
+    }
+  },
+  {
+    "id": 181,
+    "category": ["Git"],
+    "term": "git log",
+    "desc": "Yapılan commit'leri görüntülemek için kullanılan bir komuttur. Bu komut, commit geçmişini, commit mesajlarını, tarihleri, yazarları vb. gösterir.",
+    "example": {
+      "lang": "bash",
+      "codeBlock": "git log"
+    }
+  },
+  {
+    "id": 182,
+    "category": ["Git"],
+    "term": "git show",
+    "desc": "Belirli bir commit'in ayrıntılarını görmek için kullanılan bir komuttur. Bu komut, commit'in değişikliklerini, eklenen ve silinen dosyaları vb. gösterir.",
+    "example": {
+      "lang": "bash",
+      "codeBlock": "git show <commit_id>"
+    }
+  },
+  {
+    "id": 183,
+    "category": ["Git"],
+    "term": "git tag",
+    "desc": "Bir commit'e etiket eklemek için kullanılan bir komuttur. Etiketler, önemli sürümleri, yayınları veya dönüm noktalarını belirtmek için kullanılabilir.",
+    "example": {
+      "lang": "bash",
+      "codeBlock": "git tag <tag_name>"
+    }
+  },
+  {
+    "id": 184,
+    "category": ["Git"],
+    "term": "git branch",
+    "desc": "Farklı çalışma dalları (branch) oluşturmak, yönetmek veya geçiş yapmak için kullanılan bir komuttur. Bu komut, projede paralel olarak çalışmanızı sağlar.",
+    "example": {
+      "lang": "bash",
+      "codeBlock": "git branch <branch_name>\ngit branch -a"
+    }
+  },
+  {
+    "id": 185,
+    "category": ["Git"],
+    "term": "git checkout",
+    "desc": "Belirli bir dalı (branch) veya commit'i etkinleştirmek için kullanılan bir komuttur. Bu komut, çalışma alanını geçmişteki bir duruma geri getirebilir veya başka bir dalı etkinleştirebilir.",
+    "example": {
+      "lang": "bash",
+      "codeBlock": "git checkout <branch_or_commit>"
+    }
+  },
+  {
+    "id": 186,
+    "category": ["Git"],
+    "term": "git merge",
+    "desc": "Farklı dalları (branch) birleştirmek için kullanılan bir komuttur. Bu komut, farklı dallardaki değişiklikleri tek bir dalda birleştirir.",
+    "example": {
+      "lang": "bash",
+      "codeBlock": "git merge <branch_name>"
+    }
+  },
+  {
+    "id": 187,
+    "category": ["Git"],
+    "term": "git remote",
+    "desc": "Uzak Git depolarını yönetmek için kullanılan bir komuttur. Bu komut, uzak depoları eklemek, kaldırmak veya yönetmek için kullanılır.",
+    "example": {
+      "lang": "bash",
+      "codeBlock": "git remote add origin <repository_url>\ngit remote -v"
+    }
+  },
+  {
+    "id": 188,
+    "category": ["Git"],
+    "term": "git push",
+    "desc": "Yerel bir Git deposundaki değişiklikleri uzak bir depoya göndermek için kullanılan bir komuttur. Bu komut, yerel commit'leri uzak depoya aktarır.",
+    "example": {
+      "lang": "bash",
+      "codeBlock": "git push origin <branch_name>"
+    }
+  },
+  {
+    "id": 189,
+    "category": ["Git"],
+    "term": "git pull",
+    "desc": "Uzak bir Git deposundaki değişiklikleri yerel depoya çekmek için kullanılan bir komuttur. Bu komut, uzaktaki commit'leri yerel depoya getirir.",
+    "example": {
+      "lang": "bash",
+      "codeBlock": "git pull origin <branch_name>"
+    }
+  },
+  {
+    "id": 190,
+    "category": ["Git"],
+    "term": "git stash",
+    "desc": "Geçici olarak değişiklikleri saklamak için kullanılan bir komuttur. Bu komut, üzerinde çalışılan ancak henüz tamamlanmamış değişiklikleri saklar ve çalışma alanını temizler.",
+    "example": {
+      "lang": "bash",
+      "codeBlock": "git stash\ngit stash apply"
+    }
   }
 ]

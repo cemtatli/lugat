@@ -8,7 +8,7 @@ const Project = () => {
   };
 
   return (
-    <span className="relative ml-auto text-sm">
+    <span className="ml-auto hidden text-sm md:relative">
       <button
         className="flex items-center gap-x-1.5 text-gray-600 hover:text-gray-900 focus:outline-none dark:text-zinc-50 dark:hover:text-gray-200"
         onClick={handleMenuToggle}

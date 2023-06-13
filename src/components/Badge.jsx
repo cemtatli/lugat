@@ -16,7 +16,7 @@ const Badge = ({ children, variant = "default" }) => {
         "bg-teal-200 text-teal-800 dark:bg-teal-900 dark:text-teal-300": variant === "Package Managers",
         "bg-fuchsia-200 text-fuchsia-800 dark:bg-fuchsia-900 dark:text-fuchsia-300": variant === "Web Design",
         "bg-cyan-200 text-cyan-800 dark:bg-cyan-900 dark:text-cyan-300": variant === "Development",
-        "bg-gray-200 text-gray-800 dark:bg-gray-900 dark:text-gray-300": variant === "Next.js"
+        "bg-neutral-200 text-neutral-800 dark:bg-neutral-900 dark:text-neutral-300": variant === "Next.js"
       })}
     >
       {children}
