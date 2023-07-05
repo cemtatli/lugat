@@ -1,0 +1,36 @@
+{
+  "name": "lugat.website",
+  "short_name": "lugat",
+  "icons": [
+    {
+      "src": "/pwa/img/48x48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa/img/72x72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa/img/96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa/img/144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa/img/192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#020811",
+  "background_color": "#020811",
+  "start_url": "/",
+  "display": "minimal-ui",
+  "orientation": "portrait"
+}
