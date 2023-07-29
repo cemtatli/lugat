@@ -2245,5 +2245,16 @@
       "lang": "js",
       "codeBlock": "<input type=\"text\" id=\"search-input\" placeholder=\"Search...\">\n<div id=\"search-result\"></div>\n\n<script>\nfunction performSearch() {\n// Arama işlemleri burada yapılır\nconst searchTerm = document.getElementById('search-input').value;\ndocument.getElementById('search-result').textContent = `Searching for: ${searchTerm}`;\n}\n\nconst debouncedSearch = debounce(performSearch, 500);\n\n document.getElementById('search-input').addEventListener('input', debouncedSearch);\n</script>"
     }
+  },
+  
+  {
+    "id": 192,
+    "category": ["JavaScript"],
+    "term": "Date methods",
+    "desc": "JavaScript'te Date nesnesi, tarih ve saatle ilgili işlemleri yapmak için kullanılır. Bu nesne, JavaScript'in içinde bulunan bir küresel nesnedir, bu nedenle herhangi bir yeni oluşturma veya özel bir adlandırma olmadan kullanılabilir.",
+    "example": {
+      "lang": "js",
+      "codeBlock": "// tarih bilgilerini almak\nconst currentDate = new Date(); // şu anki tarih ve saati almak\n\nconst year = currentDate.getFullYear(); // yıl'ı almak\nconst month = currentDate.getMonth(); // Ay, 0'dan başlar (Ocak için 0, Şubat için 1, vb.)\nconst dateDay = currentDate.getDate();  // günü almak 1-31 arası\nconst  day = currentDate.getDay(); // haftanın gününü almak 0-6 arası\nconst hour = currentDate.getHours(); // saat bilgisini almak 0-23 arası\nconst minute = currentDate.getMinutes(); // dakika bilgisini almak 0-59 arası\nconst second = currentDate.getSeconds(); // saniye bilgisini almak 0-59 arası\nconst millisecond = currentDate.getMilliseconds(); // milisaniye bilgisini almak 0-999 arası\nconst time = currentDate.getTime(); // 1 Ocak 1970 00:00:00 UTC'den bu yana geçen milisaniye sayısı\n// "
+    }
   }
 ]
