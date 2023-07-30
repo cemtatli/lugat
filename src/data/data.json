@@ -1,9 +1,7 @@
 [
   {
     "id": 1,
-    "category": [
-      "JavaScript"
-    ],
+    "category": ["JavaScript"],
     "term": "Scope",
     "desc": "JavaScript'te 'scope' kavramı, bir değişkenin hangi kod bloğunda erişilebilir olduğunu belirler. Bir kod bloğu, genellikle süslü parantezler ({}) arasında yer alan ve belirli bir işlevi yerine getiren kod grubudur.",
     "example": {
@@ -13,9 +11,7 @@
   },
   {
     "id": 2,
-    "category": [
-      "JavaScript"
-    ],
+    "category": ["JavaScript"],
     "term": "Closure",
     "desc": "JavaScript'te 'closure' kavramı, iç içe fonksiyonlar arasındaki bağlantıyı ifade eder. Bir iç fonksiyon, dış fonksiyonun değişkenlerine erişebilir, ancak dış fonksiyon içinde tanımlanan değişkenlere dışarıdan erişilemez.",
     "example": {
@@ -25,9 +21,7 @@
   },
   {
     "id": 3,
-    "category": [
-      "JavaScript"
-    ],
+    "category": ["JavaScript"],
     "term": "Asenkron Programlama",
     "desc": "JavaScript'te 'asenkron programlama' kavramı, işlem sırasının sıralı olarak ilerlemesi yerine, işlemlerin belirli bir sırayla çalıştırılmadan önce tamamlanması ilkesine dayanır. Bu sayede, programda uzun süren işlemlerin yavaşlatması engellenir ve program daha hızlı çalışır.",
     "example": {
@@ -37,9 +31,7 @@
   },
   {
     "id": 4,
-    "category": [
-      "React"
-    ],
+    "category": ["React"],
     "term": "State",
     "desc": "State, React component'lerindeki verilerin depolanması ve yönetilmesi için kullanılan bir özelliktir. State, component'in özellikleri (props) gibi dışarıdan değil, component'in içinde tanımlanır ve değiştirilebilir.",
     "example": {
@@ -49,10 +41,7 @@
   },
   {
     "id": 5,
-    "category": [
-      "React",
-      "Vue.js"
-    ],
+    "category": ["React", "Vue.js"],
     "term": "Component",
     "desc": "React uygulamalarında UI’ı, birkaç parçaya bölerek, her parçayı tekrar kullanılabilir, bağımsız ve kolayca yönetilebilir hale getiren yapıdır.",
     "example": {
@@ -62,10 +51,7 @@
   },
   {
     "id": 6,
-    "category": [
-      "React",
-      "JavaScript"
-    ],
+    "category": ["React", "JavaScript"],
     "term": "Props",
     "desc": "React bileşenleri arasında veri iletmek için kullanılır. Veriler, bileşenin çağrıldığı yerden başka bir bileşene, özellikle ebeveyn bileşenlerden alt bileşenlere iletilir.",
     "example": {
@@ -75,9 +61,7 @@
   },
   {
     "id": 7,
-    "category": [
-      "CSS"
-    ],
+    "category": ["CSS"],
     "term": "Box Model",
     "desc": "Box Model, her HTML öğesi için bir kutu modeli oluşturarak öğelerin boyutlandırılmasını ve yerleştirilmesini sağlayan bir CSS özelliğidir. Kutu modeli, içerik, dolgu, sınır ve kenar boşluğu olarak dört bileşenden oluşur.",
     "example": {
@@ -87,9 +71,7 @@
   },
   {
     "id": 8,
-    "category": [
-      "Web Development"
-    ],
+    "category": ["Web Development"],
     "term": "Client Side",
     "desc": "Müşteri tarafı, web uygulamasının işlevselliğinin müşterinin web tarayıcısı üzerinde gerçekleştirildiği bir web uygulama modelidir. Müşteri tarafı kodlama, kullanıcı etkileşimi ve arayüz tasarımı için kullanılır. Müşteri tarafı dilleri arasında JavaScript, HTML ve CSS bulunur.",
     "example": {
@@ -99,10 +81,7 @@
   },
   {
     "id": 9,
-    "category": [
-      "React",
-      "JavaScript"
-    ],
+    "category": ["React", "JavaScript"],
     "term": "JSX",
     "desc": "JSX, JavaScript sözdizimini genişleten bir XML benzeri sözdizimidir. React bileşenlerini tanımlamak ve bu bileşenlere özellikler ve çocuk bileşenler eklemek için kullanılır. JSX, React uygulamalarının okunaklılığını artırır ve hataları önceden tespit etmeye yardımcı olur.",
     "example": {
@@ -112,9 +91,7 @@
   },
   {
     "id": 10,
-    "category": [
-      "React"
-    ],
+    "category": ["React"],
     "term": "Virtual DOM",
     "desc": "Virtual DOM, React'ın performansını artırmak için kullandığı bir tekniktir. React, bir bileşenin durumu değiştiğinde, önce sanal bir DOM ağacı oluşturur ve gerçek DOM ile karşılaştırır. Ardından, sadece değişen kısımları günceller ve gerçek DOM ağacını yeniden oluşturmak yerine bu değişiklikleri yansıtır. Bu işlem, gerçek DOM ağacını yeniden oluşturmaktan daha hızlıdır ve React uygulamalarının performansını artırır.",
     "example": {
@@ -124,11 +101,7 @@
   },
   {
     "id": 11,
-    "category": [
-      "JavaScript",
-      "React",
-      "Vue.js"
-    ],
+    "category": ["JavaScript", "React", "Vue.js"],
     "term": "let",
     "desc": "'let' anahtar kelimesi, JavaScript'te yeni bir değişken tanımlamak için kullanılır. 'let' kullanarak tanımlanan değişkenler, sadece tanımlandıkları blok içinde erişilebilir ve dışarıya sızamazlar. Ayrıca, 'let' ile tanımlanan değişkenlerin değerleri sonradan değiştirilebilir.",
     "example": {
@@ -138,9 +111,7 @@
   },
   {
     "id": 12,
-    "category": [
-      "JavaScript"
-    ],
+    "category": ["JavaScript"],
     "term": "Hoisting",
     "desc": "Hoisting, JavaScript'te bir değişkenin ya da fonksiyonun tanımlanmasının, kodun çalıştırılması sırasında nereye konulduğundan bağımsız olarak, en üstteki blokta tanımlandığı varsayımıdır.",
     "example": {
@@ -150,11 +121,7 @@
   },
   {
     "id": 13,
-    "category": [
-      "JavaScript",
-      "React",
-      "Vue.js"
-    ],
+    "category": ["JavaScript", "React", "Vue.js"],
     "term": "Promise",
     "desc": "Promise, asenkron işlemleri kolaylaştırmak için JavaScript'te kullanılan bir nesnedir. Promise nesnesi, bir işlem tamamlandığında veya hata verdiğinde geri çağırma işlevlerini kullanarak işlemin sonucunu yönetir.",
     "example": {
@@ -164,9 +131,7 @@
   },
   {
     "id": 14,
-    "category": [
-      "JavaScript"
-    ],
+    "category": ["JavaScript"],
     "term": "Event Loop",
     "desc": "Event Loop, JavaScript'in asenkron çalışmasının temelidir. Event Loop, bir JavaScript programının çalıştığı ortamda, iş parçacıklarını yönetir ve ana iş parçacığı dışındaki işleri işlemek için bir sıra oluşturur.",
     "example": {
@@ -176,9 +141,7 @@
   },
   {
     "id": 15,
-    "category": [
-      "JavaScript"
-    ],
+    "category": ["JavaScript"],
     "term": "Spread Operator",
     "desc": "Spread Operator, bir dizi ya da nesne içindeki elemanları tek tek ayırarak yeni bir dizi ya da nesne oluşturur. Spread Operator, kodun daha okunaklı ve kısa olmasına yardımcı olur.",
     "example": {
@@ -188,9 +151,7 @@
   },
   {
     "id": 16,
-    "category": [
-      "JavaScript"
-    ],
+    "category": ["JavaScript"],
     "term": "Rest Parameter",
     "desc": "Rest Parameter, bir fonksiyona değişken sayıda argüman geçmek için kullanılır. Rest Parameter, argümanların bir dizi olarak toplanmasını sağlar.",
     "example": {
@@ -200,9 +161,7 @@
   },
   {
     "id": 17,
-    "category": [
-      "JavaScript"
-    ],
+    "category": ["JavaScript"],
     "term": "Local Storage",
     "desc": "Local Storage, bir web sayfasında, kullanıcının tarayıcısında verileri depolamak için kullanılır. Local Storage, anahtar-değer çiftleri halinde verileri saklar ve veriler tarayıcıyı kapatsanız bile kalıcıdır.",
     "example": {
@@ -212,9 +171,7 @@
   },
   {
     "id": 18,
-    "category": [
-      "Web Development"
-    ],
+    "category": ["Web Development"],
     "term": "Session Storage",
     "desc": "Session Storage, bir web sayfasında, kullanıcının tarayıcısında verileri depolamak için kullanılır. Session Storage, Local Storage gibi çalışır ancak tarayıcı kapatıldığında veriler otomatik olarak silinir.",
     "example": {
@@ -224,9 +181,7 @@
   },
   {
     "id": 19,
-    "category": [
-      "JavaScript"
-    ],
+    "category": ["JavaScript"],
     "term": "Call Stack",
     "desc": "Call Stack, JavaScript'in fonksiyon çağrılarını izlediği veri yapısıdır. Bir fonksiyon çağrısı yapıldığında, bu çağrı Call Stack'e eklenir ve fonksiyonun tamamlanmasıyla birlikte Call Stack'den çıkarılır.",
     "example": {
@@ -236,9 +191,7 @@
   },
   {
     "id": 20,
-    "category": [
-      "JavaScript"
-    ],
+    "category": ["JavaScript"],
     "term": "Higher-Order Function",
     "desc": "Higher-Order Function, bir fonksiyonun, diğer bir fonksiyonu parametre olarak alması veya bir fonksiyon döndürmesi durumudur. Bu özellik sayesinde, fonksiyonlar daha esnek ve yeniden kullanılabilir hale gelir.",
     "example": {
@@ -248,9 +201,7 @@
   },
   {
     "id": 21,
-    "category": [
-      "JavaScript"
-    ],
+    "category": ["JavaScript"],
     "term": "ES6",
     "desc": "ES6, ECMAScript 2015 olarak da bilinen bir JavaScript sürümüdür. Bu sürüm, birçok yeni özellik ve geliştirme içermektedir, örneğin arrow functionlar, let ve const anahtar kelimeleri, template literals, destructuring, spread ve rest operatörleri gibi.",
     "example": {
@@ -260,9 +211,7 @@
   },
   {
     "id": 22,
-    "category": [
-      "JavaScript"
-    ],
+    "category": ["JavaScript"],
     "term": "Destructuring",
     "desc": "Destructuring, JavaScript'te bir nesne veya dizi içindeki değerleri ayrıştırma işlemidir. Bu işlem, tek tek öğeleri elde etmek yerine nesne veya dizinin özelliklerine doğrudan erişmenizi sağlar.",
     "example": {
@@ -272,9 +221,7 @@
   },
   {
     "id": 23,
-    "category": [
-      "JavaScript"
-    ],
+    "category": ["JavaScript"],
     "term": "Template Literals",
     "desc": "Template Literals, ECMAScript 6 (ES6) ile birlikte gelen bir özelliktir ve string ifadelerini daha esnek hale getirir. Bu özellik, string ifadelerini tek tırnak veya çift tırnak içine almaktansa, backtick karakterleri (``) arasına almanıza izin verir ve içinde değişkenler veya ifadeler kullanmanızı sağlar.",
     "example": {
@@ -284,9 +231,7 @@
   },
   {
     "id": 24,
-    "category": [
-      "JavaScript"
-    ],
+    "category": ["JavaScript"],
     "term": "Object Oriented Programming (OOP)",
     "desc": "Object Oriented Programming (OOP), JavaScript'te bir programın nesne ve sınıflar üzerine kurulmasını sağlayan bir programlama paradigmadır. Bu paradigmada, bir program birbirleriyle etkileşim halinde olan nesnelerin kümesinden oluşur ve her nesne bir sınıfın örneğidir.",
     "example": {
@@ -296,9 +241,7 @@
   },
   {
     "id": 25,
-    "category": [
-      "JavaScript"
-    ],
+    "category": ["JavaScript"],
     "term": "Prototype",
     "desc": "Prototype, JavaScript'teki nesne tabanlı programlama modelinde kullanılan bir özelliktir ve her nesnenin bir prototipi vardır. Bu özellik, bir nesnenin özellikleri veya metotlarına erişmek için kullanılır ve nesne tabanlı programlamada miras alma kavramını destekler.",
     "example": {
@@ -308,9 +251,7 @@
   },
   {
     "id": 26,
-    "category": [
-      "JavaScript"
-    ],
+    "category": ["JavaScript"],
     "term": "Array Methods",
     "desc": "Array Methods, JavaScript'teki dizilerde kullanılan özel metodlardır ve dizilerin işlenmesini kolaylaştırır. Bu metodlar arasında, eleman ekleme ve silme, sıralama, filtreleme ve dönüştürme işlemleri bulunur.",
     "example": {
@@ -320,9 +261,7 @@
   },
   {
     "id": 27,
-    "category": [
-      "CSS"
-    ],
+    "category": ["CSS"],
     "term": "Flexbox",
     "desc": "Flexbox, esnek kutu modeli kullanarak bir HTML öğesi içindeki öğelerin yerleştirilmesini ve hizalanmasını yöneten bir CSS özelliğidir. Flexbox, öğelerin yatay veya dikey olarak hizalanmasını ve öğeler arasındaki boşluğu yönetmek için kullanılabilir.",
     "example": {
@@ -332,9 +271,7 @@
   },
   {
     "id": 28,
-    "category": [
-      "CSS"
-    ],
+    "category": ["CSS"],
     "term": "Media Queries",
     "desc": "Media Queries, belirli ekran boyutları veya cihaz özellikleri gibi koşullar için farklı CSS kuralları belirleyerek duyarlı web tasarımı yapmayı mümkün kılan bir CSS özelliğidir.",
     "example": {
@@ -344,10 +281,7 @@
   },
   {
     "id": 29,
-    "category": [
-      "CSS",
-      "HTML"
-    ],
+    "category": ["CSS", "HTML"],
     "term": "Selectors",
     "desc": "Selectors, belirli HTML öğelerini veya özelliklerini seçerek stil uygulamak için kullanılan CSS özellikleridir. ID'ler, sınıflar, özellikler, yavrular, kardeşler ve daha birçok seçici türü vardır.",
     "example": {
@@ -357,9 +291,7 @@
   },
   {
     "id": 30,
-    "category": [
-      "CSS"
-    ],
+    "category": ["CSS"],
     "term": "Transitions",
     "desc": "Transitions, belirli bir öğenin belirli bir özelliğinde (genellikle renk veya boyut gibi) bir değişiklik olduğunda, değişikliğin düzenli ve yumuşak bir şekilde gerçekleşmesini sağlayan bir CSS özelliğidir.",
     "example": {
@@ -369,9 +301,7 @@
   },
   {
     "id": 31,
-    "category": [
-      "CSS"
-    ],
+    "category": ["CSS"],
     "term": "Transforms",
     "desc": "Transforms, bir HTML öğesinin boyutunu, şeklini, konumunu ve oryantasyonunu değiştirmek için kullanılan bir CSS özelliğidir. Döndürme, ölçeklendirme, eğimleme ve konumlandırma gibi birçok değişiklik yapılabilir.",
     "example": {
@@ -381,9 +311,7 @@
   },
   {
     "id": 32,
-    "category": [
-      "CSS"
-    ],
+    "category": ["CSS"],
     "term": "Grid",
     "desc": "Grid, bir HTML öğesinin içindeki öğeleri satır ve sütunlar halinde yerleştirmek ve hizalamak için kullanılan bir CSS özelliğidir. Grid, Flexbox'tan daha karmaşık yerleştirme işlemleri yapmak için kullanılabilir.",
     "example": {
@@ -393,9 +321,7 @@
   },
   {
     "id": 33,
-    "category": [
-      "Git"
-    ],
+    "category": ["Git"],
     "term": "Merge",
     "desc": "Git versiyon kontrol sisteminde iki veya daha fazla branch'i birleştirmek için kullanılan bir işlemdir. Bu işlem, değişikliklerin kaynak kodu deposundaki ana branch'e dahil edilmesini sağlar.",
     "example": {
@@ -405,9 +331,7 @@
   },
   {
     "id": 34,
-    "category": [
-      "Web Development"
-    ],
+    "category": ["Web Development"],
     "term": "Webpack",
     "desc": "Webpack, bir JavaScript modül paketleme aracıdır. Bu araç, web uygulamaları için gerekli olan JavaScript, CSS ve diğer statik dosyaları paketler, birleştirir ve optimize eder.",
     "example": {
@@ -417,9 +341,7 @@
   },
   {
     "id": 35,
-    "category": [
-      "Web Development"
-    ],
+    "category": ["Web Development"],
     "term": "MVC",
     "desc": "Model-View-Controller, bir yazılım mimarisidir ve web geliştirme sürecinde kullanılır. Bu mimari, uygulamanın veri (Model), kullanıcı arayüzü (View) ve iş mantığının (Controller) birbirinden ayrılmasını sağlar.",
     "example": {
@@ -429,9 +351,7 @@
   },
   {
     "id": 36,
-    "category": [
-      "Web Development"
-    ],
+    "category": ["Web Development"],
     "term": "SPA",
     "desc": "Tek sayfa uygulaması (Single Page Application), kullanıcının web sayfasının farklı bölümlerine erişirken sayfayı yeniden yüklemeden yalnızca değişen verileri yükleyen bir web uygulamasıdır.",
     "example": {
@@ -441,10 +361,7 @@
   },
   {
     "id": 37,
-    "category": [
-      "Web Development",
-      "JavaScript"
-    ],
+    "category": ["Web Development", "JavaScript"],
     "term": "Gulp",
     "desc": "Gulp, JavaScript tabanlı bir yapım aracıdır. Bu araç, web geliştiricilerinin proje için özelleştirilmiş iş akışlarını otomatikleştirmelerine ve kolaylaştırmalarına olanak tanır.",
     "example": {
@@ -454,10 +371,7 @@
   },
   {
     "id": 38,
-    "category": [
-      "Web Development",
-      "JavaScript"
-    ],
+    "category": ["Web Development", "JavaScript"],
     "term": "ESLint",
     "desc": "ESLint, JavaScript kodlarının stil ve hata denetimini otomatikleştiren bir araçtır. Bu araç, kodun okunabilirliğini ve bakımını kolaylaştırır ve hataları erken aşamada tespit ederek geliştirme sürecini hızlandırır.",
     "example": {
@@ -467,10 +381,7 @@
   },
   {
     "id": 39,
-    "category": [
-      "Web Development",
-      "Network"
-    ],
+    "category": ["Web Development", "Network"],
     "term": "HTTPS",
     "desc": "HTTPS, İnternet üzerinden veri iletiminde güvenliği sağlamak için kullanılan bir protokoldür. Bu protokol, verilerin şifrelenmesi ve doğrulanması için SSL veya TLS gibi güvenlik protokolleri kullanır.",
     "example": {
@@ -479,10 +390,7 @@
   },
   {
     "id": 40,
-    "category": [
-      "Web Development",
-      "Network"
-    ],
+    "category": ["Web Development", "Network"],
     "term": "DNS",
     "desc": "Alan adı sistemleri (DNS), İnternet adreslerini (IP adresleri) insanların anlayabileceği isimlere dönüştürmek için kullanılan bir sistemdir. Bu sistem, web sitelerine erişmek için kullanılan adreslerin yönetimini sağlar.",
     "example": {
@@ -491,9 +399,7 @@
   },
   {
     "id": 41,
-    "category": [
-      "Web Development"
-    ],
+    "category": ["Web Development"],
     "term": "Static Site Generation (SSG)",
     "desc": "Static Site Generation (SSG), web sitelerinin derlenerek, HTML, CSS ve JavaScript dosyaları şeklinde sunulduğu bir yöntemdir. SSG ile siteler hızlı bir şekilde yüklenebilir ve performansları artırılabilir. SSG, statik içerikli web siteleri için ideal bir seçenektir.",
     "example": {
@@ -503,9 +409,7 @@
   },
   {
     "id": 42,
-    "category": [
-      "Web Development"
-    ],
+    "category": ["Web Development"],
     "term": "CDN",
     "desc": "İçerik dağıtım ağı (CDN), statik içeriklerin dağıtımını kolaylaştırmak ve hızlandırmak için kullanılan bir ağdır. Bu ağ, sunucuların dünya genelindeki birçok konumda barındırılmasını sağlar.",
     "example": {
@@ -515,9 +419,7 @@
   },
   {
     "id": 43,
-    "category": [
-      "Git"
-    ],
+    "category": ["Git"],
     "term": "Push",
     "desc": "Git'te, yerel değişiklikleri uzak bir deposuna göndermek için kullanılan bir komuttur. Bu işlem, yerel değişikliklerin uzak bir depoda saklanmasını, diğer kullanıcıların bu değişiklikleri görebilmesini ve işbirliği yapmalarını sağlar.",
     "example": {
@@ -527,9 +429,7 @@
   },
   {
     "id": 44,
-    "category": [
-      "Git"
-    ],
+    "category": ["Git"],
     "term": "Pull",
     "desc": "Git'te, uzak bir depodaki değişiklikleri yerel bir depoya çekmek için kullanılan bir komuttur. Bu işlem, yerel depoda bulunmayan değişikliklerin alınmasını ve birleştirilmesini sağlar.",
     "example": {
@@ -539,9 +439,7 @@
   },
   {
     "id": 45,
-    "category": [
-      "Git"
-    ],
+    "category": ["Git"],
     "term": "Branch",
     "desc": "Git'te, bağımsız bir kod parçası oluşturmak için kullanılan bir kavramdır. Bu kavram, birden çok geliştiricinin aynı projede çalışmasını sağlar ve her geliştiricinin kendi kod parçasını ayrı bir dalda tutmasını mümkün kılar.",
     "example": {
@@ -551,9 +449,7 @@
   },
   {
     "id": 46,
-    "category": [
-      "Git"
-    ],
+    "category": ["Git"],
     "term": "Repository",
     "desc": "Git'te, projenin tüm sürüm geçmişini ve dosyalarını içeren depodur. Bu depo, yerel bir bilgisayarda veya bir web sunucusunda barındırılabilir.",
     "example": {
@@ -563,9 +459,7 @@
   },
   {
     "id": 47,
-    "category": [
-      "Git"
-    ],
+    "category": ["Git"],
     "term": "Commit",
     "desc": "Git'te, değişiklikleri yerel bir depoya kaydetmek için kullanılan bir komuttur. Bu işlem, değişikliklerin tarihçesini ve açıklamasını tutar ve projenin belirli bir noktasına geri dönülebilmesini sağlar.",
     "example": {
@@ -575,9 +469,7 @@
   },
   {
     "id": 48,
-    "category": [
-      "Package Managers"
-    ],
+    "category": ["Package Managers"],
     "term": "npm",
     "desc": "npm (Node Package Manager), Node.js için açık kaynaklı bir paket yöneticisidir. npm, Node.js topluluğu tarafından oluşturulmuştur ve paketlerin indirilmesi, yüklenmesi ve yönetimi için kullanılır.",
     "example": {
@@ -587,9 +479,7 @@
   },
   {
     "id": 49,
-    "category": [
-      "Package Managers"
-    ],
+    "category": ["Package Managers"],
     "term": "yarn",
     "desc": "yarn, Facebook tarafından oluşturulan açık kaynaklı bir paket yöneticisidir. npm'e benzer şekilde çalışır ve daha hızlı ve güvenilir paket yükleme ve yönetim özellikleri sunar.",
     "example": {
@@ -599,9 +489,7 @@
   },
   {
     "id": 50,
-    "category": [
-      "Package Managers"
-    ],
+    "category": ["Package Managers"],
     "term": "pnpm",
     "desc": "pnpm, Node.js için açık kaynaklı bir paket yöneticisidir. npm ve yarn'a benzer şekilde çalışır ve özellikle disk alanı tasarrufu sağlayan bir özelliğe sahiptir. Ayrıca, birden fazla proje için paylaşılan bağımlılıkların tek bir yerde saklanmasını sağlar.",
     "example": {
@@ -611,9 +499,7 @@
   },
   {
     "id": 51,
-    "category": [
-      "Web Development"
-    ],
+    "category": ["Web Development"],
     "term": "API",
     "desc": "API (Application Programming Interface), yazılım uygulamaları arasında veri alışverişi yapmak için kullanılan bir arayüzdür. İki farklı uygulama arasında bilgi alışverişi yapmak için standartlaştırılmış bir yol sağlar.",
     "example": {
@@ -623,9 +509,7 @@
   },
   {
     "id": 52,
-    "category": [
-      "Web Development"
-    ],
+    "category": ["Web Development"],
     "term": "SSL",
     "desc": "SSL (Secure Sockets Layer), Network bağlantılarının güvenli hale getirilmesi için kullanılan bir protokoldür. SSL sertifikaları, kullanıcının güvenli bir web sitesine bağlandığını ve bilgilerinin şifrelendiğini doğrular.",
     "example": {
@@ -634,10 +518,7 @@
   },
   {
     "id": 53,
-    "category": [
-      "JavaScript",
-      "Web Development"
-    ],
+    "category": ["JavaScript", "Web Development"],
     "term": "Fetch",
     "desc": "Fetch, web tarayıcıları tarafından sunulan bir JavaScript API'sidir ve HTTP isteklerinin yapılmasını sağlar. Fetch API, XMLHttpRequest API'sine alternatif olarak kullanılabilir ve modern web uygulamaları için daha iyi bir seçenek olabilir.",
     "example": {
@@ -647,9 +528,7 @@
   },
   {
     "id": 54,
-    "category": [
-      "CSS"
-    ],
+    "category": ["CSS"],
     "term": "SASS",
     "desc": "SASS (Syntactically Awesome Style Sheets), CSS stil dosyaları oluşturmak için kullanılan bir CSS ön işlemcisi dilidir. SASS, daha kolay ve hızlı bir şekilde CSS yazmanıza olanak tanır ve CSS kodunun yeniden kullanılabilirliğini artırır.",
     "example": {
@@ -659,10 +538,7 @@
   },
   {
     "id": 55,
-    "category": [
-      "HTML",
-      "CSS"
-    ],
+    "category": ["HTML", "CSS"],
     "term": "ID",
     "desc": "ID (Identifier), HTML ve CSS'de bir öğenin benzersiz bir kimliğini tanımlamak için kullanılan bir özniteliktir. Bir ID, sayfadaki yalnızca bir öğeyi tanımlayabilir ve öğenin bir kimliği olduğu sürece diğer öğelerden ayırt edilir.",
     "example": {
@@ -672,9 +548,7 @@
   },
   {
     "id": 56,
-    "category": [
-      "Web Development"
-    ],
+    "category": ["Web Development"],
     "term": "WebSockets",
     "desc": "WebSockets, istemci ve sunucu arasında tam çift yönlü iletişim sağlayan bir ağ protokolüdür. Bu protokol, sürekli bağlantı kurarak veri alışverişi yapmanızı sağlar ve gerçek zamanlı uygulamalar için idealdir.",
     "example": {
@@ -684,17 +558,13 @@
   },
   {
     "id": 57,
-    "category": [
-      "Web Development"
-    ],
+    "category": ["Web Development"],
     "term": "SSL",
     "desc": "SSL (Secure Sockets Layer), veri iletişiminde güvenliği sağlamak için kullanılan bir kriptografik protokoldür. Bu protokol, veri iletişiminde şifreleme, kimlik doğrulama ve bütünlük sağlar."
   },
   {
     "id": 58,
-    "category": [
-      "Web Development"
-    ],
+    "category": ["Web Development"],
     "term": "AJAX",
     "desc": "AJAX, sayfa yeniden yüklenmeden web sayfaları aracılığıyla sunucu ile iletişim kurmayı sağlayan bir teknolojidir.",
     "example": {
@@ -704,9 +574,7 @@
   },
   {
     "id": 59,
-    "category": [
-      "Web Development"
-    ],
+    "category": ["Web Development"],
     "term": "RESTful API",
     "desc": "RESTful API, temel HTTP protokolünü kullanarak web servislerine erişim sağlamak için kullanılan bir arayüzdür.",
     "example": {
@@ -716,10 +584,7 @@
   },
   {
     "id": 60,
-    "category": [
-      "Web Development",
-      "JavaScript"
-    ],
+    "category": ["Web Development", "JavaScript"],
     "term": "Node.js",
     "desc": "Node.js, JavaScript ile sunucu tarafı uygulama geliştirme için kullanılan bir çalıştırma ortamıdır.",
     "example": {
@@ -729,9 +594,7 @@
   },
   {
     "id": 61,
-    "category": [
-      "JavaScript"
-    ],
+    "category": ["JavaScript"],
     "term": "JSON",
     "desc": "JSON (JavaScript Object Notation), verileri okunaklı ve hafif bir format kullanarak depolamak, göndermek ve almak için kullanılan bir veri değişim formatıdır.",
     "example": {
@@ -741,9 +604,7 @@
   },
   {
     "id": 62,
-    "category": [
-      "HTML"
-    ],
+    "category": ["HTML"],
     "term": "Anchor",
     "desc": "HTML'de <a> etiketi, bir metni veya resmi tıklanabilir bir bağlantıya dönüştürmek için kullanılır. Genellikle başka bir sayfaya, belirli bir bölüme veya bir e-posta adresine yönlendirmek için kullanılır.",
     "example": {
@@ -753,10 +614,7 @@
   },
   {
     "id": 63,
-    "category": [
-      "HTML",
-      "CSS"
-    ],
+    "category": ["HTML", "CSS"],
     "term": "Attribute",
     "desc": "HTML'de öğelerin özelliklerini belirleyen özniteliklerdir. Örneğin, bir <img> etiketi için 'src' özniteliği, resmin kaynak dosyasını belirtir.",
     "example": {
@@ -766,9 +624,7 @@
   },
   {
     "id": 64,
-    "category": [
-      "JavaScript"
-    ],
+    "category": ["JavaScript"],
     "term": "Property",
     "desc": "JavaScript'te, nesnelerin özellikleri olarak adlandırılan değerlerdir. Örneğin, bir HTML öğesi için 'innerHTML' özelliği, öğenin içeriğini belirtir.",
     "example": {
@@ -778,9 +634,7 @@
   },
   {
     "id": 65,
-    "category": [
-      "Web Development"
-    ],
+    "category": ["Web Development"],
     "term": "Server-Side Rendering (SSR)",
     "desc": "Server-Side Rendering (SSR), web sayfalarının sunucu tarafında oluşturulması ve hazırlanması işlemidir. Bu işlemde, sunucu sayfa içeriğini hazırlayarak tarayıcıya gönderir. Bu sayede, sayfa içeriği tarayıcıda işlemci yükünü hafifletir ve kullanıcıya daha hızlı yükleme süresi sağlar.",
     "example": {
@@ -790,9 +644,7 @@
   },
   {
     "id": 66,
-    "category": [
-      "Web Development"
-    ],
+    "category": ["Web Development"],
     "term": "Progressive Web Applications (PWA)",
     "desc": "Progressive Web Applications (PWA), web uygulamalarının mobil uygulamalar gibi çalışmasını sağlayan bir teknolojidir. PWA, hızlı yükleme süreleri, offline desteği ve uygulama benzeri bir arayüz sunar. PWA, responsive tasarım ile birlikte kullanıldığında, web uygulamalarının mobil cihazlar için daha kullanışlı hale gelmesini sağlar.",
     "example": {
@@ -801,10 +653,7 @@
   },
   {
     "id": 67,
-    "category": [
-      "React",
-      "Web Development"
-    ],
+    "category": ["React", "Web Development"],
     "term": "Redux",
     "desc": "Bir JavaScript kütüphanesi olan Redux, React uygulamaları için kullanılan bir durum yönetim aracıdır. Uygulama durumunu merkezi bir depoda saklar ve durum değişikliklerini yönetir.",
     "example": {
@@ -814,9 +663,7 @@
   },
   {
     "id": 68,
-    "category": [
-      "Web Development"
-    ],
+    "category": ["Web Development"],
     "term": "GraphQL",
     "desc": "GraphQL, bir API sorgulama dili ve çalıştırma ortamıdır. Geleneksel RESTful API'lerin yerini alabilir ve daha esnek ve verimli bir API sağlayabilir.",
     "example": {
@@ -826,9 +673,7 @@
   },
   {
     "id": 69,
-    "category": [
-      "Web Development"
-    ],
+    "category": ["Web Development"],
     "term": "Accessibility",
     "desc": "Web sitelerinin ve uygulamaların, herkesin kullanabileceği şekilde tasarlanması ve geliştirilmesidir. Özellikle, engelli kullanıcıların ihtiyaçlarına yönelik olarak tasarlanmalıdır.",
     "example": {
@@ -838,10 +683,7 @@
   },
   {
     "id": 70,
-    "category": [
-      "CSS",
-      "Web Development"
-    ],
+    "category": ["CSS", "Web Development"],
     "term": "Block Element Model (BEM)",
     "desc": "CSS yöntemleriyle tasarlanmış bir web tasarım yaklaşımıdır. Bu yaklaşım, web sitelerinin ve uygulamalarının modüler hale getirilmesine olanak tanır ve stil sayfalarının kolay yönetimini sağlar.",
     "example": {
@@ -850,9 +692,7 @@
   },
   {
     "id": 71,
-    "category": [
-      "Web Development"
-    ],
+    "category": ["Web Development"],
     "term": "Microservices",
     "desc": "Bir uygulamanın küçük, özerk hizmetlere bölünmesiyle oluşturulan bir mimaridir. Bu, uygulamaların daha ölçeklenebilir, esnek ve bakımı kolay hale getirilmesine olanak tanır.",
     "example": {
@@ -862,9 +702,7 @@
   },
   {
     "id": 72,
-    "category": [
-      "Web Development"
-    ],
+    "category": ["Web Development"],
     "term": "Containerization",
     "desc": "Yazılım uygulamalarının, kendi kendine yeterli bir ortamda çalışmasını sağlamak için bir işletim sistemi sanalizasyon tekniğidir. Özellikle DevOps ve dağıtım süreçlerinde kullanılır.",
     "example": {
@@ -874,11 +712,7 @@
   },
   {
     "id": 73,
-    "category": [
-      "Web Development",
-      "React",
-      "Vue.js"
-    ],
+    "category": ["Web Development", "React", "Vue.js"],
     "term": "Vite",
     "desc": "Vite, modern web uygulamaları oluşturmak için kullanılan bir geliştirici aracıdır. Vue.js ve React gibi popüler JavaScript çerçeveleri ile uyumlu olan Vite, geliştirme sunucusu, hızlı derleme zamanı ve modüler mimari gibi özelliklerle gelir.",
     "example": {
@@ -888,9 +722,7 @@
   },
   {
     "id": 74,
-    "category": [
-      "Web Development"
-    ],
+    "category": ["Web Development"],
     "term": "Unit Test",
     "desc": "Unit Test, bir yazılım parçasının (genellikle bir fonksiyon veya sınıf) beklenen davranışı gösterip göstermediğini doğrulayan otomatik testlerdir.",
     "example": {
@@ -900,9 +732,7 @@
   },
   {
     "id": 75,
-    "category": [
-      "Web Development"
-    ],
+    "category": ["Web Development"],
     "term": "Cookie",
     "desc": "Web tarayıcısı tarafından kullanıcının bilgisayarında depolanan küçük bir veri parçasıdır. Çerezler, kullanıcı tercihlerini, oturum açma bilgilerini ve kullanıcının bir web sitesindeki deneyimini kişiselleştirmek için kullanılabilecek diğer bilgileri hatırlamak için kullanılır.",
     "example": {
@@ -912,10 +742,7 @@
   },
   {
     "id": 76,
-    "category": [
-      "Web Development",
-      "HTML"
-    ],
+    "category": ["Web Development", "HTML"],
     "term": "Meta Tag",
     "desc": "HTML meta etiketleri, anahtar kelimeler, açıklama, yazar ve diğer meta verileri gibi web sayfası hakkında bilgi sağlar. Bu etiketler, HTML belgesinin head bölümüne yerleştirilir.",
     "example": {
@@ -925,9 +752,7 @@
   },
   {
     "id": 77,
-    "category": [
-      "Web Development"
-    ],
+    "category": ["Web Development"],
     "term": "Cache",
     "desc": "Cache, önbellek olarak da adlandırılır, sık kullanılan verilerin daha hızlı erişilebilir olmasını sağlamak için geçici olarak saklanır. Web sayfaları, JavaScript dosyaları ve diğer web kaynakları, kullanıcının web tarayıcısındaki önbelleğe alınabilir. Bu sayede, kullanıcıların kaynakları tekrar tekrar indirmesi gerekmez ve sayfalar daha hızlı yüklenir.",
     "example": {
@@ -937,9 +762,7 @@
   },
   {
     "id": 78,
-    "category": [
-      "Web Development"
-    ],
+    "category": ["Web Development"],
     "term": "Server Side",
     "desc": "Sunucu tarafı, web uygulamasının işlevselliğinin sunucu üzerinde gerçekleştirildiği bir web uygulama modelidir. Sunucu tarafı kodlama, web tarayıcısında çalışan kodun yerini alır. Sunucu tarafı dilleri arasında PHP, Python, Ruby, Java ve .NET bulunur.",
     "example": {
@@ -949,10 +772,7 @@
   },
   {
     "id": 79,
-    "category": [
-      "Web Development",
-      "Network"
-    ],
+    "category": ["Web Development", "Network"],
     "term": "HTTP",
     "desc": "HTTP, bir istemcinin bir web sunucusuna bağlanarak web sayfaları ve diğer kaynaklar gibi çeşitli verilerin iletiminde kullanılan bir iletişim protokolüdür.",
     "example": {
@@ -961,10 +781,7 @@
   },
   {
     "id": 80,
-    "category": [
-      "Web Development",
-      "Network"
-    ],
+    "category": ["Web Development", "Network"],
     "term": "Hosting",
     "desc": "Hosting, web sitelerinin Network üzerinde erişilebilir olabilmesi için kullanılan bir hizmettir. Birden fazla hosting türü vardır, örneğin Shared Hosting ve VPS Hosting.",
     "example": {
@@ -973,10 +790,7 @@
   },
   {
     "id": 81,
-    "category": [
-      "HTML",
-      "Web Development"
-    ],
+    "category": ["HTML", "Web Development"],
     "term": "Semantic HTML",
     "desc": "Anlamlı HTML, bir web sayfasının içeriğini açıklayan HTML etiketleri kullanarak sayfayı daha anlaşılır ve erişilebilir hale getiren bir web geliştirme teknolojisidir.",
     "example": {
@@ -985,9 +799,7 @@
   },
   {
     "id": 82,
-    "category": [
-      "Web Development"
-    ],
+    "category": ["Web Development"],
     "term": "Layout",
     "desc": "Bir web sayfasının görünümünü belirleyen ve içeriğin nasıl yerleştirileceğini tanımlayan düzenleme öğeleridir. Bu öğeler, web sayfasının kullanılabilirliğini ve erişilebilirliğini artırmaya yardımcı olur.",
     "example": {
@@ -996,9 +808,7 @@
   },
   {
     "id": 83,
-    "category": [
-      "Web Development"
-    ],
+    "category": ["Web Development"],
     "term": "Framework",
     "desc": "Framework, bir yazılım uygulaması veya bileşenlerinin tasarımı ve geliştirilmesi için bir temel oluşturmak üzere kullanılan bir yapılı programlama aracıdır. Framework, tekrar eden işlemleri otomatikleştirir ve geliştirme sürecini hızlandırır.",
     "example": {
@@ -1008,9 +818,7 @@
   },
   {
     "id": 84,
-    "category": [
-      "Web Development"
-    ],
+    "category": ["Web Development"],
     "term": "Library",
     "desc": "Bir kütüphane, belirli bir programlama dilinde kullanılabilecek tekrar kullanılabilir kod bloklarının bir koleksiyonudur. Kullanıcılara belirli bir işlevsellik sağlar ve tekrar tekrar kod yazmak yerine hazır çözümler sunar.",
     "example": {
@@ -1020,10 +828,7 @@
   },
   {
     "id": 85,
-    "category": [
-      "JavaScript",
-      "Web Development"
-    ],
+    "category": ["JavaScript", "Web Development"],
     "term": "Callback",
     "desc": "Bir fonksiyon, başka bir fonksiyon tarafından çağrıldığında geri döndürülebilen bir fonksiyondur. Bir işlemin tamamlandığı zaman, bir işlevin çağrılması için geri çağrılabilir. Bu, programcılara asenkron işlemler için bir yol sağlar.",
     "example": {
@@ -1033,9 +838,7 @@
   },
   {
     "id": 86,
-    "category": [
-      "JavaScript"
-    ],
+    "category": ["JavaScript"],
     "term": "Async",
     "desc": "Async, bir programda asenkron işlemlerin gerçekleştirilmesine izin veren bir anahtar kelimedir. Async fonksiyonlar, diğer fonksiyonların çalışmasına izin verirken, bir arka planda işlem yapabilirler ve işlem tamamlandığında geri dönüş değeri döndürebilirler.",
     "example": {
@@ -1045,10 +848,7 @@
   },
   {
     "id": 87,
-    "category": [
-      "Web Development",
-      "Web Design"
-    ],
+    "category": ["Web Development", "Web Design"],
     "term": "Web Standards",
     "desc": "Belirli bir web sitesinin uygun bir şekilde tasarlanması ve oluşturulması için belirlenmiş kurallar ve yönergelerdir.",
     "example": {
@@ -1058,10 +858,7 @@
   },
   {
     "id": 88,
-    "category": [
-      "Web Development",
-      "Web Design"
-    ],
+    "category": ["Web Development", "Web Design"],
     "term": "Mobile-First Design",
     "desc": "Web sitelerinin mobil cihazlar için optimize edilerek tasarlanmasıdır. Bu yaklaşım, mobil cihazlardaki kullanıcı deneyimini arttırmak ve performansı iyileştirmek için kullanılır.",
     "example": {
@@ -1071,9 +868,7 @@
   },
   {
     "id": 89,
-    "category": [
-      "Web Design"
-    ],
+    "category": ["Web Design"],
     "term": "Atomic Design",
     "desc": "Bileşen tabanlı bir tasarım sistemidir. Sayfaların temel yapıtaşlarından başlayarak karmaşık bileşenlere kadar ayrıntılı bir tasarım süreci sunar.",
     "example": {
@@ -1083,9 +878,7 @@
   },
   {
     "id": 90,
-    "category": [
-      "Web Development"
-    ],
+    "category": ["Web Development"],
     "term": "CORS",
     "desc": "Cross-Origin Resource Sharing, web sayfalarının farklı kaynaklardan veri almasına olanak tanıyan bir mekanizmadır.",
     "example": {
@@ -1095,9 +888,7 @@
   },
   {
     "id": 91,
-    "category": [
-      "Web Design"
-    ],
+    "category": ["Web Design"],
     "term": "Wireframes",
     "desc": "Web sitesinin temel yapısal özelliklerini ve düzenini gösteren bir taslak çizimidir. Genellikle tasarım sürecinin başlangıcında kullanılır.",
     "example": {
@@ -1107,9 +898,7 @@
   },
   {
     "id": 92,
-    "category": [
-      "Web Design"
-    ],
+    "category": ["Web Design"],
     "term": "Typography",
     "desc": "Web sitesinde kullanılan yazı karakterleri, boyutları, aralıkları ve renkleri gibi özellikleri belirleyen tasarım.",
     "example": {
@@ -1119,9 +908,7 @@
   },
   {
     "id": 93,
-    "category": [
-      "Web Development"
-    ],
+    "category": ["Web Development"],
     "term": "A/B Testing",
     "desc": "İki farklı web sayfası sürümü arasındaki performans farklarını karşılaştırarak hangi sürümün daha etkili olduğunu belirlemek için yapılan bir test türüdür.",
     "example": {
@@ -1131,9 +918,7 @@
   },
   {
     "id": 94,
-    "category": [
-      "Web Design"
-    ],
+    "category": ["Web Design"],
     "term": "Heatmap",
     "desc": "Web sayfasında kullanıcı etkileşimlerini görsel olarak gösteren bir araçtır. Bu araç sayesinde, kullanıcıların hangi alanlara daha çok tıkladığı veya hangi alanlara daha az ilgi gösterdiği görülebilir.",
     "example": {
@@ -1143,9 +928,7 @@
   },
   {
     "id": 95,
-    "category": [
-      "Web Design"
-    ],
+    "category": ["Web Design"],
     "term": "Pagination",
     "desc": "Web sayfalarında uzun içerikleri birden fazla sayfaya bölerek kullanıcının daha kolay bir şekilde gezinmesini sağlayan bir özelliktir.",
     "example": {
@@ -1155,9 +938,7 @@
   },
   {
     "id": 96,
-    "category": [
-      "Web Development"
-    ],
+    "category": ["Web Development"],
     "term": "WebGL",
     "desc": "Web tarayıcıları için 3 boyutlu grafikleri oluşturmak ve göstermek için kullanılan bir JavaScript API'sidir.",
     "example": {
@@ -1167,10 +948,7 @@
   },
   {
     "id": 97,
-    "category": [
-      "Web Design",
-      "Web Development"
-    ],
+    "category": ["Web Design", "Web Development"],
     "term": "Prototyping",
     "desc": "Web sitesinin tasarımının ve işlevselliğinin test edilmesi için bir prototip oluşturulmasıdır. Bu sayede gerçek bir web sitesinin yapımı öncesinde fikirler test edilebilir.",
     "example": {
@@ -1180,9 +958,7 @@
   },
   {
     "id": 98,
-    "category": [
-      "Web Development"
-    ],
+    "category": ["Web Development"],
     "term": "Deploy",
     "desc": "Bir web sitesinin veya uygulamanın canlı sunucuya yerleştirilmesi, yayınlanması ve kullanıcıların erişebilir hale getirilmesi işlemidir.",
     "example": {
@@ -1192,9 +968,7 @@
   },
   {
     "id": 99,
-    "category": [
-      "Web Development"
-    ],
+    "category": ["Web Development"],
     "term": "Issue",
     "desc": "Bir yazılım projesinde karşılaşılan sorunları veya eksiklikleri ifade eden bir terimdir. Issue'lar, yazılım geliştirme ekipleri tarafından izlenir ve çözülür.",
     "example": {
@@ -1204,9 +978,7 @@
   },
   {
     "id": 101,
-    "category": [
-      "Web Design"
-    ],
+    "category": ["Web Design"],
     "term": "Above the Fold",
     "desc": "Web sayfasının üst kısmında yer alan ve kullanıcının sayfaya ilk baktığında göreceği alan.",
     "example": {
@@ -1216,9 +988,7 @@
   },
   {
     "id": 103,
-    "category": [
-      "Web Design"
-    ],
+    "category": ["Web Design"],
     "term": "Tooltip",
     "desc": "Bir web sayfasında bir öğenin ne olduğunu açıklayan bir açıklama metni gösteren bir grafik aracı.",
     "example": {
@@ -1228,10 +998,7 @@
   },
   {
     "id": 104,
-    "category": [
-      "Web Development",
-      "HTML"
-    ],
+    "category": ["Web Development", "HTML"],
     "term": "Canvas",
     "desc": "HTML5 standardının bir parçası olan bir özellik olan Canvas, programatik olarak grafikler, animasyonlar ve diğer görsel öğeler oluşturmak için kullanılır.",
     "example": {
@@ -1241,9 +1008,7 @@
   },
   {
     "id": 105,
-    "category": [
-      "Web Development"
-    ],
+    "category": ["Web Development"],
     "term": "GitHub",
     "desc": "Git tabanlı bir sürüm kontrolü platformudur. Geliştiriciler, kodlarını barındırmak, revize etmek ve işbirliği yapmak için GitHub'u kullanırlar.",
     "example": {
@@ -1253,9 +1018,7 @@
   },
   {
     "id": 106,
-    "category": [
-      "Web Development"
-    ],
+    "category": ["Web Development"],
     "term": "Kanban",
     "desc": "Bir iş akışı yönetimi aracıdır ve bir tahta üzerinde yapışkan not kağıtları kullanarak görevleri görselleştirir.",
     "example": {
@@ -1265,9 +1028,7 @@
   },
   {
     "id": 107,
-    "category": [
-      "Web Development"
-    ],
+    "category": ["Web Development"],
     "term": "Storybook",
     "desc": "Bir UI bileşeni kütüphanesi geliştirme aracıdır. Bileşenlerin ayrı ayrı test edilmesini ve belgelenmesini sağlar.",
     "example": {
@@ -1277,10 +1038,7 @@
   },
   {
     "id": 108,
-    "category": [
-      "JavaScript",
-      "Web Development"
-    ],
+    "category": ["JavaScript", "Web Development"],
     "term": "TypeScript",
     "desc": "JavaScript'in statik tipli bir üst kümesi olan TypeScript, isteğe bağlı tipler, arayüzler, sınıflar ve diğer özellikler ekleyerek, hataları çalışma zamanı yerine derleme zamanında yakalamak için yardımcı olur. Büyük ölçekli uygulamalar için daha iyi kod organizasyonu, ölçeklenebilirlik ve araç desteği sunar.",
     "example": {
@@ -1290,10 +1048,7 @@
   },
   {
     "id": 110,
-    "category": [
-      "React",
-      "Web Development"
-    ],
+    "category": ["React", "Web Development"],
     "term": "Context API",
     "desc": "React ile birlikte gelen bir özellik olan Context API, uygulamanın durumunu bileşenler arasında paylaşmaya ve iletmeye olanak tanır. Bu, durum yönetimi için Redux gibi diğer araçların kullanımına gerek kalmadan, verilerin ana bileşenlerden alt bileşenlere aktarılmasını kolaylaştırır.",
     "example": {
@@ -1303,10 +1058,7 @@
   },
   {
     "id": 111,
-    "category": [
-      "React",
-      "Web Development"
-    ],
+    "category": ["React", "Web Development"],
     "term": "Injection",
     "desc": "Injection, bir bileşenin başka bir bileşen tarafından manipüle edilmesi anlamına gelir. Özellikle React'ta yaygın olarak kullanılır ve JSX ve render ifadeleri içinde kullanılabilir.",
     "example": {
@@ -1316,10 +1068,7 @@
   },
   {
     "id": 112,
-    "category": [
-      "React",
-      "Web Development"
-    ],
+    "category": ["React", "Web Development"],
     "term": "Injection Saldırısı",
     "desc": "Injection saldırısı, bir uygulamanın güvenliğini etkileyen bir saldırı türüdür. Genellikle kullanıcı tarafından sağlanan verilerin, programlama dili veya veritabanı sorguları gibi önemli bir bileşene doğrudan dahil edilmesiyle gerçekleştirilir.",
     "example": {
@@ -1329,10 +1078,7 @@
   },
   {
     "id": 113,
-    "category": [
-      "React",
-      "Web Development"
-    ],
+    "category": ["React", "Web Development"],
     "term": "Children",
     "desc": "React bileşenlerinde kullanılan bir özellik olan 'children', bir bileşenin içerisindeki diğer bileşenlerdir. Yani, bir bileşenin içinde başka bileşenler yer alabilir ve bu bileşenler 'children' olarak adlandırılır.",
     "example": {
@@ -1342,10 +1088,7 @@
   },
   {
     "id": 114,
-    "category": [
-      "JavaScript",
-      "Web Development"
-    ],
+    "category": ["JavaScript", "Web Development"],
     "term": "DOM",
     "desc": "Document Object Model (DOM), web sayfalarının bir program tarafından manipüle edilmesini sağlayan bir API'dir. DOM, HTML, XHTML veya XML belgelerinin programlar tarafından değiştirilmesini, eklenmesini veya silinmesini sağlayarak dinamik web sayfalarının oluşturulmasına izin verir.",
     "example": {
@@ -1355,9 +1098,7 @@
   },
   {
     "id": 115,
-    "category": [
-      "JavaScript"
-    ],
+    "category": ["JavaScript"],
     "term": "Backtick",
     "desc": "Backtick (``) veya backquote, bir string ifadesini tanımlamak için kullanılan bir karakterdir. Template literals özelliği ile kullanılır.",
     "example": {
@@ -1367,9 +1108,7 @@
   },
   {
     "id": 116,
-    "category": [
-      "Web Development"
-    ],
+    "category": ["Web Development"],
     "term": "Tilde",
     "desc": "Tilde (~) birçok farklı programlama dili ve ortamda kullanılan bir karakterdir. Değişken adının önüne veya sonuna eklenerek kullanılabilir ve genellikle bir işaretçi veya bellek adresi ile ilişkilendirilir.",
     "example": {
@@ -1379,9 +1118,7 @@
   },
   {
     "id": 117,
-    "category": [
-      "Web Development"
-    ],
+    "category": ["Web Development"],
     "term": "Curly Bracket",
     "desc": "Curly bracket ({}) veya brace, birçok programlama dili ve ortamda kullanılan bir karakterdir. Genellikle, kod bloklarını belirlemek veya nesne özelliklerini tanımlamak için kullanılır.",
     "example": {
@@ -1391,9 +1128,7 @@
   },
   {
     "id": 119,
-    "category": [
-      "JavaScript"
-    ],
+    "category": ["JavaScript"],
     "term": "Ternary Operator",
     "desc": "Bir koşula göre iki farklı değeri döndüren bir operatördür.",
     "example": {
@@ -1403,10 +1138,7 @@
   },
   {
     "id": 120,
-    "category": [
-      "Network",
-      "Next.js"
-    ],
+    "category": ["Network", "Next.js"],
     "term": "Dynamic Route",
     "desc": "Ağdaki mevcut duruma dayalı olarak bir yönlendirme protokolü tarafından dinamik olarak öğrenilen bir rota türüdür. Topolojinin değişmesiyle birlikte yönlendirme tablosu otomatik olarak güncellenir.",
     "example": {
@@ -1416,10 +1148,7 @@
   },
   {
     "id": 121,
-    "category": [
-      "Network",
-      "Next.js"
-    ],
+    "category": ["Network", "Next.js"],
     "term": "Static Route",
     "desc": "Manuel olarak yapılandırılan bir rota türüdür. Yönlendirme tablosuna elle eklenir ve ağ topolojisi değişse bile değişmez.",
     "example": {
@@ -1429,10 +1158,7 @@
   },
   {
     "id": 122,
-    "category": [
-      "Network",
-      "Next.js"
-    ],
+    "category": ["Network", "Next.js"],
     "term": "Route",
     "desc": "Bir kaynak ağ adresinden hedef ağ adresine yönlendirme için kullanılan bir yol veya yollar kümesidir.",
     "example": {
@@ -1442,10 +1168,7 @@
   },
   {
     "id": 123,
-    "category": [
-      "Network",
-      "Next.js"
-    ],
+    "category": ["Network", "Next.js"],
     "term": "Catch All Routes",
     "desc": "Tüm hedef ağ adresleri için geçerli olan bir rota veya rota kümesidir. Bu tür rotalar, önceden tanımlanmış rotalar dışındaki tüm trafik için kullanılır.",
     "example": {
@@ -1455,9 +1178,7 @@
   },
   {
     "id": 124,
-    "category": [
-      "Vue.js"
-    ],
+    "category": ["Vue.js"],
     "term": "Directive",
     "desc": "Vue.js direktifleri, DOM manipülasyonlarını gerçekleştirmek için kullanılır. Örneğin, v-bind direktifi, bir HTML özelliğinin bir Vue bileşeni özelliğiyle eşleştirilmesine izin verir.",
     "example": {
@@ -1467,10 +1188,7 @@
   },
   {
     "id": 125,
-    "category": [
-      "Vue.js",
-      "React"
-    ],
+    "category": ["Vue.js", "React"],
     "term": "Lifecycle Hooks",
     "desc": "Vue.js ve React bileşenlerinin hayat döngüsü olayları, bileşenin oluşturulması, güncellenmesi ve yok edilmesi gibi aşamalarda gerçekleşir. Bileşenin hayat döngüsü olaylarına bağlı işlevler tanımlayabilirsiniz.",
     "example": {
@@ -1480,9 +1198,7 @@
   },
   {
     "id": 126,
-    "category": [
-      "Vue.js"
-    ],
+    "category": ["Vue.js"],
     "term": "V",
     "desc": "v-model, bir form elemanının değerini Vue bileşeninin veri öğesiyle eşleştirmek için kullanılan bir direktiftir.",
     "example": {
@@ -1492,9 +1208,7 @@
   },
   {
     "id": 127,
-    "category": [
-      "Vue.js"
-    ],
+    "category": ["Vue.js"],
     "term": "Computed",
     "desc": "Vue.js bileşenlerinde hesaplanan özellikler, bileşenin verilerini kullanarak bir hesaplama yapar ve sonucunu döndürür.",
     "example": {
@@ -1504,9 +1218,7 @@
   },
   {
     "id": 128,
-    "category": [
-      "Vue.js"
-    ],
+    "category": ["Vue.js"],
     "term": "Watch",
     "desc": "Vue.js bileşenleri içinde izlenen özellikler, değer değiştiğinde çağrılan işlevleri tanımlamak için kullanılır.",
     "example": {
@@ -1516,9 +1228,7 @@
   },
   {
     "id": 129,
-    "category": [
-      "CSS"
-    ],
+    "category": ["CSS"],
     "term": "Element Selector",
     "desc": "Belirtilen etikete sahip tüm öğeleri seçer.",
     "example": {
@@ -1528,9 +1238,7 @@
   },
   {
     "id": 130,
-    "category": [
-      "CSS"
-    ],
+    "category": ["CSS"],
     "term": "Class Selector",
     "desc": "Belirtilen sınıf adına sahip tüm öğeleri seçer.",
     "example": {
@@ -1540,9 +1248,7 @@
   },
   {
     "id": 131,
-    "category": [
-      "CSS"
-    ],
+    "category": ["CSS"],
     "term": "ID Selector",
     "desc": "Belirtilen ID'ye sahip öğeyi seçer.",
     "example": {
@@ -1552,9 +1258,7 @@
   },
   {
     "id": 132,
-    "category": [
-      "CSS"
-    ],
+    "category": ["CSS"],
     "term": "Universal Selector",
     "desc": "Tüm öğeleri seçer.",
     "example": {
@@ -1564,9 +1268,7 @@
   },
   {
     "id": 133,
-    "category": [
-      "CSS"
-    ],
+    "category": ["CSS"],
     "term": "Attribute Selector",
     "desc": "Belirtilen öznitelik değerine sahip öğeleri seçer.",
     "example": {
@@ -1576,9 +1278,7 @@
   },
   {
     "id": 134,
-    "category": [
-      "CSS"
-    ],
+    "category": ["CSS"],
     "term": "Child Selector",
     "desc": "Belirtilen üst öğenin doğrudan alt öğesini seçer.",
     "example": {
@@ -1588,9 +1288,7 @@
   },
   {
     "id": 135,
-    "category": [
-      "CSS"
-    ],
+    "category": ["CSS"],
     "term": "Descendant Selector",
     "desc": "Belirtilen üst öğenin alt öğelerinden herhangi birini seçer.",
     "example": {
@@ -1600,9 +1298,7 @@
   },
   {
     "id": 136,
-    "category": [
-      "CSS"
-    ],
+    "category": ["CSS"],
     "term": "Adjacent Sibling Selector",
     "desc": "Belirtilen öğenin hemen yanındaki kardeş öğeyi seçer.",
     "example": {
@@ -1612,9 +1308,7 @@
   },
   {
     "id": 137,
-    "category": [
-      "CSS"
-    ],
+    "category": ["CSS"],
     "term": "General Sibling Selector",
     "desc": "Belirtilen öğenin yanındaki tüm kardeş öğeleri seçer.",
     "example": {
@@ -1624,9 +1318,7 @@
   },
   {
     "id": 138,
-    "category": [
-      "HTML"
-    ],
+    "category": ["HTML"],
     "term": "Element",
     "desc": "HTML belgelerindeki yapısal öğelerdir ve açılış ve kapanış etiketleriyle belirtilirler.",
     "example": {
@@ -1636,9 +1328,7 @@
   },
   {
     "id": 139,
-    "category": [
-      "HTML"
-    ],
+    "category": ["HTML"],
     "term": "Header etiketi",
     "desc": "Belge veya bölüm başlığını tanımlar.",
     "example": {
@@ -1648,9 +1338,7 @@
   },
   {
     "id": 140,
-    "category": [
-      "HTML"
-    ],
+    "category": ["HTML"],
     "term": "Nav etiketi",
     "desc": "Belgede gezinme bağlantılarını veya navigasyon menülerini içeren bir bölümü tanımlar.",
     "example": {
@@ -1660,9 +1348,7 @@
   },
   {
     "id": 141,
-    "category": [
-      "HTML"
-    ],
+    "category": ["HTML"],
     "term": "Main etiketi",
     "desc": "Belge içeriğinin ana bölümünü tanımlar.",
     "example": {
@@ -1672,9 +1358,7 @@
   },
   {
     "id": 142,
-    "category": [
-      "HTML"
-    ],
+    "category": ["HTML"],
     "term": "Article Etiketi",
     "desc": "Belge veya bölüm içindeki, bağımsız ve tamamlanmış bir içeriği tanımlar.",
     "example": {
@@ -1684,9 +1368,7 @@
   },
   {
     "id": 143,
-    "category": [
-      "HTML"
-    ],
+    "category": ["HTML"],
     "term": "Section Etiketi",
     "desc": "Belge veya bölüm içindeki bir kısmı veya bölümü tanımlar.",
     "example": {
@@ -1696,9 +1378,7 @@
   },
   {
     "id": 144,
-    "category": [
-      "JavaScript"
-    ],
+    "category": ["JavaScript"],
     "term": "Heap",
     "desc": "Heap, bir bilgisayar programında dinamik bellek tahsisi yapmak için kullanılan bir veri yapısıdır.",
     "example": {
@@ -1708,9 +1388,7 @@
   },
   {
     "id": 145,
-    "category": [
-      "JavaScript"
-    ],
+    "category": ["JavaScript"],
     "term": "Stack",
     "desc": "Stack, programda yerel değişkenlerin depolandığı veri yapısıdır ve son giren ilk çıkar (LIFO) kuralına göre çalışır.",
     "example": {
@@ -1720,9 +1398,7 @@
   },
   {
     "id": 146,
-    "category": [
-      "JavaScript"
-    ],
+    "category": ["JavaScript"],
     "term": "Callback queue",
     "desc": "Callback queue, JavaScript'te asynchronous (işlemi devam eden) işlemleri takip etmek için kullanılan bir yapıdır. Event loop'un bir parçasıdır.",
     "example": {
@@ -1732,9 +1408,7 @@
   },
   {
     "id": 147,
-    "category": [
-      "JavaScript"
-    ],
+    "category": ["JavaScript"],
     "term": "Higher order function",
     "desc": "Higher order function, bir fonksiyonu parametre olarak alan veya fonksiyonu döndüren bir fonksiyondur.",
     "example": {
@@ -1744,9 +1418,7 @@
   },
   {
     "id": 148,
-    "category": [
-      "JavaScript"
-    ],
+    "category": ["JavaScript"],
     "term": "setTimeout",
     "desc": "setTimeout, belirtilen süre sonunda bir fonksiyonu çalıştırmak için kullanılan bir JavaScript yöntemidir.",
     "example": {
@@ -1756,9 +1428,7 @@
   },
   {
     "id": 149,
-    "category": [
-      "JavaScript"
-    ],
+    "category": ["JavaScript"],
     "term": "setInterval",
     "desc": "setInterval, belirtilen aralıklarla bir fonksiyonu tekrar tekrar çalıştırmak için kullanılan bir JavaScript yöntemidir.",
     "example": {
@@ -1768,9 +1438,7 @@
   },
   {
     "id": 150,
-    "category": [
-      "JavaScript"
-    ],
+    "category": ["JavaScript"],
     "term": "Constructor",
     "desc": "Constructor, JavaScript'te bir nesne için bir şablon veya model oluşturmak için kullanılan bir işlevdir. Yeni bir nesne oluşturmak için 'new' anahtar kelimesi ile birlikte kullanılır.",
     "example": {
@@ -1780,9 +1448,7 @@
   },
   {
     "id": 151,
-    "category": [
-      "JavaScript"
-    ],
+    "category": ["JavaScript"],
     "term": "Call",
     "desc": "Call, bir fonksiyonu belirtilen bir bağlamda (obje) çağırmak için kullanılan bir JavaScript yöntemidir. İlk argüman, çağrılacak fonksiyonun bağlamını belirtir.",
     "example": {
@@ -1792,9 +1458,7 @@
   },
   {
     "id": 152,
-    "category": [
-      "JavaScript"
-    ],
+    "category": ["JavaScript"],
     "term": "Apply",
     "desc": "Apply, bir fonksiyonu belirtilen bir bağlamda (obje) ve bir dizi argümanla çağırmak için kullanılan bir JavaScript yöntemidir. İlk argüman, çağrılacak fonksiyonun bağlamını belirtir, ikinci argüman ise dizi olarak fonksiyona geçirilecek argümanları içerir.",
     "example": {
@@ -1804,9 +1468,7 @@
   },
   {
     "id": 153,
-    "category": [
-      "JavaScript"
-    ],
+    "category": ["JavaScript"],
     "term": "Bind",
     "desc": "Bind, bir fonksiyona belirtilen bir bağlamı (obje) ve/veya argümanları bağlamak için kullanılan bir JavaScript yöntemidir. Bir fonksiyonu bağlamak, o fonksiyonun belirtilen bağlamda çalıştırılmasını sağlar.",
     "example": {
@@ -1816,9 +1478,7 @@
   },
   {
     "id": 154,
-    "category": [
-      "JavaScript"
-    ],
+    "category": ["JavaScript"],
     "term": "this",
     "desc": "'this' anahtar kelimesi, bir fonksiyon içinde, o fonksiyonun çağrıldığı bağlama (context) referans alır. 'this', fonksiyonun hangi obje üzerinden çağrıldığına bağlı olarak farklı değerler alabilir. ",
     "example": {
@@ -1828,9 +1488,7 @@
   },
   {
     "id": 155,
-    "category": [
-      "JavaScript"
-    ],
+    "category": ["JavaScript"],
     "term": "global this",
     "desc": "global this terimi, JavaScript'te global kapsamda (scope) kullanılan 'this' değerini ifade eder. Bu değer, global nesne olan 'window' nesnesine referans verir. Ancak, 'use strict' ifadesi kullanıldığında, global kapsamda 'this' değeri undefined olur.",
     "example": {
@@ -1840,9 +1498,7 @@
   },
   {
     "id": 156,
-    "category": [
-      "JavaScript"
-    ],
+    "category": ["JavaScript"],
     "term": "Babel",
     "desc": "Babel, JavaScript kodunu eski tarayıcılarda çalışacak şekilde derlemek için kullanılan bir transpiler (source-to-source compiler) aracıdır. Babel, ECMAScript 6 (ES6) ve sonraki sürümlerdeki (ES7, ES8 vb.) kodu, eski tarayıcılarda desteklenen ES5 ve öncesindeki sürümlere dönüştürebilir.",
     "example": {
@@ -1852,9 +1508,7 @@
   },
   {
     "id": 157,
-    "category": [
-      "React"
-    ],
+    "category": ["React"],
     "term": "Hooks",
     "desc": "Hooks, React sınıf bileşenleri yerine fonksiyonel bileşenlerin kullanımını sağlar. React bileşenlerine özelliklerin (state) ve yaşam döngüsü yöntemlerinin (lifecycle methods) yanı sıra, Hooks API'si sayesinde fonksiyonel bileşenler de bu özelliklere sahip olabilir.",
     "example": {
@@ -1864,9 +1518,7 @@
   },
   {
     "id": 158,
-    "category": [
-      "React"
-    ],
+    "category": ["React"],
     "term": "useState",
     "desc": "useState, bir fonksiyonel bileşenin durumunu tutmak için kullanılan bir Hook'tur. useState, bir dizi içindeki ilk öğe olarak mevcut durumu, ikinci öğe olarak ise durumu güncellemek için kullanılan bir işlevi döndürür.",
     "example": {
@@ -1876,9 +1528,7 @@
   },
   {
     "id": 159,
-    "category": [
-      "React"
-    ],
+    "category": ["React"],
     "term": "useEffect",
     "desc": "useEffect, fonksiyonel bileşenlerde yaşam döngüsü yöntemlerine benzer bir işlev gören bir Hook'tur. useEffect, bileşen her render edildiğinde çalışacak bir işlevi alır ve bileşenin önceki durumu ile karşılaştırarak işlevi çağırır.",
     "example": {
@@ -1888,9 +1538,7 @@
   },
   {
     "id": 160,
-    "category": [
-      "React"
-    ],
+    "category": ["React"],
     "term": "useRef",
     "desc": "useRef, bir değeri tutmak ve değiştirmek için kullanılan bir Hook'tur. useRef, bir nesne döndürür ve bu nesnenin 'current' özelliği, depolanan değeri içerir.",
     "example": {
@@ -1900,9 +1548,7 @@
   },
   {
     "id": 161,
-    "category": [
-      "Development"
-    ],
+    "category": ["Development"],
     "term": "dotenv",
     "desc": "dotenv, uygulama ortamında kullanılan yapılandırma değişkenlerini yönetmek için kullanılan bir kütüphanedir. .env dosyasında tanımlanan değişkenlere erişmek ve kullanmak için kullanılır.",
     "example": {
@@ -1912,9 +1558,7 @@
   },
   {
     "id": 162,
-    "category": [
-      "Development"
-    ],
+    "category": ["Development"],
     "term": "bug",
     "desc": "Bir yazılım uygulamasında bulunan hatalara bug denir. Bu hatalar, beklenmeyen veya istenmeyen davranışlara neden olabilir ve uygulamanın doğru çalışmasını engelleyebilir.",
     "example": {
@@ -1924,9 +1568,7 @@
   },
   {
     "id": 163,
-    "category": [
-      "Development"
-    ],
+    "category": ["Development"],
     "term": "boolean",
     "desc": "Boolean, sadece iki olası değeri olan bir veri tipidir. Bu değerler true (doğru) veya false (yanlış) olabilir. Programlamada sıklıkla kullanılır, örneğin bir durumu (state) temsil etmek veya bir koşulu değerlendirmek için kullanılabilir.",
     "example": {
@@ -1936,9 +1578,7 @@
   },
   {
     "id": 164,
-    "category": [
-      "Development"
-    ],
+    "category": ["Development"],
     "term": "string",
     "desc": "String, karakterlerin birleşiminden oluşan bir veri tipidir. Metinleri, kelime veya cümleleri temsil etmek için kullanılır. Programlamada sıklıkla kullanılır, örneğin kullanıcı arayüzünde metinleri göstermek veya girdi almak için kullanılabilir.",
     "example": {
@@ -1948,9 +1588,7 @@
   },
   {
     "id": 165,
-    "category": [
-      "Development"
-    ],
+    "category": ["Development"],
     "term": "integer",
     "desc": "Integer, tam sayıları temsil eden bir veri tipidir. Negatif veya pozitif olabilir. Programlamada genellikle hesaplamalar veya sayaçlar gibi sayısal değerleri temsil etmek için kullanılır.",
     "example": {
@@ -1960,9 +1598,7 @@
   },
   {
     "id": 166,
-    "category": [
-      "Development"
-    ],
+    "category": ["Development"],
     "term": "bundle",
     "desc": "Bir JavaScript projesi geliştirildiğinde, projedeki tüm dosyalar ve bağımlılıklar genellikle bir araya getirilerek bir paket oluşturulur. Bu pakete genellikle 'bundle' denir. React projelerinde de kaynak dosyaları birleştirilerek bir bundle oluşturulur.",
     "example": {
@@ -1972,9 +1608,7 @@
   },
   {
     "id": 167,
-    "category": [
-      "Development"
-    ],
+    "category": ["Development"],
     "term": "charset",
     "desc": "Charset, karakter kodlaması anlamına gelir ve belirli bir karakter kümesini temsil etmek için kullanılır. Web geliştirmede genellikle HTML belgelerinde belirtilir ve doğru karakterlerin düzgün bir şekilde görüntülenmesini sağlar.",
     "example": {
@@ -1984,9 +1618,7 @@
   },
   {
     "id": 168,
-    "category": [
-      "Development"
-    ],
+    "category": ["Development"],
     "term": "cors",
     "desc": "CORS (Cross-Origin Resource Sharing), web tarayıcısının güvenlik önlemleri nedeniyle, bir kaynağın başka bir etki alanından yüklenmesini engelleyen bir mekanizmadır. CORS, web uygulamaları arasındaki kaynak paylaşımını yönetmek için kullanılır.",
     "example": {
@@ -1996,9 +1628,7 @@
   },
   {
     "id": 170,
-    "category": [
-      "Web Development"
-    ],
+    "category": ["Web Development"],
     "term": "input",
     "desc": "Input (giriş), kullanıcıdan veri almak için kullanılan bir web elementidir. Kullanıcı tarafından doldurulan verileri işlemek veya göndermek için kullanılabilir. Web formalarında sıklıkla kullanılır.",
     "example": {
@@ -2008,9 +1638,7 @@
   },
   {
     "id": 172,
-    "category": [
-      "Git"
-    ],
+    "category": ["Git"],
     "term": "git config",
     "desc": "Git yapılandırma ayarlarını belirlemek veya değiştirmek için kullanılan bir komuttur. Kullanıcı adı, e-posta adresi, renk temaları vb. gibi ayarları yapılandırmak için kullanılır.",
     "example": {
@@ -2020,9 +1648,7 @@
   },
   {
     "id": 173,
-    "category": [
-      "Git"
-    ],
+    "category": ["Git"],
     "term": "git init",
     "desc": "Bir dizini Git deposu olarak başlatmak için kullanılan bir komuttur. Bu komut, mevcut bir projeyi Git deposuna dönüştürür ve takip etmeye başlar.",
     "example": {
@@ -2032,9 +1658,7 @@
   },
   {
     "id": 174,
-    "category": [
-      "Git"
-    ],
+    "category": ["Git"],
     "term": "git clone",
     "desc": "Bir uzak Git deposunu kopyalamak ve yerel bir kopya oluşturmak için kullanılan bir komuttur. Bu komut, uzak bir depoyu yerel bir dizine klonlar.",
     "example": {
@@ -2044,9 +1668,7 @@
   },
   {
     "id": 175,
-    "category": [
-      "Git"
-    ],
+    "category": ["Git"],
     "term": "git add",
     "desc": "Değişiklikleri Git tarafından takip edilen bir projeye eklemek için kullanılan bir komuttur. Bu komut, dosyaları geçici depolama alanına ekler (staging area).",
     "example": {
@@ -2056,9 +1678,7 @@
   },
   {
     "id": 176,
-    "category": [
-      "Git"
-    ],
+    "category": ["Git"],
     "term": "git commit",
     "desc": "Proje geçmişine bir snapshot (anlık görüntü) eklemek için kullanılan bir komuttur. Bu komut, geçici depolama alanında bulunan dosyaları bir commit olarak kaydeder.",
     "example": {
@@ -2068,9 +1688,7 @@
   },
   {
     "id": 177,
-    "category": [
-      "Git"
-    ],
+    "category": ["Git"],
     "term": "git diff",
     "desc": "Değişiklikleri görmek için kullanılan bir komuttur. Bu komut, geçici depolama alanında (staging area) bulunan dosyalar ile son commit arasındaki farkları gösterir.",
     "example": {
@@ -2080,9 +1698,7 @@
   },
   {
     "id": 178,
-    "category": [
-      "Git"
-    ],
+    "category": ["Git"],
     "term": "git reset",
     "desc": "Değişiklikleri geri almak veya geçici depolama alanını (staging area) sıfırlamak için kullanılan bir komuttur. Bu komut, dosyaları belirli bir duruma geri getirebilir.",
     "example": {
@@ -2092,9 +1708,7 @@
   },
   {
     "id": 179,
-    "category": [
-      "Git"
-    ],
+    "category": ["Git"],
     "term": "git status",
     "desc": "Projenin mevcut durumunu görmek için kullanılan bir komuttur. Bu komut, değişikliklerin durumunu, geçici depolama alanındaki (staging area) dosyaları ve diğer bilgileri gösterir.",
     "example": {
@@ -2104,9 +1718,7 @@
   },
   {
     "id": 180,
-    "category": [
-      "Git"
-    ],
+    "category": ["Git"],
     "term": "git rm",
     "desc": "Git tarafından takip edilen bir dosyayı silmek için kullanılan bir komuttur. Bu komut, dosyayı hem dosya sistemi hem de Git deposundan kaldırır.",
     "example": {
@@ -2116,9 +1728,7 @@
   },
   {
     "id": 181,
-    "category": [
-      "Git"
-    ],
+    "category": ["Git"],
     "term": "git log",
     "desc": "Yapılan commit'leri görüntülemek için kullanılan bir komuttur. Bu komut, commit geçmişini, commit mesajlarını, tarihleri, yazarları vb. gösterir.",
     "example": {
@@ -2128,9 +1738,7 @@
   },
   {
     "id": 182,
-    "category": [
-      "Git"
-    ],
+    "category": ["Git"],
     "term": "git show",
     "desc": "Belirli bir commit'in ayrıntılarını görmek için kullanılan bir komuttur. Bu komut, commit'in değişikliklerini, eklenen ve silinen dosyaları vb. gösterir.",
     "example": {
@@ -2140,9 +1748,7 @@
   },
   {
     "id": 183,
-    "category": [
-      "Git"
-    ],
+    "category": ["Git"],
     "term": "git tag",
     "desc": "Bir commit'e etiket eklemek için kullanılan bir komuttur. Etiketler, önemli sürümleri, yayınları veya dönüm noktalarını belirtmek için kullanılabilir.",
     "example": {
@@ -2152,9 +1758,7 @@
   },
   {
     "id": 184,
-    "category": [
-      "Git"
-    ],
+    "category": ["Git"],
     "term": "git branch",
     "desc": "Farklı çalışma dalları (branch) oluşturmak, yönetmek veya geçiş yapmak için kullanılan bir komuttur. Bu komut, projede paralel olarak çalışmanızı sağlar.",
     "example": {
@@ -2164,9 +1768,7 @@
   },
   {
     "id": 185,
-    "category": [
-      "Git"
-    ],
+    "category": ["Git"],
     "term": "git checkout",
     "desc": "Belirli bir dalı (branch) veya commit'i etkinleştirmek için kullanılan bir komuttur. Bu komut, çalışma alanını geçmişteki bir duruma geri getirebilir veya başka bir dalı etkinleştirebilir.",
     "example": {
@@ -2176,9 +1778,7 @@
   },
   {
     "id": 186,
-    "category": [
-      "Git"
-    ],
+    "category": ["Git"],
     "term": "git merge",
     "desc": "Farklı dalları (branch) birleştirmek için kullanılan bir komuttur. Bu komut, farklı dallardaki değişiklikleri tek bir dalda birleştirir.",
     "example": {
@@ -2188,9 +1788,7 @@
   },
   {
     "id": 187,
-    "category": [
-      "Git"
-    ],
+    "category": ["Git"],
     "term": "git remote",
     "desc": "Uzak Git depolarını yönetmek için kullanılan bir komuttur. Bu komut, uzak depoları eklemek, kaldırmak veya yönetmek için kullanılır.",
     "example": {
@@ -2200,9 +1798,7 @@
   },
   {
     "id": 188,
-    "category": [
-      "Git"
-    ],
+    "category": ["Git"],
     "term": "git push",
     "desc": "Yerel bir Git deposundaki değişiklikleri uzak bir depoya göndermek için kullanılan bir komuttur. Bu komut, yerel commit'leri uzak depoya aktarır.",
     "example": {
@@ -2212,9 +1808,7 @@
   },
   {
     "id": 189,
-    "category": [
-      "Git"
-    ],
+    "category": ["Git"],
     "term": "git pull",
     "desc": "Uzak bir Git deposundaki değişiklikleri yerel depoya çekmek için kullanılan bir komuttur. Bu komut, uzaktaki commit'leri yerel depoya getirir.",
     "example": {
@@ -2224,9 +1818,7 @@
   },
   {
     "id": 190,
-    "category": [
-      "Git"
-    ],
+    "category": ["Git"],
     "term": "git stash",
     "desc": "Geçici olarak değişiklikleri saklamak için kullanılan bir komuttur. Bu komut, üzerinde çalışılan ancak henüz tamamlanmamış değişiklikleri saklar ve çalışma alanını temizler.",
     "example": {
@@ -2236,9 +1828,7 @@
   },
   {
     "id": 191,
-    "category": [
-      "JavaScript"
-    ],
+    "category": ["JavaScript"],
     "term": "Debounce",
     "desc": "Debounce, kullanıcı etkileşimlerini işlerken veya bir fonksiyonu sürekli çağırırken ortaya çıkan aşırı çağrıları engellemek için kullanılan bir tekniktir. Özellikle kullanıcıların hızlı bir şekilde bir giriş alanına yazdığı, tarayıcı boyutunu değiştirdiği veya fareyle hızlıca tıkladığı durumlarda kullanılır.",
     "example": {
@@ -2248,9 +1838,7 @@
   },
   {
     "id": 192,
-    "category": [
-      "HTML"
-    ],
+    "category": ["HTML"],
     "term": "Event bubbling",
     "desc": "Event bubbling, bir HTML belgesindeki bir olayın, olayın hedef elementinden başlayarak, üst elementlere doğru yükselmesini ifade eder. Bu, bir olayın birden fazla elementi etkileyebileceği anlamına gelir.",
     "example": {
@@ -2260,24 +1848,22 @@
   },
   {
     "id": 193,
-    "category": [
-      "React"
-    ],
-    "term": " Prop drilling",
-    "desc": "Prop drilling, React'ta bir bileşkeden başka bir bileşkeye veri aktarmanın bir yoludur. Bu, verilerin bir üst bileşkeden bir alt bileşkeye geçirilmesi için birden fazla bileşkenin geçirilmesini gerektiren bir durumdur.",
-    "example": {
-      "lang": "jsx",
-      "codeBlock": "// Ana bileşke\nfunction App() { \nconst username = \"Erdem\";\nconst age = 28;\nreturn (\n<div>\n<Header username={username} />\n<Content username={username} age={age} />\n</div>\n ); }\n\n// Başlık bileşeni\nfunction Header(props) {\nreturn <h1>Welcome, {props.username}!</h1>;\n}\n\n// İçerik bileşeni \nfunction Content(props){\nreturn (\n<div>\n<p>Username: {props.username}</p>\n<p>Age: {props.age}</p>\n</div>\n);}"
-    }
-  },
-  {
-    "id": 194,
     "category": ["JavaScript"],
     "term": "Date methods",
     "desc": "JavaScript'te Date nesnesi, tarih ve saatle ilgili işlemleri yapmak için kullanılır. Bu nesne, JavaScript'in içinde bulunan bir küresel nesnedir, bu nedenle herhangi bir yeni oluşturma veya özel bir adlandırma olmadan kullanılabilir.",
     "example": {
       "lang": "js",
       "codeBlock": "// tarih bilgilerini almak\nconst currentDate = new Date(); // şu anki tarih ve saati almak\n\nconst year = currentDate.getFullYear(); // yıl'ı almak\nconst month = currentDate.getMonth(); // Ay, 0'dan başlar (Ocak için 0, Şubat için 1, vb.)\nconst dateDay = currentDate.getDate();  // günü almak 1-31 arası\nconst  day = currentDate.getDay(); // haftanın gününü almak 0-6 arası\nconst hour = currentDate.getHours(); // saat bilgisini almak 0-23 arası\nconst minute = currentDate.getMinutes(); // dakika bilgisini almak 0-59 arası\nconst second = currentDate.getSeconds(); // saniye bilgisini almak 0-59 arası\nconst millisecond = currentDate.getMilliseconds(); // milisaniye bilgisini almak 0-999 arası\nconst time = currentDate.getTime(); // 1 Ocak 1970 00:00:00 UTC'den bu yana geçen milisaniye sayısı\n// "
+    }
+  },
+  {
+    "id": 194,
+    "category": ["React"],
+    "term": "Prop drilling",
+    "desc": "Prop drilling, React'ta bir bileşkeden başka bir bileşkeye veri aktarmanın bir yoludur. Bu, verilerin bir üst bileşkeden bir alt bileşkeye geçirilmesi için birden fazla bileşkenin geçirilmesini gerektiren bir durumdur.",
+    "example": {
+      "lang": "js",
+      "codeBlock": "// Ana bileşke\nfunction App() { \nconst username = \"Erdem\";\nconst age = 28;\nreturn (\n<div>\n<Header username={username} />\n<Content username={username} age={age} />\n</div>\n ); }\n\n// Başlık bileşeni\nfunction Header(props) {\nreturn <h1>Welcome, {props.username}!</h1>;\n}\n\n// İçerik bileşeni \nfunction Content(props){\nreturn (\n<div>\n<p>Username: {props.username}</p>\n<p>Age: {props.age}</p>\n</div>\n);}"
     }
   }
 ]
