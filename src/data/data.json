@@ -1865,5 +1865,15 @@
       "lang": "js",
       "codeBlock": "// Ana bileşke\nfunction App() { \nconst username = \"Erdem\";\nconst age = 28;\nreturn (\n<div>\n<Header username={username} />\n<Content username={username} age={age} />\n</div>\n ); }\n\n// Başlık bileşeni\nfunction Header(props) {\nreturn <h1>Welcome, {props.username}!</h1>;\n}\n\n// İçerik bileşeni \nfunction Content(props){\nreturn (\n<div>\n<p>Username: {props.username}</p>\n<p>Age: {props.age}</p>\n</div>\n);}"
     }
+  },
+  {
+    "id": 195,
+    "category": ["JavaScript"],
+    "term": "Anonymous functions",
+    "desc": "\"Anonymous function\" yani anonim fonksiyon kod içerisinde isteğe bağlı ismini belirtmek istemediğimizde kullandığımız, adı olmayan bir fonksiyondur. Pratikte genellikle diğer bir fonksiyon için argüman olarak kullanılır.",
+    "example": {
+      "lang": "js",
+      "codeBlock": "// kullanım şekli \n(function //function yazılmak zorunda değildir. () \n //...\n});\n\n//Diğer bir fonksiyona argüman olarak örnek kullanımı\nsetTimeout(function() {\nconsole.log('Execute later after 1 second')\n}, 1000);"
+    }
   }
 ]
