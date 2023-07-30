@@ -2268,8 +2268,8 @@
     "example": {
       "lang": "jsx",
       "codeBlock": "// Ana bileşke\nfunction App() { \nconst username = \"Erdem\";\nconst age = 28;\nreturn (\n<div>\n<Header username={username} />\n<Content username={username} age={age} />\n</div>\n ); }\n\n// Başlık bileşeni\nfunction Header(props) {\nreturn <h1>Welcome, {props.username}!</h1>;\n}\n\n// İçerik bileşeni \nfunction Content(props){\nreturn (\n<div>\n<p>Username: {props.username}</p>\n<p>Age: {props.age}</p>\n</div>\n);}"
-=======
-  
+    }
+  },
   {
     "id": 194,
     "category": ["JavaScript"],
