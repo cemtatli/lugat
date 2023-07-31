@@ -86,7 +86,7 @@ const Layout = () => {
         })}
       </div>
       <div className="h-full w-full overflow-auto">
-        <div className="flex flex-col gap-y-15">
+        <div className=" flex flex-col gap-y-15">
           {currentItems.map(item => (
             <div key={item.id}>
               <h2 className="text-xl font-semibold">{item.term} nedir?</h2>

@@ -10,7 +10,6 @@ const Header = () => {
         <Logo size={44} />
         <ThemeChanger />
       </nav>
-      <Project />
     </header>
   );
 };

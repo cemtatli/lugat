@@ -80,7 +80,7 @@ const Search = ({ onSearch }) => {
     <div className="mt-4 flex w-full flex-col items-center justify-center gap-4 ">
       <div className="relative flex w-full">
         <input
-          className="h-12 w-full border px-10 text-sm text-gray-700 outline-none  dark:text-gray-200 dark:bg-gray-700"
+          className="h-12 w-full rounded-lg border px-10 text-sm text-gray-700 outline-none dark:border-gray-600 dark:bg-gray-800 dark:text-white"
           type="text"
           placeholder="Ne aramıştınız?"
           value={searchTerm}
@@ -97,17 +97,23 @@ const Search = ({ onSearch }) => {
             <XCircleIcon className="h-5 w-5" />
           </button>
         )}
-        <div className="absolute left-0 top-0 flex h-12 w-12 items-center justify-center text-gray-500" onClick={handleMenuToggle}>
-          <MagnifyingGlassIcon className="h-5 w-5 text-black dark:text-gray-200" />
+        <div
+          className="absolute left-0 top-0 flex h-12 w-12 items-center justify-center text-gray-500"
+          onClick={handleMenuToggle}
+        >
+          <MagnifyingGlassIcon className="h-5 w-5 text-black dark:text-gray-50" />
         </div>
         {searchHistory.length > 0 && isFocused && (
-          <div ref={menuRef} className="absolute top-full z-10 w-full overflow-hidden  border border-gray-200 bg-white dark:bg-gray-800 dark:border-gray-200    shadow-md">
+          <div
+            ref={menuRef}
+            className="absolute top-full z-10 w-full overflow-hidden  border border-gray-200 bg-white shadow-md dark:border-gray-200    dark:bg-gray-800"
+          >
             <ul className="divide-y divide-gray-200">
               {searchHistory.map(item => (
                 <li
                   key={item}
                   className=" cursor-pointer px-4
-                  py-3 transition-all hover:bg-gray-50 text-gray-950  dark:hover:bg-gray-950 dark:text-gray-50"
+                  py-3 text-gray-950 transition-all hover:bg-gray-50  dark:text-gray-50 dark:hover:bg-gray-950"
                   onClick={() => handleHistoryClick(item)}
                 >
                   {item}
@@ -115,7 +121,7 @@ const Search = ({ onSearch }) => {
               ))}
             </ul>
             <button
-              className="block w-full bg-gray-100 py-2 text-sm font-medium text-gray-500 hover:bg-gray-200 hover:text-gray-900 dark:bg-gray-600 dark:hover:text-white dark:text-gray-200 "
+              className="block w-full bg-gray-100 py-2 text-sm font-medium text-gray-500 hover:bg-gray-200 hover:text-gray-900 dark:bg-gray-600 dark:text-gray-200 dark:hover:text-white "
               onClick={handleClearHistory}
             >
               Arama Geçmişini Temizle
