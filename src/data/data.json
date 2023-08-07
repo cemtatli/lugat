@@ -2245,5 +2245,17 @@
       "lang": "js",
       "codeBlock": "<input type=\"text\" id=\"search-input\" placeholder=\"Search...\">\n<div id=\"search-result\"></div>\n\n<script>\nfunction performSearch() {\n// Arama işlemleri burada yapılır\nconst searchTerm = document.getElementById('search-input').value;\ndocument.getElementById('search-result').textContent = `Searching for: ${searchTerm}`;\n}\n\nconst debouncedSearch = debounce(performSearch, 500);\n\n document.getElementById('search-input').addEventListener('input', debouncedSearch);\n</script>"
     }
+  },
+  {
+    "id": 196,
+    "category": [
+      "JavaScript"
+    ],
+    "term": "Cookies",
+    "desc": "Cookies kullanıcı deneyimini iyileştirmek ve verileri tarayıcıda saklamak için kullanılan bir araçtır. Bir çok web sitesi çerezleri kullanarak kullanıcı oturumlarını yönetir, tercihleri hatırlar ve alışveriş sepetleri gibi verileri koruyarak web deneyimini daha kolay hale getirir.",
+    "example": {
+      "lang": "js",
+      "codeBlock": "// Çerez oluşturma\ndocument.cookie = \"kullaniciAdi=ornekKullanici\";"
+    }
   }
 ]
