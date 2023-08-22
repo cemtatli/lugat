@@ -5,6 +5,10 @@ Bu sözlük, frontend dünyasında yolunu kaybetmiş veya daha yeni başlayan ge
 
 [🔗 Lugat'a hemen göz atmak için bağlantıya tıklayın!](https://lugat.website)
 
+
+<img src='og-image.png'/>
+
+
 ### 🧰 Kullanılan Teknolojiler
 Lugat, React ve Tailwind CSS teknolojilerini kullanarak oluşturulmuştur.
 
