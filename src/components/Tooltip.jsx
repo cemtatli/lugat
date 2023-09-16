@@ -8,7 +8,7 @@ export default function Tooltip() {
       </div>
       <a
         target="_blank"
-        className=" shrink-0 rounded-full bg-blue-100 px-3 py-1 text-xs font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-300 "
+        className=" shrink-0 rounded-full bg-blue-100 px-3 py-1 text-xs font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-200"
         href="https://github.com/cemtatli/lugat"
       >
         Repo'ya git

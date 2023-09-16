@@ -79,7 +79,7 @@ const Layout = () => {
               onClick={() => handleCategoryClick(category)}
             >
               <Categories variant={category}>
-                {category} ({count}){filteredCategory === category && <XMarkIcon className="ml-0.5 h-4 w-4" />}
+                {category} ({count}){filteredCategory === category && <XMarkIcon strokeWidth={2} className="h-3 w-3 absolute right-1.5" />}
               </Categories>
             </div>
           );

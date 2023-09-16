@@ -106,14 +106,14 @@ const Search = ({ onSearch }) => {
         {searchHistory.length > 0 && isFocused && (
           <div
             ref={menuRef}
-            className="absolute top-full z-10 w-full overflow-hidden  border border-gray-200 bg-white shadow-md dark:border-gray-200    dark:bg-gray-800"
+            className="absolute top-full z-10 w-full overflow-hidden  border border-gray-200 bg-white shadow-md dark:border-gray-600  dark:bg-gray-800"
           >
             <ul className="divide-y divide-gray-200">
               {searchHistory.map(item => (
                 <li
                   key={item}
                   className=" cursor-pointer px-4
-                  py-3 text-gray-950 transition-all hover:bg-gray-50  dark:text-gray-50 dark:hover:bg-gray-950"
+                  py-3 text-gray-950 transition-all hover:bg-gray-50  dark:text-gray-50 dark:hover:bg-gray-900"
                   onClick={() => handleHistoryClick(item)}
                 >
                   {item}
