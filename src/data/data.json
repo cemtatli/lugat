@@ -1877,7 +1877,7 @@
     }
   },
   {
-    "id": 195,
+    "id": 196,
     "category": ["Web Development"],
     "term": "Lazy Loading",
     "desc": "Lazy loading, web sitelerindeki CSS, Image, Font gibi kaynakların sayfa açılışında yüklenmeden, kullanılacağı zaman yüklenmesi tekniğidir.",
