@@ -508,15 +508,6 @@
     }
   },
   {
-    "id": 52,
-    "category": ["Web Development"],
-    "term": "SSL",
-    "desc": "SSL (Secure Sockets Layer), Network bağlantılarının güvenli hale getirilmesi için kullanılan bir protokoldür. SSL sertifikaları, kullanıcının güvenli bir web sitesine bağlandığını ve bilgilerinin şifrelendiğini doğrular.",
-    "example": {
-      "codeBlock": "https://www.example.com"
-    }
-  },
-  {
     "id": 53,
     "category": ["JavaScript", "Web Development"],
     "term": "Fetch",
