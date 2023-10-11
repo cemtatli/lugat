@@ -1876,5 +1876,15 @@
       "lang": "html",
       "codeBlock": "<img src=\"image.jpg\" alt=\"...\" loading=\"lazy\"/>"
     }
+  },
+  {
+    "id": 197,
+    "category": ["CSS"],
+    "term": "Focus",
+    "desc": "Bir öğenin belirli bir durumunu temsil eden bir pseudo-class'tir. Bu durum, bir öğe belirli bir etkileşime girdiğinde veya odaklandığında ortaya çıkar. Odaklanma durumu genellikle kullanıcı form öğelerine tıkladığında veya klavye üzerinde gezinirken gerçekleşir.",
+    "example": {
+      "lang": "css",
+      "codeBlock": "/* <input> öğesi odaklandığında arka plan rengini sarı yapacak ve metin rengini kırmızı yapacaktır.  */\ninput:focus {\n backgroundColor: 'yellow' \n color: 'red';\n}"
+    }
   }
 ]
