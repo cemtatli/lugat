@@ -1886,5 +1886,18 @@
       "lang": "css",
       "codeBlock": "/* <input> öğesi odaklandığında arka plan rengini sarı yapacak ve metin rengini kırmızı yapacaktır.  */\ninput:focus {\n backgroundColor: 'yellow' \n color: 'red';\n}"
     }
+  },
+  {
+    "id": 198,
+    "category": ["JavaScript"],
+    "term": "Fetch fonksiyonu",
+    "desc": "Fetch fonksiyonu, ağ üzerinden veri almak veya göndermek için kullanılan modern bir JavaScript API'sidir. Fetch, Promise tabanlıdır ve tarayıcıda yerleşik olarak bulunur.",
+    "example": {
+      "lang": "js",
+      "codeBlock": "fetch('https://api.example.com/data').then(response => response.json()).then(data => console.log(data)).catch(error => console.error(error));"
+    }
   }
+  
+  
+
 ]
